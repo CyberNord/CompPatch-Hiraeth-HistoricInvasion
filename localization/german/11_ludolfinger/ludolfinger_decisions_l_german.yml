@@ -1,0 +1,12 @@
+﻿l_german:
+ hi_restore_hre_decision:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Restore the $e_hre$"
+ hi_restore_hre_decision_confirm:0 "To glory!"
+ hi_restore_hre_decision_desc:0 "The Romans ought to acknowledge us as the true rulers of these lands!"
+ hi_restore_hre_decision_tooltip:0 "You become a mighty [emperor|E]."
+ special_ludolfinger_conquest_region_core:0 "core territory of the $e_hre$"
+ titles_contested_in_war:0 "One of your titles is being contested in a war."
+ hi_restore_hre_decision_not_ludwig:0 "You're not Ludwig 'the German'"
+ hi_restore_hre_decision_percent_text:0 "At least 80%..."
+ hi_restore_hre_decision_region_text:0 "Is within the [GetGeographicalRegion('special_ludolfinger_conquest_region_core').GetName] [region|El]"
+ hi_restore_hre_decision_optional_titles_tt:0 "Optionally also control $k_burgundy$, $k_bohemia$, $k_sorbia$ or $k_pomerania$"
+ hi_restore_hre_decision_optional_titles_shift_tt:0 "If optionally fulfilled, these titles will also become [de_jure|E] part of [GetTitleByKey('e_hre').GetName]:"

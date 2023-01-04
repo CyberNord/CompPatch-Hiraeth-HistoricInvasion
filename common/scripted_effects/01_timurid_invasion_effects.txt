@@ -1,0 +1,349 @@
+﻿### an invader appears
+spawn_timur_character_effect = {
+	title:c_samarkand.title_province = {
+		save_scope_as = $INVADER_DYNN$_spawn_location
+	}
+
+	if = {
+		limit = { has_game_rule = inversed_gender_equality }
+		create_character = {
+			gender = female
+			location = scope:$INVADER_DYNN$_spawn_location
+			template = saray_mulkh_character_template
+			save_scope_as = $INVADER_NAME$
+		}
+	}
+	else_if = {
+		limit = { has_game_rule = full_gender_equality }
+		random_list = {
+			#Female Timur.
+			50 = {
+				create_character = {
+					gender = female
+					location = scope:$INVADER_DYNN$_spawn_location
+					template = saray_mulkh_character_template
+					save_scope_as = $INVADER_NAME$
+				}
+			}
+			#Male Timur.
+			50 = {
+				create_character = {
+					location = scope:$INVADER_DYNN$_spawn_location
+					template = timur_timurid_character_template
+					save_scope_as = $INVADER_NAME$
+				}
+			}
+		}
+	}
+	else = {
+		create_character = {
+			location = scope:$INVADER_DYNN$_spawn_location
+			template = timur_timurid_character_template
+			save_scope_as = $INVADER_NAME$
+		}
+	}
+
+	scope:$INVADER_NAME$ = {
+		add_trait = true_heir_of_genghis
+
+		add_gold = 5000
+		add_prestige = 25000
+		add_piety = 250
+
+		dynasty = {
+			set_dynasty_name = hi_dynn_timurid
+			set_coa = title:e_timurid
+
+			add_dynasty_prestige_level = 5
+			add_dynasty_prestige = 20250
+			add_dynasty_perk = hth_warfare_legacy_1
+			add_dynasty_perk = hth_warfare_legacy_2
+			add_dynasty_perk = hth_warfare_legacy_3
+			add_dynasty_perk = hth_warfare_legacy_4
+			add_dynasty_perk = hth_warfare_legacy_5
+			add_dynasty_perk = hth_glory_legacy_1
+			if = {
+				limit = { has_fp1_dlc_trigger = yes }
+				add_dynasty_perk = hth_ep1_culture_legacy_1
+				add_dynasty_perk = hth_ep1_culture_legacy_2
+				add_dynasty_perk = hth_ep1_culture_legacy_3
+			}
+			else = {
+				add_dynasty_perk = hth_erudition_legacy_1
+				add_dynasty_perk = hth_erudition_legacy_2
+				add_dynasty_perk = hth_erudition_legacy_3
+			}
+		}
+		house = {
+			set_house_name = hi_dynn_timurid
+		}
+	}
+
+	every_player = {
+		trigger_event = $INVADER_DYNN$_invasion.1001 # invader title has spawned notification
+	}
+}
+
+timurid_maintenance_effect = {
+	apply_invader_modifiers_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+	}
+	give_invader_land_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		STARTING_TIER = $STARTING_TIER$
+	}
+	spawn_$INVADER_DYNN$_family_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	spawn_invader_servants_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	form_the_invader_title_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		INVADER_TITLE = $INVADER_TITLE$
+		LANDLESS_YES_NO = $LANDLESS_YES_NO$
+		INVADER_TITLE_TIER = $INVADER_TITLE_TIER$
+	}
+}
+
+### populating the life of the invader character
+spawn_timurid_family_effect = {
+	give_nickname = nick_hi_the_lame
+	# spouse
+	if = {
+		limit = {
+			$INVADER_CHAR$ = { is_female = yes }
+		}
+		# Create timur (husband)...
+		create_character = {
+			template = timur_timurid_character_template
+			employer = $INVADER_CHAR$
+			save_scope_as = saray_mulk
+		}
+	}
+	else = {
+		# Create saray_mulk (wife)...
+		create_character = {
+			template = saray_mulkh_character_template
+			gender = female
+			employer = $INVADER_CHAR$
+			save_scope_as = saray_mulk
+		}
+	}
+	scope:saray_mulk = {
+		marry = $INVADER_CHAR$
+		disease_immunity_short_effect = yes
+	}
+	if = {
+		limit = {
+			$INVADER_CHAR$ = { is_male = yes }
+		}
+		$INVADER_CHAR$ = { save_temporary_scope_as = $INVADER_DYNN$_family_father }
+		scope:saray_mulk = { save_temporary_scope_as = $INVADER_DYNN$_family_mother }
+	}
+	else = {
+		$INVADER_CHAR$ = { save_temporary_scope_as = $INVADER_DYNN$_family_mother }
+		scope:saray_mulk = { save_temporary_scope_as = $INVADER_DYNN$_family_father }
+	}
+
+	### Family
+	# Create Umar (son)...
+	create_character = {
+		template = umar_timurid_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		mother = scope:$INVADER_DYNN$_family_mother
+		father = scope:$INVADER_DYNN$_family_father
+		save_scope_as = umar
+	}
+	scope:umar = {
+		disease_immunity_short_effect = yes
+
+		#Make it more likely that he gets a good education
+		hidden_effect = {
+			#education_point_acquisition_effect = yes
+			#education_point_acquisition_effect = yes
+		}
+	}
+
+	# Create jahangir (son)...
+	create_character = {
+		template = jahangir_timurid_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		mother = scope:$INVADER_DYNN$_family_mother
+		father = scope:$INVADER_DYNN$_family_father
+		save_scope_as = jahangir
+	}
+	scope:jahangir = {
+		#Make it more likely that he gets a good education
+		hidden_effect = {
+			#education_point_acquisition_effect = yes
+			#education_point_acquisition_effect = yes
+		}
+	}
+
+	# Create Miran (son)...
+	create_character = {
+		template = miran_timurid_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		mother = scope:$INVADER_DYNN$_family_mother
+		father = scope:$INVADER_DYNN$_family_father
+		save_scope_as = miran
+	}
+	scope:miran = {
+		disease_immunity_short_effect = yes
+
+		#Make it more likely that he gets a good education
+		hidden_effect = {
+			#education_point_acquisition_effect = yes
+			#education_point_acquisition_effect = yes
+		}
+	}
+
+	# Create Rukh (son)...
+	create_character = {
+		template = rukh_timurid_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		mother = scope:$INVADER_DYNN$_family_mother
+		father = scope:$INVADER_DYNN$_family_father
+		save_scope_as = rukh
+	}
+	scope:rukh = {
+		disease_immunity_short_effect = yes
+
+		#Make it more likely that he gets a good education
+		hidden_effect = {
+			#education_point_acquisition_effect = yes
+			#education_point_acquisition_effect = yes
+		}
+	}
+
+	# Create Tohun (Secondary Wive)...
+	create_character = {
+		template = tohun_character_template
+		employer = $INVADER_CHAR$
+		gender = female
+		save_scope_as = tohun
+	}
+	scope:tohun = {
+		if = {
+			limit = { $INVADER_CHAR$ = { is_male = yes } }
+			marry = $INVADER_CHAR$
+		}
+		disease_immunity_short_effect = yes
+	}
+
+	# Create Turmish (Secondary Wive)...
+	create_character = {
+		template = turmish_character_template
+		employer = $INVADER_CHAR$
+		gender = female
+		save_scope_as = turmish
+	}
+	scope:turmish = {
+		if = {
+			limit = { $INVADER_CHAR$ = { is_male = yes } }
+			marry = $INVADER_CHAR$
+		}
+		disease_immunity_short_effect = yes
+	}
+
+	# Create Mengli (Secondary Wive)...
+	create_character = {
+		template = mengli_character_template
+		employer = $INVADER_CHAR$
+		gender = female
+		save_scope_as = mengli
+	}
+	scope:mengli = {
+		if = {
+			limit = { $INVADER_CHAR$ = { is_male = yes } }
+			marry = $INVADER_CHAR$
+		}
+		disease_immunity_short_effect = yes
+	}
+
+	# Create Taghay (Secondary Wive)...
+	create_character = {
+		template = taghay_character_template
+		employer = $INVADER_CHAR$
+		gender = female
+		save_scope_as = taghay
+	}
+	scope:taghay = {
+		# if = {
+		# 	limit = { $INVADER_CHAR$ = { is_male = yes } }
+		# 	marry = $INVADER_CHAR$
+		# }
+		disease_immunity_short_effect = yes
+	}
+
+	### others
+	create_character = {
+		template = hafez_character_template
+		employer = $INVADER_CHAR$
+		save_scope_as = hafez
+	}
+	scope:hafez = {
+		disease_immunity_short_effect = yes
+		# Set friendship with invader
+		set_relation_friend = {
+			target = $INVADER_CHAR$
+		}
+	}
+}
+
+# Make sure invader has troops
+spawn_timurid_troops_effect = {
+	spawn_timurid_army_effect = yes
+	spawn_timurid_army_effect = yes
+	spawn_timurid_army_effect = yes
+	spawn_timurid_army_effect = yes
+	spawn_timurid_army_effect = yes
+	spawn_timurid_army_effect = yes
+}
+spawn_timurid_army_effect = {
+	spawn_army = {
+		name = timurid_event_troops
+		location = capital_province
+		uses_supply = no
+		inheritable = no
+
+		levies = 1250
+		men_at_arms = {
+			type = horse_archers
+			stacks = 12
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 12
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 10
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		# siege
+		men_at_arms = {
+			type = trebuchet
+			stacks = 9
+		}
+		men_at_arms = {
+			type = bombard
+			stacks = 3
+		}
+	}
+}

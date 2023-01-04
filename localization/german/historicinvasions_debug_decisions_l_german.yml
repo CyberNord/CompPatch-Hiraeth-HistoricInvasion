@@ -1,0 +1,24 @@
+﻿l_german:
+ become_saoshyant_modded_decision:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Become the Saoshyant"
+ become_saoshyant_modded_decision_confirm:0 "I am the one!"
+
+ hi_pope_restores_jerusalem_de_jure_decision:0 "Restore $k_jerusalem$"
+ hi_pope_restores_jerusalem_de_jure_decision_desc:0 "$k_jerusalem$ currently holds no [de_jure|El] [titles|El]. We ought to ensure that the people believe in $k_jerusalem$ again!"
+ hi_pope_restores_jerusalem_de_jure_decision_tooltip:0 "Assign de jure land to $k_jerusalem$."
+ hi_pope_restores_jerusalem_de_jure_decision_confirm:0 "Confirm"
+ global_hi_pope_restores_jerusalem_de_jure_decision_jerusalem_no_de_jure:0 "$k_jerusalem$ has no de jure land."
+ global_hi_pope_restores_jerusalem_de_jure_decision_israel_no_de_jure:0 "$k_israel$ has no de jure land."
+
+ historicinvasion_debug_decision:0 "#p Historic Invasions:#! Debug Decision"
+ historicinvasion_debug_decision_tooltip:0 "Only visible in debug mode."
+ historicinvasion_debug_decision_desc:0 "A decision visibly only in Debug Mode to test out event or decision requirements.\n\nComplete to dismiss."
+ historicinvasion_debug_decision_confirm:0 "Ok"
+
+ hi_end_bugged_mongol_empire_story_decision:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] End Bugged Mongol Invasion Story"
+ hi_end_bugged_mongol_empire_story_decision_tooltip:0 "A decision to prevent the AI from automatically swearing fealty ad nauseam."
+ hi_end_bugged_mongol_empire_story_decision_desc:0 "The vanilla Mongol Invasion story seems to have bugged out in your game:\n\nThe $e_mongol_empire$ still exists and has de jure land even after the global variable that indicates the end of the story line has been set.\nUsually, the $e_mongol_empire$ is supposed be splintered into titles like the $e_ilkhanate$, $e_golden_horde$ and $e_mongolia$. Since the $e_mongol_empire$ still exists in your game, the surrounding AI rulers automatically swear fealty to the emperor via decision every 12 months and later revolt - ad nauseam.\n\nThis endless loop can be fixed by swapping out the $e_mongol_empire$ with $e_mongolia$."
+ hi_end_bugged_mongol_empire_story_decision_confirm:0 "Confirm"
+ global_hi_not_ai_text:0 "You are not an AI"
+ global_hi_mongol_empire_has_spawned_text:0 "The $e_mongol_empire$ has spawned"
+ global_hi_mongol_story_has_ended_text:0 "Global variable \"mongol_story_has_ended\" is set"
+ global_hi_mongol_empire_has_de_jure_land_text:0 "The $e_mongol_empire$ posesses [de_jure|El] land"

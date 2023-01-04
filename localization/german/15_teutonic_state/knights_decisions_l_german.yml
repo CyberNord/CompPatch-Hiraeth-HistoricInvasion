@@ -1,0 +1,20 @@
+﻿l_german:
+ knights_found_teutonic_order_decision:0 "Found the $k_teutonic_order$"
+ knights_found_teutonic_order_decision_confirm:0 "Confirm"
+ knights_found_teutonic_order_decision_desc:0 "It is time to expand the influence of the [GetTitleByKey('e_teutonic_state').GetName] over the Baltic Sea."
+ knights_found_teutonic_order_decision_tooltip:0 "You receive the $k_teutonic_order$."
+
+ knights_found_livonian_order_decision:0 "Found the $k_livonian_order$"
+ knights_found_livonian_order_decision_confirm:0 "Confirm"
+ knights_found_livonian_order_decision_desc:0 "It is time to expand the influence of the [GetTitleByKey('e_teutonic_state').GetName] over the Baltic Sea."
+ knights_found_livonian_order_decision_tooltip:0 "You receive the $k_livonian_order$."
+
+ knights_enlarge_teutonic_order_decision:0 "Enlarge the $k_teutonic_order$"
+ knights_enlarge_teutonic_order_decision_confirm:0 "Confirm"
+ knights_enlarge_teutonic_order_decision_desc:0 "It is time to expand the influence of the [GetTitleByKey('e_teutonic_state').GetName] over the Baltic Sea."
+ knights_enlarge_teutonic_order_decision_tooltip:0 "Add more [de_jure|E] [duchies|E] to the $k_teutonic_order$."
+
+ knights_enlarge_livonian_order_decision:0 "Enlarge the $k_livonian_order$"
+ knights_enlarge_livonian_order_decision_confirm:0 "Confirm"
+ knights_enlarge_livonian_order_decision_desc:0 "It is time to expand the influence of the [GetTitleByKey('e_teutonic_state').GetName] over the Baltic Sea."
+ knights_enlarge_livonian_order_decision_tooltip:0 "Add more [de_jure|E] [duchies|E] to the $k_livonian_order$."

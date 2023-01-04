@@ -1,0 +1,48 @@
+﻿l_german:
+ jannabid_invasion.1001.t:0 "[said.GetFaith.GetAdherentNameNoTooltip] Uprising in $d_al-hasa$"
+ jannabid_invasion.1001.desc.1:0 "Just a few years ago in lower $k_mesopotamia$, a young [hamadan_qarmat.GetName] [hamadan_qarmat.GetDynasty.GetNameNoTooltip] was part of an Isma'ili opposition movement against Abbasid rule. In $b_salamiya$, [hamadan_qarmat.GetSheHe] lost the leadership to Abdullah Fatimid, who would later be declared Mahdi.\n"
+ jannabid_invasion.1001.desc.2.a:0 "[hamadan_qarmat.GetFirstNameNoTooltip] has since 'repented' and joined [fatimid_caliph.GetFirstNameNicknamed] in [fatimid_caliph.GetCapitalLocation.GetNameNoTooltip]. But despite this, "
+ jannabid_invasion.1001.desc.2.b:0 "What became of [hamadan_qarmat.GetFirstNameNoTooltip] is unknown. But despite [hamadan_qarmat.GetHerHis] disappearance, "
+ jannabid_invasion.1001.desc.3:0 "his followers continue to preach his teachings.\n\n[said.GetShortUINameNoTooltip] is a devouit [said.GetFaith.GetAdherentName] and openly rejects both the $d_sunni$ and $d_shiite$. [said.GetSheHe|U] and [said.GetHerHis] followers have gained a foothold in $d_al-hasa$ and are threatening a revolution if the $d_sunni$ to their north leaves them unchecked.\n\nHow far will their movement spread? Will $b_mecca$ remain a safe place for pilgrims? Only time will tell."
+ jannabid_invasion.1001.a:0 "Is this the start of an age of turmoil?"
+ jannabid_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [said.GetHerHim]..."
+
+ jannabid_invasion.1101.opening:0 "[hamadan_qarmat.Custom2('AppropriateGreeting', ROOT.Char)]"
+ jannabid_invasion.1101.desc:0 "I have decided to set our differences that came to light in $b_salamiya$ aside and instead join your cause under my new name [hamadan_qarmat.GetFirstNameNoTooltip].\n\nPlease accept my reconciliation. I hope that the [said.GetFaith.GetAdherentNameNoTooltip] movement in [said.GetCapitalLocation.GetName] will not delegitimize your rightful rule."
+ jannabid_invasion.1101.a:0 "Thank you, my friend."
+
+ jannabid_invasion.1201.t:0 "The sacking of $c_mecca$"
+ jannabid_invasion.1201.desc:0 "After besieging the holy city of $c_mecca$ for several weeks, [occupant.GetName] and [occupant.GetHerHis] [occupant.GetFaith.GetAdherentName] forces have entered the city not by force but through trickery: [occupant.GetSheHe|U] claimed to come with peaceful intentions and cited the right of every Muslim to gain access to the holy city.\n\nWithin $c_mecca$, [occupant.GetFirstNameNoTooltip] immediately ordered his followers to murder as many defenseless pilgrims as possible. His forces rode up and down every street, alert for every small movement...\n\nSurvivors are reporting that the [occupant.GetFaith.GetAdherentNamePluralNoTooltip] have also defiled the Zamzam Well by throwing the dead bodies of the slaughtered pilgrims into it.\n\nWill the Black Stone stay safe or disappear amid the chaos?"
+ jannabid_invasion.1201.a:0 "These are not mere heretics!"
+ jannabid_invasion.1201.b:0 "That will signal our break from [GetFaithByKey('qarmatian').GetReligion.GetNameNoTooltip]."
+
+ jannabid_invasion.2001.opening:0 "My destined servant,"
+ jannabid_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
+ jannabid_invasion.2001.a:0 "I submit with honor, my [jannabid_ruler.GetTitleAsNameNoTooltip] and convert to your faith."
+ jannabid_invasion.2001.a.tt:0 "You become a vassal of [jannabid_ruler.GetShortUIName]"
+ jannabid_invasion.2001.b:0 "You pose no threat to me!"
+ jannabid_invasion.2001.b.tt:0 "[jannabid_ruler.GetShortUIName|U] declares war on you"
+ jannabid_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [jannabid_ruler.GetTitleAsNameNoTooltip]."
+ jannabid_invasion.2001.c.tt:0 "You become a vassal of [jannabid_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
+
+ jannabid_invasion.2002.opening:0 "Oh almighty Amir,"
+ jannabid_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
+ jannabid_invasion.2002.a:0 "A wise choice, my servant."
+
+ jannabid_invasion.2003.opening:0 "You [jannabid_ruler.Custom('InsultAdjective')] shadow of a [jannabid_ruler.GetTitleAsNameNoTooltip],"
+ jannabid_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
+ jannabid_invasion.2003.a:0 "War and death it is, then."
+
+ jannabid_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the true ruler of $k_persia$."
+ jannabid_invasion.2101.a:0 "Of course, my liege."
+ jannabid_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
+ jannabid_invasion.2101.b.tt:0 "@warning_icon! [jannabid_ruler.GetShortUIName] breaks [jannabid_ruler.GetHerHis] alliance with you and may go to war instead!"
+
+ jannabid_invasion.2103.a:0 "You will bow to me now, one way or another!"
+ jannabid_invasion.2103.b:0 "Just you wait..."
+
+ jannabid_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
+ jannabid_invasion.2111.b.tt:0 "@warning_icon! [jannabid_ruler.GetShortUIName] breaks [jannabid_ruler.GetHerHis] alliance with you"
+
+ jannabid_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
+ jannabid_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

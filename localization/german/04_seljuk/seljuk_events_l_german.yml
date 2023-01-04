@@ -1,0 +1,64 @@
+﻿l_german:
+ seljuk_invasion.1001.t:0 "[tughril.GetFirstNameNoTooltip] [tughril.GetHouse.GetNameNoTooltip]"
+ seljuk_invasion.1001.desc:0 "Not too long ago, an $turkish$ clan leader named Seljuk split off from his bretheren in $d_aral_il$ and set out for the lands in $k_syr_darya$, specifically to the town of Jand. He was not unheard of, as he had served in the $khazar$ horde before. Once a believer in Tengri, he converted to Sunni Islam in 985 and died 24 years later in the town he had migrated to.\n\nJust a few years ago, the Seljuk tribe migrated second time: from the plains in $k_syr_darya$ to $d_gurgan$ and rented grazing fields in exchange for mercenary services. During the tumultuous Persian Intermezzo period, they eventually acquired land as a vassal under the $e_ghaznavid$ before eventually overpowering them.\n\nThe rise of the Ghaznavids wasn't able to end the Persian Intermezzo period, but perhaps the fractured region will soon be ruled whole again?"
+ seljuk_invasion.1001.a:0 "Will the turmoil never end?"
+ seljuk_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [tughril.GetHerHim]..."
+
+ seljuk_invasion.1010.t:0 "Vacant $c_baghdad$"
+ seljuk_invasion.1010.desc:0 "After our recent conquest of $k_mesopotamia$, we have pushed the Sunni Caliph out of $c_baghdad$.\n\nOffering them $c_baghdad$ and a few other surrounding counties is exchange for vassalage could greatly strengthen my legitimacy."
+ seljuk_invasion.1010.a:0 "Yes, I will send them an offer."
+ seljuk_invasion.1010.b:0 "Yes, contact a legitimate successor."
+ seljuk_invasion.1010.c:0 "No, that would not be wise."
+
+ seljuk_invasion.1011.opening:0 "My honored Caliph,"
+ seljuk_invasion.1011.desc:0 "I offer you to settle down in your former city of $c_baghdad$ as well as a few other surrounding counties. In exchange, I demand that you leave behind every title and vassal you currently control and become a [duke|E] under my control."
+ seljuk_invasion.1011.a:0 "I shall accept your generous offer."
+ seljuk_invasion.1011.b:0 "Never!"
+
+ seljuk_invasion.1012.opening:0 "My dear liege,"
+ seljuk_invasion.1012.desc:0 "I graciously accept your offer to settle down in $c_baghdad$ as your loyal vassal. My court will arrive there as soon as possible."
+ seljuk_invasion.1012.a:0 "That is great to hear."
+
+ seljuk_invasion.1013.opening:0 "To the ruler of $e_seljuk$,"
+ seljuk_invasion.1013.desc:0 "I refuse to submit to the likes of you! That was not a diplomatic offer, but a scornful insult."
+ seljuk_invasion.1013.a:0 "Unfortunate."
+
+ seljuk_invasion.1014.opening:0 "[random_vassal.Custom2('AppropriateGreeting', ROOT.Char)]"
+ seljuk_invasion.1014.desc:0 "word has reached me that the [sunni_caliph.GetTitledFirstName], the leader of all Muslims, has bent [sunni_caliph.GetHerHis] knee and has settled down in $c_baghdad$ as a mere vassal of the $e_seljuk$. Not only that, but the [sunni_caliph.GetPrimaryTitle.GetNameNoTooltip] allegedly has recognized all Seljuk conquests as rightful and titled [seljuk_ruler.GetHerHim] as \"Sultan of East and West\"."
+ seljuk_invasion.1014.a:0 "Thank you [random_vassal.GetFirstNameNoTooltip], that is most interesting..."
+
+ seljuk_invasion.1015.opening:0 "[random_vassal.Custom2('AppropriateGreeting', ROOT.Char)]"
+ seljuk_invasion.1015.desc:0 "I come to inform you that the $e_byzantium$ has lost all of her holdings in Asia Minor to [seljuk_ruler.GetTitledFirstName]. The territory is now being supervised by [rum_ruler.GetTitledFirstName] who has invited many $turkish$ nomads to live in these territories permanentely.\n[rum_ruler.GetSheHe|U] calls the new realm \"Sultanate of Rûm\" - a clear corruption and mocking of the word \"Rome\"."
+ seljuk_invasion.1015.a:0 "That's three Roman Empires existing simultaneously now!"
+ seljuk_invasion.1015.b:0 "@warning_icon! I wonder what the future holds for [rum_ruler.GetHerHim]..."
+
+ seljuk_invasion.2001.opening:0 "My destined servant,"
+ seljuk_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
+ seljuk_invasion.2001.a:0 "I submit with honor, my [seljuk_ruler.GetTitleAsNameNoTooltip]."
+ seljuk_invasion.2001.a.tt:0 "You become a vassal of [seljuk_ruler.GetShortUIName]"
+ seljuk_invasion.2001.b:0 "You pose no threat to me!"
+ seljuk_invasion.2001.b.tt:0 "[seljuk_ruler.GetShortUIName|U] declares war on you"
+ seljuk_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [seljuk_ruler.GetTitleAsNameNoTooltip]."
+ seljuk_invasion.2001.c.tt:0 "You become a vassal of [seljuk_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
+
+ seljuk_invasion.2002.opening:0 "Oh almighty Amir,"
+ seljuk_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
+ seljuk_invasion.2002.a:0 "A wise choice, my servant."
+
+ seljuk_invasion.2003.opening:0 "You [seljuk_ruler.Custom('InsultAdjective')] shadow of a [seljuk_ruler.GetTitleAsNameNoTooltip],"
+ seljuk_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
+ seljuk_invasion.2003.a:0 "War and death it is, then."
+
+ seljuk_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the true ruler of $k_persia$."
+ seljuk_invasion.2101.a:0 "Of course, my liege."
+ seljuk_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
+ seljuk_invasion.2101.b.tt:0 "@warning_icon! [seljuk_ruler.GetShortUIName] breaks [seljuk_ruler.GetHerHis] alliance with you and may go to war instead!"
+
+ seljuk_invasion.2103.a:0 "You will bow to me now, one way or another!"
+ seljuk_invasion.2103.b:0 "Just you wait..."
+
+ seljuk_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
+ seljuk_invasion.2111.b.tt:0 "@warning_icon! [seljuk_ruler.GetShortUIName] breaks [seljuk_ruler.GetHerHis] alliance with you"
+
+ seljuk_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
+ seljuk_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

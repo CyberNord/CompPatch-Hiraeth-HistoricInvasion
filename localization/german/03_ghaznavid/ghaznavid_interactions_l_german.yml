@@ -1,0 +1,4 @@
+﻿l_german:
+ ghaznavid_demand_subjugation_interaction:0 "Demand Subjugation"
+ ghaznavid_demand_subjugation_interaction_desc:0 "Demand that [recipient.GetShortUINameNoTooltip] becomes your [vassal|E], under threat of [war|E]. Unavailable for the duration of a [truce|E]."
+ ghaznavid_demand_subjugation_interaction_tooltip:0 "[recipient.GetShortUIName|U] gets a chance to respond."

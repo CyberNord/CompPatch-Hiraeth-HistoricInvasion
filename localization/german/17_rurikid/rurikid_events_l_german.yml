@@ -1,0 +1,36 @@
+﻿l_german:
+ rurikid_invasion.1001.t:0 "Rise of the [oleg.GetHouse.GetNameNoTooltip]s"
+ rurikid_invasion.1001.desc:0 "How does one gain the right to rule over a vast land of foreign people with differing beliefs? Conquest and to a certain extend inheritances are the norm, but receiving a personal invitation to rule over the land might be one of the strangest ways to rise to power.\nThat, however, is how [rurik.GetFirstName] is said to have risen to power.\n\nNow, the Rurikids are eyeing the territories that are slowly breaking free from the $khazar$ sphere of influence -  but this time, they won't wait for an invitation."
+ rurikid_invasion.1001.a:0 "Invited to rule? A fairy tale!"
+ rurikid_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [oleg.GetHerHim]..."
+
+ rurikid_invasion.2001.opening:0 "My destined servant,"
+ rurikid_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
+ rurikid_invasion.2001.a:0 "I submit with honor, my [rurikid_ruler.GetTitleAsNameNoTooltip]."
+ rurikid_invasion.2001.a.tt:0 "You become a vassal of [rurikid_ruler.GetShortUIName]"
+ rurikid_invasion.2001.b:0 "You pose no threat to me!"
+ rurikid_invasion.2001.b.tt:0 "[rurikid_ruler.GetShortUIName|U] declares war on you"
+ rurikid_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [rurikid_ruler.GetTitleAsNameNoTooltip]."
+ rurikid_invasion.2001.c.tt:0 "You become a vassal of [rurikid_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
+
+ rurikid_invasion.2002.opening:0 "Honored Ruler,"
+ rurikid_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
+ rurikid_invasion.2002.a:0 "A wise choice, my servant."
+
+ rurikid_invasion.2003.opening:0 "You [rurikid_ruler.Custom('InsultAdjective')] shadow of a [rurikid_ruler.GetTitleAsNameNoTooltip],"
+ rurikid_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
+ rurikid_invasion.2003.a:0 "War and death it is, then."
+
+ rurikid_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the Caliph."
+ rurikid_invasion.2101.a:0 "Of course, my liege."
+ rurikid_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
+ rurikid_invasion.2101.b.tt:0 "@warning_icon! [rurikid_ruler.GetShortUIName] breaks [rurikid_ruler.GetHerHis] alliance with you and may go to war instead!"
+
+ rurikid_invasion.2103.a:0 "You will bow to me now, one way or another!"
+ rurikid_invasion.2103.b:0 "Just you wait..."
+
+ rurikid_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
+ rurikid_invasion.2111.b.tt:0 "@warning_icon! [rurikid_ruler.GetShortUIName] breaks [rurikid_ruler.GetHerHis] alliance with you"
+
+ rurikid_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
+ rurikid_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

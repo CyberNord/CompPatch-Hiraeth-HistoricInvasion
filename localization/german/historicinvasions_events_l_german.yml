@@ -1,0 +1,7 @@
+﻿l_german:
+ historicinvasions_event.1000.opening:0 "To my former enemy,"
+ historicinvasions_event.1000.desc:0 "you've fought valiantly on the battlefield. Despite winning the war and thus being entitled to usurp every county you hold, I have decided to reward you with the [player_compensation_title.GetName].\n\nMay your reign be long and prosperous."
+ historicinvasions_event.1000.a:0 "I graciously accept this gift."
+ historicinvasions_event.1000.tt:0 "Despite losing every held title to the invader, a [game_over|E] was prevented.\nYou received a temporary [duchy|E] title as well as some event troops."
+
+ historicinvasions_vassal_religious_exemption.tt:0 "Since you are of a different [faith|E], your religious rights will be protected."

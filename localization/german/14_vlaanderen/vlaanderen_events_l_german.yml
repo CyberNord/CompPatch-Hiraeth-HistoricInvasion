@@ -1,0 +1,68 @@
+﻿l_german:
+ vlaanderen_invasion.1001.t:0 "$e_byzantium$ is shattered!"
+ vlaanderen_invasion.1001.desc:0 "In a vile display of misguided greed, the knights who were originally heading to reinforce the crusaders fighting in the Holy Land have brutally ransacked most coastal trade ports on the way to $b_constantinople$. The City of the World's Desire itself is aflame while the Latins are doing unthinkable things to the local population.\n\nThe former ruler of the $e_byzantium$ has fled the city and left $b_constantinople$ in the hands of [latin_emperor.GetShortUINameNoTooltip], who has proclaimed [latin_emperor.GetHerselfHimself] rightful ruler.\n\nAcross the strait, [nikaea_emperor.GetShortUINameNoTooltip] has organized a resistance to reclaim the lost city and restore the $e_byzantium$."
+ vlaanderen_invasion.1001.a:0 "From 27 BC until now..."
+ vlaanderen_invasion.1001.b:0 "@warning_icon! I wish I was the Latin [latin_emperor.GetFirstNameNoTooltip]..."
+ vlaanderen_invasion.1001.c:0 "@warning_icon! I wonder what the Byzantine [nikaea_emperor.GetFirstNameNoTooltip] will do..."
+
+ vlaanderen_invasion.1101.t:0 "The Faithful Prepare for War"
+ vlaanderen_invasion.1101.desc:0 "A Papal envoy has reached my court, bringing news from the Vatican. [pope.GetTitledFirstName] issued a call to arms to all righteous Christian rulers.\n\nTo all those who will take the fight against the vile heathens desecrating their holy sites, the Holy See promises full absolution from all sins and a guaranteed place in Heaven."
+ vlaanderen_invasion.1101.a:0 "I wonder how many will answer [pope.GetHerHis] call to arms?"
+
+ vlaanderen_invasion.1102.t:0 "A helping Hand"
+ vlaanderen_invasion.1102.desc:0 "The doge of $k_venice$, [doge.GetTitledFirstName] has offered to sponsor a large number of transport ships to make the crusader's journey to the Holy Land as uncomplicated as possible.\n\nIn return, [doge.GetSheHe] likely expects some kind of compensation..."
+ vlaanderen_invasion.1102.a:0 "Those ships are going to cost a fortune!"
+
+ vlaanderen_invasion.1103.t:0 "Crusaders depart for the Holy Land"
+ vlaanderen_invasion.1103.desc:0 "A surprisingly small number of crusaders has gathered around the ports in $c_venezia$. Many have instead chosen to treat the upcoming Great Holy War as a pilgrimage and are now wandering towards $c_jerusalem$ on foot. There are in fact so few knighs waiting in $c_venezia$ that a large portion of the built vessels will remain unused.\n\nThis does not concern the waiting crusaders though. They are eager to set sail and take part in a Holy Cause.\n\nTheir ships won't head directly towads $c_jerusalem$ though. The $e_byzantium$ has promised to provide the crusaders with a steady stream of supply, which they are going to pick up first."
+ vlaanderen_invasion.1103.a:0 "They are going to arrive any day now."
+
+ vlaanderen_invasion.1104.opening:0 "[random_vassal.Custom2('AppropriateGreeting', ROOT.Char)]"
+ vlaanderen_invasion.1104.desc:0 "reports regarding the ongoing crusade are telling us of a general breakdown of discipline.\nThe crusaders who were simply going to resupply in the $e_byzantium$ have started terrorizing the urban centers around $b_constantinople$. Worse yet, the knights have started to set up camp in front of the city and are threatening to breach the Theodosian Walls! Pope [pope.GetFirstName] threatens to excommunicate everyone involved if discipline and order is not restored at once."
+ vlaanderen_invasion.1104.a:0 "Unbelievable!"
+ vlaanderen_invasion.1104.b:0 "Wait! I wish to join!"
+
+ vlaanderen_invasion.1105.t:0 "$b_constantinople$ burns!"
+ vlaanderen_invasion.1105.desc:0 "$b_constantinople$ has fallen to the $e_vlaanderen$!\n\nLarge parts of the city are on fire and the helpless population is being brutally ransacked!\n\nDespite the issued threat to excommunicate everyone involved, the Pope is considering legitimizing Latin rule over $b_constantinople$..."
+ vlaanderen_invasion.1105.a:0 "And so, the last remnant of the $e_roman_empire$ falls."
+
+ vlaanderen_invasion.1201.t:0 "You wretched [ROOT.Char.Custom('GirlBoy'))],"
+ vlaanderen_invasion.1201.desc_vassal:0 "I dragged you out of the filth, and I can cast you back in again! You didn't #EMP truly#! think #EMP Constantinople#!, the last pillar of erudition on this disdainful earth, could really be yours! Not so much as your littlest toe is worthy of treading upon its glimmering bricks! Return it, or else the Golden Horn shall be your drowning-pit — I will fling you into it myself, if I must."
+ vlaanderen_invasion.1201.a:0 "I was merely looking after it for you!"
+ vlaanderen_invasion.1201.b:0 "I hope your mithering rear gets splinters on the Throne."
+
+ vlaanderen_invasion.1202.t:0 "You wretched [ROOT.Char.Custom('GirlBoy'))],"
+ vlaanderen_invasion.1202.desc_vassal:0 "I dragged you out of the filth, and I can cast you back in again! You didn't #EMP truly#! think #EMP Nikaea#!, the last pillar of erudition on this disdainful earth, could really be yours! Not so much as your littlest toe is worthy of treading upon its glimmering bricks! Return it, or else the Golden Horn shall be your drowning-pit — I will fling you into it myself, if I must."
+ vlaanderen_invasion.1202.a:0 "I was merely looking after it for you!"
+ vlaanderen_invasion.1202.b:0 "I hope your mithering rear gets splinters on the Throne."
+
+ vlaanderen_invasion.2001.opening:0 "My destined servant,"
+ vlaanderen_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
+ vlaanderen_invasion.2001.a:0 "I submit with honor, my [vlaanderen_ruler.GetTitleAsNameNoTooltip]."
+ vlaanderen_invasion.2001.a.tt:0 "You become a vassal of [vlaanderen_ruler.GetShortUIName]"
+ vlaanderen_invasion.2001.b:0 "You pose no threat to me!"
+ vlaanderen_invasion.2001.b.tt:0 "[vlaanderen_ruler.GetShortUIName|U] declares war on you"
+ vlaanderen_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [vlaanderen_ruler.GetTitleAsNameNoTooltip]."
+ vlaanderen_invasion.2001.c.tt:0 "You become a vassal of [vlaanderen_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
+
+ vlaanderen_invasion.2002.opening:0 "Oh almighty Emperor,"
+ vlaanderen_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
+ vlaanderen_invasion.2002.a:0 "A wise choice, my servant."
+
+ vlaanderen_invasion.2003.opening:0 "You [vlaanderen_ruler.Custom('InsultAdjective')] shadow of a [vlaanderen_ruler.GetTitleAsNameNoTooltip],"
+ vlaanderen_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
+ vlaanderen_invasion.2003.a:0 "War and death it is, then."
+
+ vlaanderen_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the true ruler of these lands."
+ vlaanderen_invasion.2101.a:0 "Of course, my liege."
+ vlaanderen_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
+ vlaanderen_invasion.2101.b.tt:0 "@warning_icon! [vlaanderen_ruler.GetShortUIName] breaks [vlaanderen_ruler.GetHerHis] alliance with you and may go to war instead!"
+
+ vlaanderen_invasion.2103.a:0 "You will bow to me now, one way or another!"
+ vlaanderen_invasion.2103.b:0 "Just you wait..."
+
+ vlaanderen_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
+ vlaanderen_invasion.2111.b.tt:0 "@warning_icon! [vlaanderen_ruler.GetShortUIName] breaks [vlaanderen_ruler.GetHerHis] alliance with you"
+
+ vlaanderen_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
+ vlaanderen_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

@@ -1,0 +1,54 @@
+﻿l_german:
+ e_shiite:0 "Ifriqiya"
+ e_shiite_adj:0 "$maghrebi$"
+
+ e_ghaznavids:0 "Ghaznavid Empire"
+ e_ghaznavids_adj:0 "$turkish$"
+ 
+ e_seljuks:0 "Seljuk Empire"
+ e_seljuks_adj:0 "$turkish$"
+
+ k_ziyarids:0 "Ziyarid"
+ k_ziyarids_adj:0 "Gilak"
+
+ e_ayyubids:0 "Ayyubid Empire"
+ e_ayyubids_adj:0 "$egyptian$"
+
+ e_almoravids:0 "Almoravid Empire"
+ e_almoravids_adj:0 "$berber$"
+
+ e_almohads:0 "Almohad Empire"
+ e_almohads_adj:0 "$berber$"
+
+ k_jannabids:0 "Jannabid"
+ k_jannabids_adj:0 "$bedouin$"
+
+ k_norman_host_sicily:0 "$norman$ Mercenaries"
+ k_norman_host_sicily_adj:0 "$norman$"
+ 
+ e_terterobas:0 "Desht-i Qipchaq"
+ e_terterobas_adj:0 "$cuman$"
+
+ e_rurikids:0 "Kyivan Rus'"
+ e_rurikids_adj:0 "Rus'"
+
+ e_cholas:0 "Chola"
+ e_cholas_adj:0 "$tamil$"
+
+ e_anushtiginids_article:0 "the "
+ e_anushtiginids:0 "Khwarezmian Empire"
+ e_anushtiginids_adj:0 "Khwarezmian"
+
+ e_yelus:0 "Qara Khitai"
+ e_yelus_adj:0 "$khitan$"
+
+ e_ottomans:0 "Ottoman Empire"
+ e_ottomans_adj:0 "$turkish$"
+
+ e_keitas_article:0 "the "
+ e_keitas:0 "Keita Empire"
+ e_keitas_adj:0 "$malinke$"
+
+ e_attilas_article:0 "the "
+ e_attilas:0 "Hunnic Empire"
+ e_attilas_adj:0 "Hunnic"

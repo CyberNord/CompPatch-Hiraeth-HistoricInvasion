@@ -1,0 +1,6 @@
+﻿l_german:
+ submit_to_ghaznavid_decision:0 "Submit to the $e_ghaznavid$"
+ submit_to_ghaznavid_decision_confirm:0 "Swear Fealty"
+ submit_to_ghaznavid_decision_opening_desc:0 "It is time to acknowledge the $e_ghaznavid$ as our honored liege. I will join their ranks, rather than fight them."
+ submit_to_ghaznavid_decision_tooltip:0 "You become a vassal of the $e_ghaznavid$ and pay a monthly donation."
+ submit_to_ghaznavid_effect_tooltip:0 "Become a vassal of the $e_ghaznavid$"

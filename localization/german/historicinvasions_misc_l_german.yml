@@ -1,0 +1,9 @@
+﻿l_german:
+ TRUCE_SWEAR_FEALTY:0 "Negotiated Truce"
+
+ global_any_county_in_region_percent_trigger:0 "A certain percentage of [counties|El] fulfill the following requirements:"
+ first_any_county_in_region_percent_trigger:0 "A certain percentage of [counties|El] fulfill the following requirements:"
+ global_any_sub_realm_county_count_trigger:0 "A certain number of [realm|El] [counties|El] fulfill the following requirements:"
+ first_any_sub_realm_county_count_trigger:0 "A certain number of [realm|El] [counties|El] fulfill the following requirements:"
+
+ heavy_cavalry_siege_value_add:0 "[heavy_cavalry|E] [siege_progress|E]"

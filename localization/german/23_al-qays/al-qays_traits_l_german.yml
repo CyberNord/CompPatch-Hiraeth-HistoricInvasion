@@ -1,0 +1,5 @@
+﻿l_german:
+ trait_alleged_sayyid:0 "Alleged Sayyid"
+ trait_alleged_sayyida:0 "Alleged Sayyida"
+ trait_alleged_sayyid_desc:1 "This character claims - without convincing evidence - to be descended from the Prophet."
+ trait_alleged_sayyid_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] claims - without convincing evidence - to be descended from the Prophet."
