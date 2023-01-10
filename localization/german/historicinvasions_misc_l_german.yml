@@ -7,3 +7,7 @@
  first_any_sub_realm_county_count_trigger:0 "A certain number of [realm|El] [counties|El] fulfill the following requirements:"
 
  heavy_cavalry_siege_value_add:0 "[heavy_cavalry|E] [siege_progress|E]"
+ heavy_infantry_siege_value_mult:0 "[heavy_infantry|E] [siege_progress|E] multiplier"
+ pikemen_siege_value_mult:0 "[spearmen|E] [siege_progress|E] multiplier"
+
+ invader_title_destroyed_on_succession_tt:0 "#r Their invader-specific title will be destroyed on succession!#!"

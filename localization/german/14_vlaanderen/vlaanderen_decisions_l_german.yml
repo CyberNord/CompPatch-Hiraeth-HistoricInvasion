@@ -16,7 +16,7 @@
  vlaanderen_reclaim_byzantine_empire_decision_desc:0 "The $e_byzantium$ has fallen. If we control $b_constantinople$ as well as a large chunk of its imperial territory, we can reclaim the title."
  vlaanderen_reclaim_byzantine_empire_decision_tooltip:0 "You gain the $e_byzantium$."
  e_byzantium_not_created:0 "[GetTitleByKey('e_byzantium').GetName] is not created"
- vlaanderen_reclaim_byzantine_empire_decision_hold_percent:0 "You or your vassals control a certain percentage of [de_jure|El] territory belonging to [GetTitleByKey('e_byzantium').GetName]"
+ vlaanderen_reclaim_byzantine_empire_decision_hold_percent:0 "You or your vassals control a certain percentage (>= 30%) of [de_jure|El] territory belonging to [GetTitleByKey('e_byzantium').GetName]"
  held_by_you_or_vassal:0 "Is held by you or your vassals"
  your_vassal_controls_c_byzantion:0 "Your [vassal|El] controls $b_constantinople$"
  you_control_c_byzantion:0 "You control $b_constantinople$"

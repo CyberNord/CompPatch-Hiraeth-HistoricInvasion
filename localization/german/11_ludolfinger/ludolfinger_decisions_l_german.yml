@@ -10,3 +10,8 @@
  hi_restore_hre_decision_region_text:0 "Is within the [GetGeographicalRegion('special_ludolfinger_conquest_region_core').GetName] [region|El]"
  hi_restore_hre_decision_optional_titles_tt:0 "Optionally also control $k_burgundy$, $k_bohemia$, $k_sorbia$ or $k_pomerania$"
  hi_restore_hre_decision_optional_titles_shift_tt:0 "If optionally fulfilled, these titles will also become [de_jure|E] part of [GetTitleByKey('e_hre').GetName]:"
+
+ hi_expand_hre_decision:0 "Expand the imperial borders"
+ hi_expand_hre_decision_confirm:0 "Confirm"
+ hi_expand_hre_decision_desc:0 "It is time that we assert ourselves as the rightful rulers of these lands."
+ hi_expand_hre_decision_tooltip:0 "Add more [de_jure|E] [kingdoms|E] to the $e_hre$."

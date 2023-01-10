@@ -15,6 +15,14 @@
  setting_historicinvasion_cb_levy_off:0 "Off / Landless-only"
  setting_historicinvasion_cb_levy_off_desc:0 "Only unlanded invaders will receive bonus levies."
 
+ rule_historicinvasion_notification_events:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Notification Events"
+ setting_historicinvasion_notification_enabled:0 "Enabled (default)"
+ setting_historicinvasion_notification_enabled_desc:0 "Players receive notification events when an invasion is launched. They may choose to play as the spawned invader."
+ setting_historicinvasion_notification_restricted:0 "'Play as invader' #r disabled#!"
+ setting_historicinvasion_notification_restricted_desc:0 "Players receive notification events when an invasion is launched. They may #bold not#! choose to play as the spawned invader."
+ setting_historicinvasion_notification_disabled:0 "#r Disabled#!"
+ setting_historicinvasion_notification_disabled_desc:0 "Players #bold won't#! receive notification events when an invasion is launched. They may #bold not#! choose to play as the spawned invader."
+
  rule_divide_arabia:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Sultanates of $k_hejaz$ & $k_bahrain$"
  setting_enable_divide_arabia:0 "Enabled (default)"
  setting_enable_divide_arabia_desc:0 "On game creation, $k_arabia$ will be split into three [kingdoms|E]. Highly recommended so invaders don't conquer both coasts in a single war."
@@ -89,9 +97,9 @@
 
  rule_ludolfinger_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] $e_hre$"
  setting_default_ludolfinger_invasion:0 "10th century (default)"
- setting_default_ludolfinger_invasion_desc:0 "Past 911, an ambitious German monarch will attempt to restore the $e_hre$. Adds an easier decision to restore the HRE."
+ setting_default_ludolfinger_invasion_desc:0 "Past 911, an ambitious German monarch will attempt to restore the $e_hre$. Adds an easier decision to restore the HRE. Enables decision to expand the HRE."
  setting_never_ludolfinger_invasion:0 "#r Never#!"
- setting_never_ludolfinger_invasion_desc:0 "No special events will trigger."
+ setting_never_ludolfinger_invasion_desc:0 "No special events will trigger. The HRE can't be expanded via decision."
 
  rule_hauteville_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] William de Hauteville (Sicily)"
  setting_default_hauteville_invasion:0 "1038 (default)"
@@ -173,6 +181,49 @@
  setting_never_knytling_invasion:0 "#r Never#!"
  setting_never_knytling_invasion_desc:0 "The $e_knytling$ will not appear."
 
+ rule_gediminid_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Gediminas (Lithuania)"
+ setting_default_gediminid_invasion:0 "1316 (default)"
+ setting_default_gediminid_invasion_desc:0 "Past 1316, Gediminas will expand the $e_gediminid$."
+ setting_never_gediminid_invasion:0 "#r Never#!"
+ setting_never_gediminid_invasion_desc:0 "The $e_gediminid$ will not appear."
+
+ rule_yngling_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Haraldr Fairhair (Norway)"
+ setting_default_yngling_invasion:0 "872 (default)"
+ setting_default_yngling_invasion_desc:0 "Around 870, Haraldr will attempt to unify $k_norway$."
+ setting_never_yngling_invasion:0 "#r Never#!"
+ setting_never_yngling_invasion_desc:0 "Haraldr will not attempt to unite $k_norway$."
+
+ rule_assassins_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Assassins (Persia & Syria)"
+ setting_default_assassins_invasion:0 "1090 / 1141 (default)"
+ setting_default_assassins_invasion_desc:0 "Around 1090, the assassins will seize a castle in $k_persia$. Around 1162, they will seize a castle in $k_syria$."
+ setting_never_assassins_invasion:0 "#r Never#!"
+ setting_never_assassins_invasion_desc:0 "The assassins will not appear."
+
+ rule_qarghuyid_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Qarghuyah (Syria)"
+ setting_default_qarghuyid_invasion:0 "968 (default)"
+ setting_default_qarghuyid_invasion_desc:0 "Around 968, Qarghuyah will attempt to seize a duchy in $k_syria$."
+ setting_never_qarghuyid_invasion:0 "#r Never#!"
+ setting_never_qarghuyid_invasion_desc:0 "Qarghuyah will not appear."
+
+ rule_vivar_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] El Cid (Iberia)"
+ setting_default_vivar_invasion:0 "1094 (default)"
+ setting_default_vivar_invasion_desc:0 "Around 1094, Rodrigo Díaz de Vivar will attempt to conquer a duchy in southern $e_iberia$."
+ setting_never_vivar_invasion:0 "#r Never#!"
+ setting_never_vivar_invasion_desc:0 "$k_england$ will not be invaded by William."
+
+ rule_normandie_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] William de Normandie (England)"
+ setting_default_normandie_invasion:0 "1066 (default)"
+ setting_default_normandie_invasion_desc:0 "Around 1066, William will attempt to conquer $k_england$."
+ setting_never_normandie_invasion:0 "#r Never#!"
+ setting_never_normandie_invasion_desc:0 "$k_england$ will not be invaded by William."
+
+ rule_piast_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Mieszko Piast (Poland)"
+ setting_default_piast_invasion:0 "960 (default)"
+ setting_default_piast_invasion_desc:0 "Around 960, Mieszko will attempt to unite $k_poland$."
+ setting_never_piast_invasion:0 "#r Never#!"
+ setting_never_piast_invasion_desc:0 "$k_poland$ will not be united by Mieszko."
+
+
  rule_turkish_migrations:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Turkish Migrations (Asia Minor & Persia)"
  setting_default_turkish_migrations:0 "Enabled (default)"
  setting_default_turkish_migrations_desc:0 "Past 1080, Turkish nomads will periodically migrate from the Steppe into Asia Minor & Persia. Enables decisions to form certain Beyliks within Asia Minor."
@@ -180,6 +231,7 @@
  setting_decisions_turkish_migrations_desc:0 "No Turkish migrations will happen. Enables decisions to form certain Beyliks within Asia Minor."
  setting_never_turkish_migrations:0 "#r Disabled#!"
  setting_never_turkish_migrations_desc:0 "No Turkish migrations will happen. No decisions that form certain Beyliks within Asia Minor can be taken."
+
 
  rule_attila_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Attila (western Steppe)"
  setting_never_attila_invasion:0 "#r Never#! (default)"

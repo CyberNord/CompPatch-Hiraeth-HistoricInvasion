@@ -29,5 +29,14 @@
  keita_event_troops:0 "$malinke$ Warriors"
  zanj_event_troops:0 "Zanj Rebels"
  knytling_event_troops:0 "Knytling Loyalists"
+ gediminid_event_troops:0 "$lithuanian$ Soldiers"
+ yngling_event_troops:0 "Viking Raiders"
+ sabbah_event_troops:0 "$persian$ Assassins"
+ jabalid_event_troops:0 "$syrian$ Assassins"
+ qarghuyid_event_troops:0 "Levantine Warriors"
+ vivar_event_troops:0 "$castillian$ Knights"
+ normandie_event_troops:0 "$norman$ Knights"
+ piast_event_troops:0 "$polish$ Knights"
+
 
  attila_event_troops:0 "Attila's Horde"

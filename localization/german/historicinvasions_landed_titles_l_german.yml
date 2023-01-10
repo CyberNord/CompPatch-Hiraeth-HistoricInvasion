@@ -32,8 +32,6 @@
  e_ayyubid_adj:0 "$egyptian$"
  k_hejaz:0 "Hejaz"
  k_hejaz_adj: "Hejazi"
- k_oman:0 "Oman"
- k_oman_adj:0 "Omani"
  k_bahrain:0 "Bahrain"
  k_bahrain_adj:0 "Bahraini"
  hi_k_arabia:0 "Najd"
@@ -118,6 +116,9 @@
  e_attila:0 "Hunnic Empire"
  e_attila_adj:0 "Hunnic"
 
+ d_al-qays_article:0 "the "
+ d_al-qays:0 "Zanj Revolt"
+ d_al-qays_adj:0 "Zanj"
  k_al-qays_article:0 "the "
  k_al-qays:0 "Zanj Revolt"
  k_al-qays_adj:0 "Zanj"
@@ -125,6 +126,31 @@
  e_knytling_article:0 "the "
  e_knytling:0 "North Sea Empire"
  e_knytling_adj:0 "$norse$"
+
+ e_gediminid:0 "Lithuania"
+ e_gediminid_adj:0 "$lithuanian$"
+ hi_commonwealth:0 "Commonwealth"
+ hi_commonwealth_adj:0 "$polish$-$lithuanian$"
+
+ d_yngling:0 "Vestfold"
+ d_yngling_adj:0 "$norse$"
+
+ k_sabbah:0 "al-Hashashin"
+ k_sabbah_adj:0 "$persian$"
+ k_jabalid:0 "al-Hashashin"
+ k_jabalid_adj:0 "$levantine$"
+
+ d_qarghuyid:0 "Aleppo"
+ d_qarghuyid_adj:0 "Levantine"
+
+ d_vivar:0 "Vivar"
+ d_vivar_adj:0 "$castillian$"
+
+ k_normandie:0 "Norman Host"
+ k_normandie_adj:0 "$norman$"
+
+ k_piast:0 "$k_poland$"
+ k_piast_adj:0 "$polish$"
 
  e_song:0 "Song"
  e_song_adj:0 "$han$"

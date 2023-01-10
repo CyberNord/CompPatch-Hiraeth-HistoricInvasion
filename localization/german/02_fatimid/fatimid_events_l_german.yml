@@ -3,7 +3,7 @@
  fatimid_invasion.1001.desc:0 "The schism of Islam was triggered in its early days and has by now turned into an open rebellion that questions the legitimacy of the Abbassid Caliph. The Shia have gathered enough strength to openly state their allegiance to [abdullah.GetFirstName], which has opened the gates for more proud zealots to join their ranks.\n\nRumors tell that a strong ruler within [GetGeographicalRegion('special_fatimid_persia_region').GetName] has already embraced [abdullah.GetFaith.GetName].\n\nA storm is gathering in Africa, one that the Sunni Caliph can't afford to ignore..."
  fatimid_invasion.1001.a:0 "And so, the infighting begins."
  fatimid_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [abdullah.GetHerHim]..."
- fatimid_invasion.1001.c:0 "[abdullah.GetSheHe|U] is right! I shall become a devout [abdullah.GetFaith.GetAdherentNameNoTooltip]."
+ fatimid_invasion.1001.c:0 "@hi_ismaili_icon! [abdullah.GetSheHe|U] is right! I shall become a devout [abdullah.GetFaith.GetAdherentNameNoTooltip]."
 
  fatimid_invasion.1006.t:0 "Cairo Awaits"
  fatimid_invasion.1006.desc:0 "My dear Caliph,\n\nthe rulers of $k_egypt$ are weak and vulnerable. We ought to seize this opportunity to seize the land around the Nile and move ever close to the holy cities: Mecca and Medina.\n\nWe could leave northern Africa behind and move our court to $k_egypt$ permanently!\n\n\n#x Note: If you control 70% of [GetGeographicalRegion('special_fatimid_conquest_region_4').GetName] upon finishing a Historic Invasion war, your court will automatically move to $k_egypt$, you leave behind all vassals outside of $k_egypt$ and become a [king|El].#!"

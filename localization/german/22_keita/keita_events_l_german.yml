@@ -21,7 +21,7 @@
  keita_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
  keita_invasion.2003.a:0 "War and death it is, then."
 
- keita_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the Caliph."
+ keita_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty me."
  keita_invasion.2101.a:0 "Of course, my liege."
  keita_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
  keita_invasion.2101.b.tt:0 "@warning_icon! [keita_ruler.GetShortUIName] breaks [keita_ruler.GetHerHis] alliance with you and may go to war instead!"

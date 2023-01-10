@@ -13,6 +13,8 @@
 
  e_ayyubids:0 "Ayyubid Empire"
  e_ayyubids_adj:0 "$egyptian$"
+ k_oman:0 "Oman"
+ k_oman_adj:0 "Omani"
 
  e_almoravids:0 "Almoravid Empire"
  e_almoravids_adj:0 "$berber$"

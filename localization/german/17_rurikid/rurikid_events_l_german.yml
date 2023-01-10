@@ -21,7 +21,7 @@
  rurikid_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
  rurikid_invasion.2003.a:0 "War and death it is, then."
 
- rurikid_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the Caliph."
+ rurikid_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty me."
  rurikid_invasion.2101.a:0 "Of course, my liege."
  rurikid_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
  rurikid_invasion.2101.b.tt:0 "@warning_icon! [rurikid_ruler.GetShortUIName] breaks [rurikid_ruler.GetHerHis] alliance with you and may go to war instead!"
@@ -34,3 +34,61 @@
 
  rurikid_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
  rurikid_invasion.2113.a:0 "Oh, you will regret your words and deeds..."
+
+ rurikid_invasion.5001.t:0 "The great Conversion"
+ rurikid_invasion.5001.desc:0 "Despite uniting the Rus', our realm is still largely isolated in terms of trade and diplomacy. When the $bolghar$ nomads migrated from the great Steppe to the footsteps of the $e_byzantium$, they lacked recognition until they converted to Orthodoxy. Up until that point, they were just another barbarian horde.\n\nPerhaps it is time for us to look for an alternative to the pagan [rus_ruler.GetFaith.GetNameNoTooltip].\n\nTo be able to make the most informed choice, three envoys are ready to venture to the faraway realms of [envoy_target_christianity.GetFirstNameNoTooltip], [envoy_target_islam.GetFirstNameNoTooltip] and [envoy_target_judaism.GetFirstNameNoTooltip] to gather information about their faith and its customs."
+ rurikid_invasion.5001.a:0 "Send the envoys on their way!"
+
+ rurikid_invasion_accept_envoy:0 "[rus_ruler.GetName] might convert to your faith or religion."
+ rurikid_invasion_decline_envoy:0 "[rus_ruler.GetName] will not consider converting to your religion."
+
+ rurikid_invasion.5002.opening:0 "Dear [envoy_target_christianity.GetFirstNameNoTooltip],"
+ rurikid_invasion.5002.desc:0 "my people are considering leaving behind the old pagan ways of [rus_ruler.GetFaith.GetName] in favor of a more civilized faith. I have sent [rus_envoy_christianity.GetName] to your court to learn more about [envoy_target_christianity.GetFaith.GetReligion.GetAdjective] [envoy_target_christianity.GetFaith.GetName].\nWe would be most grateful if you could welcome [rus_envoy_christianity.GetHerHim] with warm hospitality."
+ rurikid_invasion.5002.a:0 "[rus_envoy_christianity.GetFirstNameNoTooltip] will be treated with respect."
+ rurikid_invasion.5002.b:0 "Away with [rus_envoy_christianity.GetHerHim]!"
+
+ rurikid_invasion.5003.opening:0 "Dear [envoy_target_islam.GetFirstNameNoTooltip],"
+ rurikid_invasion.5003.desc:0 "my people are considering leaving behind the old pagan ways of [rus_ruler.GetFaith.GetName] in favor of a more civilized faith. I have sent [rus_envoy_islam.GetName] to your court to learn more about [envoy_target_islam.GetFaith.GetReligion.GetAdjective] [envoy_target_islam.GetFaith.GetName].\nWe would be most grateful if you could welcome [rus_envoy_islam.GetHerHim] with warm hospitality."
+ rurikid_invasion.5003.a:0 "[rus_envoy_islam.GetFirstNameNoTooltip] will be treated with respect."
+ rurikid_invasion.5003.b:0 "Away with [rus_envoy_islam.GetHerHim]!"
+
+ rurikid_invasion.5004.opening:0 "Dear [envoy_target_judaism.GetFirstNameNoTooltip],"
+ rurikid_invasion.5004.desc:0 "my people are considering leaving behind the old pagan ways of [rus_ruler.GetFaith.GetName] in favor of a more civilized faith. I have sent [rus_envoy_judaism.GetName] to your court to learn more about [envoy_target_judaism.GetFaith.GetReligion.GetAdjective] [envoy_target_judaism.GetFaith.GetName].\nWe would be most grateful if you could welcome [rus_envoy_judaism.GetHerHim] with warm hospitality."
+ rurikid_invasion.5004.a:0 "[rus_envoy_judaism.GetFirstNameNoTooltip] will be treated with respect."
+ rurikid_invasion.5004.b:0 "Away with [rus_envoy_judaism.GetHerHim]!"
+
+ rurikid_invasion.5010.t:0 "The Choice of [rus_ruler.GetFirstNameNoTooltip]"
+ rurikid_invasion.5010.desc:0 "It has been several weeks since my brave envoys have ventured into unknown faraway lands to learn more about [GetFaithByKey('orthodox').GetReligion.GetName], [GetFaithByKey('ashari').GetReligion.GetName] and [GetFaithByKey('kabarism').GetReligion.GetName].\n\nJust today, the last report has reached my court - now the time has come to decide between converting over to a non-pagan faith or remaining loyal to [rus_ruler.GetFaith.GetNameNoTooltip]."
+ rurikid_invasion.5010.a:0 "Our envoy told interesting stories about [GetFaithByKey('orthodox').GetReligion.GetNameNoTooltip]."
+ rurikid_invasion.5010.b:0 "Perhaps [GetFaithByKey('ashari').GetReligion.GetNameNoTooltip] would be a strong choice?"
+ rurikid_invasion.5010.c:0 "[GetFaithByKey('kabarism').GetReligion.GetNameNoTooltip] was the preferred faith of the Khazars."
+ rurikid_invasion.5010.d:0 "We will remain loyal to our old ways!"
+
+ rurikid_invasion_envoy_rejected:0 "They rejected our envoy."
+ rurikid_no_faith_conversion:0 "$e_rurikid$ did not convert"
+
+ rurikid_invasion.5011.t:0 "The Choice of [rus_ruler.GetFirstNameNoTooltip]"
+ rurikid_invasion.5011.desc:0 "[GetFaithByKey('orthodox').GetReligion.GetName] can roughly be divided into two spheres of influence:\n\nIn the east, the last remains of the $e_roman_empire$ rule alongside the $k_orthodox$. Back when the $bolghar$ Nomads migrated into the region around the Danube, the $e_byzantium$ swayed them to convert to [GetFaithByKey('orthodox').GetName].\n\nThe $k_papal_state$ is located in $b_roma$, the original capital of the famed $e_roman_empire$. The remains of the splintered Carolingian Empire are adherents of [GetFaithByKey('catholic').GetName]."
+ rurikid_invasion.5011.a:0 "@hi_orthodox_icon! [GetFaithByKey('orthodox').GetNameNoTooltip] will be my choice. Glory to [GetFaithByKey('orthodox').HighGodName]!"
+ rurikid_invasion.5011.b:0 "@hi_catholic_icon! The $k_papal_state$, head of [GetFaithByKey('catholic').GetNameNoTooltip], is superior."
+ rurikid_invasion.5011.m:0 "Perhaps a different religion would be more fitting?"
+
+ rurikid_invasion.5012.t:0 "The Choice of [rus_ruler.GetFirstNameNoTooltip]"
+ rurikid_invasion.5012.desc:0 "My envoy has told me of many great stories about [GetFaithByKey('ashari').GetReligion.GetNameNoTooltip]: Largely forgotten, the Arabs waited for their chance to strike and brought two of the greatest empires to their knees. Their empire would stretch from the Iberian peninsula over Egypt to Persia."
+ rurikid_invasion.5012.a:0 "@hi_ashari_icon! By [GetFaithByKey('ashari').HighGodName], let us embrace [GetFaithByKey('ashari').GetNameNoTooltip]."
+ rurikid_invasion.5012.b:0 "@hi_ismaili_icon! The [GetFaithByKey('ismaili').GetAdjectiveNoTooltip] [GetTitleByKey('d_shiite').GetNameNoTooltip] will guide us."
+ rurikid_invasion.5012.m:0 "Perhaps a different religion would be more fitting?"
+
+ shia_caliphate_has_not_appeared:0 "Either the $d_shiite$ is not created or the Fatimids have not appeared yet."
+
+ rurikid_invasion.5013.t:0 "The Choice of [rus_ruler.GetFirstNameNoTooltip]"
+ rurikid_invasion.5013.desc:0 "The great $khazar$ nomads converted to [GetFaithByKey('kabarism').GetReligion.GetNameNoTooltip] in the 8th century.\n\nPerhaps he should do as they did after conquering their lands?"
+ rurikid_invasion.5013.a:0 "@hi_kabarism_icon! [GetFaithByKey('kabarism').GetNameNoTooltip] shall be our faith."
+ rurikid_invasion.5013.b:0 "@hi_rabbinism_icon! [GetFaithByKey('rabbinism').GetNameNoTooltip] is a good alternative."
+ rurikid_invasion.5013.m:0 "Perhaps a different religion would be more fitting?"
+
+ rurikid_invasion.5020.t:0 "The great Conversion"
+ rurikid_invasion.5020.desc:0 "[rus_ruler.GetNameNoTooltip] and most of [rus_ruler.GetHerHis] vassals have decided to leave behind their pagan ways and convert to [rus_ruler.GetFaith.GetNameNoTooltip].\n\nTo gather information about the most ideal faith to convert to, the $e_rurikid$ had sent out three envoys to various foreign realms:\n\nOne envoy was sent to [envoy_target_christianity.GetName],\nthe second one to [envoy_target_islam.GetName]\nand last but not least, the third envoy went to the court of [envoy_target_judaism.GetName].\n\nAfter long discussions, [rus_ruler.GetFirstNameNoTooltip] and [rus_ruler.GetHerHis] vassals have made their impactful decision."
+ rurikid_invasion.5020.a:0 "Praised be [rus_ruler.GetFaith.HighGodName]!"
+ rurikid_invasion.5020.b:0 "At least they are now part of [rus_ruler.GetFaith.GetReligion.GetNameNoTooltip]"
+ rurikid_invasion.5020.c:0 "What a disappointing choice."
