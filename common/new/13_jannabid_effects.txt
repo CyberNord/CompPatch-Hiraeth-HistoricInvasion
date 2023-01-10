@@ -1,0 +1,186 @@
+﻿# invader appears, before story
+spawn_said_character_effect = {
+	title:c_gilan.title_province = {
+		save_scope_as = $INVADER_DYNN$_spawn_location
+	}
+
+	# father, hist-ID
+	if = {
+		limit = { exists = character:74039 }
+		character:74039 = { save_scope_as = bahram_jannabid } # id 6914, hist-id 74039
+	}
+	else = {
+		create_character = {
+			template = bahram_jannabid_character_template
+			location = scope:$INVADER_DYNN$_spawn_location
+			save_scope_as = bahram_jannabid
+		}
+		scope:bahram_jannabid = {
+			dynasty = {
+				set_dynasty_name = hi_dynn_jannabid
+				set_coa = title:k_jannabid
+			}
+			house = {
+				set_house_name = hi_dynn_jannabid
+			}
+		}
+		create_character = {
+			template = aarif_jannabid_character_template
+			dynasty = inherit
+			father = scope:bahram_jannabid
+			location = scope:$INVADER_DYNN$_spawn_location
+		}
+	}
+	# INVADER
+	create_character = {
+		template = said_jannabid_character_template
+		dynasty = inherit
+		father = scope:bahram_jannabid
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = $INVADER_NAME$
+	}
+	scope:$INVADER_NAME$ = {
+		add_gold = 500
+		add_prestige = 1250
+		add_piety = 2500
+
+		dynasty = {
+			add_dynasty_prestige_level = 0
+			add_dynasty_prestige = 500
+		}
+
+		# rivals
+		if = {
+			limit = { exists = title:d_sunni.holder }
+			set_relation_rival = {
+				target = title:d_sunni.holder
+				reason = rival_defied_caliph_authority_reason
+			}
+		}
+		if = {
+			limit = { exists = title:d_shiite.holder }
+			set_relation_rival = {
+				target = title:d_shiite.holder
+				reason = rival_defied_caliph_authority_reason
+			}
+		}
+		if = {
+			limit = { exists = title:d_masmudi.holder }
+			set_relation_rival = {
+				target = title:d_masmudi.holder
+				reason = rival_defied_caliph_authority_reason
+			}
+		}
+	}
+
+	# sect leader
+	create_character = {
+		template = hamadan_qarmat_character_template
+		location = title:c_hama.title_province # b_salamiya
+		save_scope_as = hamadan_qarmat
+	}
+	scope:hamadan_qarmat = {
+		dynasty = {
+			set_dynasty_name = hi_dynn_qarmat
+			generate_coa = yes
+		}
+		house = {
+			set_house_name = hi_dynn_qarmat
+		}
+	}
+	title:c_hama = { set_county_faith = faith:qarmatian }
+
+	every_player = {
+		trigger_event = $INVADER_DYNN$_invasion.1001 # Notification: Start of invasion
+	}
+}
+
+jannabid_maintenance_effect = {
+	apply_invader_modifiers_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+	}
+	give_invader_land_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		STARTING_TIER = $STARTING_TIER$
+	}
+	spawn_$INVADER_DYNN$_family_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	spawn_invader_servants_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	form_the_invader_title_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		INVADER_TITLE = $INVADER_TITLE$
+		LANDLESS_YES_NO = $LANDLESS_YES_NO$
+		INVADER_TITLE_TIER = $INVADER_TITLE_TIER$
+	}
+}
+
+### populating the life of the invader character
+spawn_jannabid_family_effect = {
+	# spouse
+	create_character = {
+		template = hi_random_spouse_character_template
+		dynasty = none
+		gender = female
+		employer = $INVADER_CHAR$
+		faith = $INVADER_CHAR$.faith
+		culture = $INVADER_CHAR$.culture
+		save_scope_as = said_spouse
+		after_creation = {
+			marry = $INVADER_CHAR$
+		}
+	}
+	# son 1
+	create_character = {
+		template = abul-qasim_jannabid_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		mother = scope:said_spouse
+		father = $INVADER_CHAR$
+	}
+	# son 2
+	create_character = {
+		template = abu_tahir_jannabid_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$
+		mother = scope:said_spouse
+	}
+}
+
+# Make sure invader has troops
+spawn_jannabid_troops_effect = {
+	spawn_jannabid_army_effect = yes
+	spawn_jannabid_army_effect = yes
+}
+spawn_jannabid_army_effect = {
+	spawn_army = {
+		name = jannabid_event_troops
+		location = capital_province
+		uses_supply = no
+		inheritable = no
+		
+		levies = 500
+		men_at_arms = {
+			type = light_footmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = camel_rider
+			stacks = 4
+		}
+		# siege
+		men_at_arms = {
+			type = mangonel
+			stacks = 3
+		}	
+	}
+}
