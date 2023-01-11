@@ -1,0 +1,141 @@
+﻿# spawn invader, before story
+spawn_parantaka_character_effect = {
+	title:c_cholamandalam.title_province = {
+		save_scope_as = $INVADER_DYNN$_spawn_location
+	}
+
+	# father
+	character:189032 = { save_scope_as = atitta }
+
+	if = {
+		limit = { NOT = { exists = scope:$INVADER_NAME$ } }
+		# INVADER
+		create_character = {
+			template = parantaka_chola_character_template
+			dynasty = inherit
+			father = scope:atitta
+			location = scope:$INVADER_DYNN$_spawn_location
+			save_scope_as = $INVADER_NAME$
+			after_creation = {
+				add_character_flag = spawned_$INVADER_DYNN$
+			}
+		}
+	}
+
+	scope:$INVADER_NAME$ = {
+		add_gold = 2000
+		add_prestige = 2500
+		add_piety = 150
+		
+		dynasty = {
+			add_dynasty_prestige_level = 1
+			add_dynasty_prestige = 500
+			add_dynasty_perk = warfare_legacy_1
+		}
+	}
+
+	every_player = {
+		trigger_event = $INVADER_DYNN$_invasion.1001 # Notification: Start of invasion
+	}
+}
+
+chola_maintenance_effect = {
+	apply_invader_modifiers_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+	}
+	if = {
+		limit = { $INVADER_CHAR$ = { has_character_flag = spawned_$INVADER_DYNN$ } }
+		give_invader_land_effect = {
+			INVADER_DYNN = $INVADER_DYNN$
+			INVADER_CHAR = $INVADER_CHAR$
+			STARTING_TIER = $STARTING_TIER$
+		}
+	}
+	spawn_$INVADER_DYNN$_family_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	spawn_invader_servants_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	form_the_invader_title_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		INVADER_TITLE = $INVADER_TITLE$
+		LANDLESS_YES_NO = $LANDLESS_YES_NO$
+	}
+}
+
+### populating the life of the invader character
+spawn_chola_family_effect = {
+	# Family
+	create_character = {
+		template = kantaratitta_chola_character_template
+		dynasty = inherit
+		father = $INVADER_CHAR$
+		employer = $INVADER_CHAR$
+		save_scope_as = kantaratitta_chola
+	}
+	create_character = {
+		template = uttama_chola_character_template
+		dynasty = inherit
+		father = scope:kantaratitta_chola
+		employer = $INVADER_CHAR$
+	}
+	create_character = {
+		template = arincaya_chola_character_template
+		dynasty = inherit
+		father = $INVADER_CHAR$
+		employer = $INVADER_CHAR$
+		save_scope_as = arincaya_chola
+	}
+	create_character = {
+		template = cuntara_chola_character_template
+		dynasty = inherit
+		father = scope:arincaya_chola
+		employer = $INVADER_CHAR$
+	}
+}
+
+# Make sure invader has troops
+spawn_chola_troops_effect = {
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_chola_army_effect = yes
+	}
+	spawn_chola_army_effect = yes
+}
+spawn_chola_army_effect = {
+	spawn_army = {
+		name = chola_event_troops
+		location = capital_province
+		uses_supply = no
+		inheritable = no
+		
+		levies = 1250
+		men_at_arms = {
+			type = war_elephant
+			stacks = 3
+		}
+		men_at_arms = {
+			type = armored_footmen
+			stacks = 7
+		}
+		men_at_arms = {
+			type = armored_footmen
+			stacks = 7
+		}
+		men_at_arms = {
+			type = paiks
+			stacks = 5
+		}
+		men_at_arms = {
+			type = paiks
+			stacks = 5
+		}
+		# siege
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+	}
+}
