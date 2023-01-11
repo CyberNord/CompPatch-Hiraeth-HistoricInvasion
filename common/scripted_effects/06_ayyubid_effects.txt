@@ -56,7 +56,6 @@ ayyubid_maintenance_effect = {
 		INVADER_CHAR = $INVADER_CHAR$
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
-		INVADER_TITLE_TIER = $INVADER_TITLE_TIER$
 	}
 }
 
@@ -230,17 +229,7 @@ form_the_ayyubid_title_effect = {
 			text = "Ayyubid Empire title was not created!"
 		}
 
-		hidden_effect = { set_primary_title_to = $INVADER_TITLE$ }
-
-		every_held_title = {
-			limit = {
-				tier >= tier_$INVADER_TITLE_TIER$
-				NOT = { this = $INVADER_TITLE$ }
-			}
-			$INVADER_CHAR$ = {
-				destroy_title = prev
-			}
-		}
+		set_primary_title_to = $INVADER_TITLE$
 
 		every_vassal = {
 			limit = { any_held_title = { is_head_of_faith = no } }
@@ -283,7 +272,10 @@ form_the_ayyubid_title_effect = {
 
 # Make sure invader has troops
 spawn_ayyubid_troops_effect = {
-	spawn_ayyubid_army_effect = yes
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_ayyubid_army_effect = yes
+	}
 	spawn_ayyubid_army_effect = yes
 	spawn_ayyubid_army_effect = yes
 	spawn_ayyubid_army_effect = yes

@@ -62,7 +62,6 @@ chola_maintenance_effect = {
 		INVADER_CHAR = $INVADER_CHAR$
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
-		INVADER_TITLE_TIER = $INVADER_TITLE_TIER$
 	}
 }
 
@@ -99,7 +98,10 @@ spawn_chola_family_effect = {
 
 # Make sure invader has troops
 spawn_chola_troops_effect = {
-	spawn_chola_army_effect = yes
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_chola_army_effect = yes
+	}
 	spawn_chola_army_effect = yes
 }
 spawn_chola_army_effect = {

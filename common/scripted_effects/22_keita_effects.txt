@@ -91,7 +91,6 @@ keita_maintenance_effect = {
 		INVADER_CHAR = $INVADER_CHAR$
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
-		INVADER_TITLE_TIER = $INVADER_TITLE_TIER$
 	}
 }
 
@@ -133,7 +132,10 @@ spawn_keita_family_effect = {
 
 # Make sure invader has troops
 spawn_keita_troops_effect = {
-	spawn_keita_army_effect = yes
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_keita_army_effect = yes
+	}
 	spawn_keita_army_effect = yes
 	spawn_keita_army_effect = yes
 	spawn_keita_army_effect = yes

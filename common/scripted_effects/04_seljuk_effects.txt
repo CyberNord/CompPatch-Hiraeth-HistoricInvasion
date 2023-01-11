@@ -119,7 +119,6 @@ seljuk_maintenance_effect = {
 		INVADER_CHAR = $INVADER_CHAR$
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
-		INVADER_TITLE_TIER = $INVADER_TITLE_TIER$
 	}
 }
 
@@ -265,7 +264,10 @@ spawn_seljuk_family_effect = {
 
 # Make sure invader has troops
 spawn_seljuk_troops_effect = {
-	spawn_seljuk_army_effect = yes
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_seljuk_army_effect = yes
+	}
 	spawn_seljuk_army_effect = yes
 	spawn_seljuk_army_effect = yes
 	spawn_seljuk_army_effect = yes
@@ -663,7 +665,10 @@ seljuk_rum_invasion_effect = {
 
 # Make sure invader has troops
 spawn_seljuk_rum_troops_effect = {
-	spawn_seljuk_rum_army_effect = yes
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_seljuk_rum_army_effect = yes
+	}
 	spawn_seljuk_rum_army_effect = yes
 	spawn_seljuk_rum_army_effect = yes
 	spawn_seljuk_rum_army_effect = yes

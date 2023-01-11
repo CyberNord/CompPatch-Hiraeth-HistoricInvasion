@@ -98,7 +98,6 @@ sabbah_maintenance_effect = {
 		INVADER_CHAR = $INVADER_CHAR$
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
-		INVADER_TITLE_TIER = $INVADER_TITLE_TIER$
 	}
 }
 
@@ -146,6 +145,10 @@ spawn_sabbah_family_effect = {
 
 # Make sure invader has troops
 spawn_sabbah_troops_effect = {
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_sabbah_army_effect = yes
+	}
 	spawn_sabbah_army_effect = yes
 }
 spawn_sabbah_army_effect = {

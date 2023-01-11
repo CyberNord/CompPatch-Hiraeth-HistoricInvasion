@@ -70,7 +70,6 @@ ziyarid_maintenance_effect = {
 		INVADER_CHAR = $INVADER_CHAR$
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
-		INVADER_TITLE_TIER = $INVADER_TITLE_TIER$
 	}
 }
 
@@ -100,7 +99,10 @@ spawn_ziyarid_family_effect = {
 
 # Make sure invader has troops
 spawn_ziyarid_troops_effect = {
-	spawn_ziyarid_army_effect = yes
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_ziyarid_army_effect = yes
+	}
 	spawn_ziyarid_army_effect = yes
 }
 spawn_ziyarid_army_effect = {

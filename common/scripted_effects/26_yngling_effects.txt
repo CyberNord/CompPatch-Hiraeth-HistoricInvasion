@@ -62,7 +62,6 @@ yngling_maintenance_effect = {
 		INVADER_CHAR = $INVADER_CHAR$
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
-		INVADER_TITLE_TIER = $INVADER_TITLE_TIER$
 	}
 }
 
@@ -89,6 +88,10 @@ spawn_yngling_family_effect = {
 
 # Make sure invader has troops
 spawn_yngling_troops_effect = {
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_yngling_army_effect = yes
+	}
 	spawn_yngling_army_effect = yes
 }
 spawn_yngling_army_effect = {
@@ -98,19 +101,19 @@ spawn_yngling_army_effect = {
 		uses_supply = no
 		inheritable = no
 		
-		levies = 100
+		levies = 50
 		men_at_arms = {
 			type = light_footmen
-			stacks = 3
+			stacks = 2
 		}
 		men_at_arms = {
 			type = bowmen
-			stacks = 2
+			stacks = 1
 		}
 		# siege
 		men_at_arms = {
 			type = onager
-			stacks = 5
+			stacks = 4
 		}
 	}
 }
