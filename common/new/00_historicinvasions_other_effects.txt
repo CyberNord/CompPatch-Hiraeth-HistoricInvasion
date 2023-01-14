@@ -1,0 +1,34 @@
+﻿### effects that don't really fit anywhere
+
+hi_end_bugged_mongol_empire_story_effect = {
+	title:e_mongol_empire = {
+		every_in_de_jure_hierarchy = {
+			limit = { tier = tier_kingdom }
+			set_de_jure_liege_title = title:e_mongolia
+		}
+	}
+
+	if = {
+		limit = { exists = title:e_mongol_empire.holder }
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:e_mongolia = {
+			change_title_holder = {
+				holder = title:e_mongol_empire.holder
+				change = scope:title_change
+			}
+			copy_title_history = title:e_mongol_empire
+		}
+		resolve_title_and_vassal_change = scope:title_change
+	}
+	else = {
+		title:e_mongolia = {
+			copy_title_history = title:e_mongol_empire
+		}
+	}
+
+	destroy_title = title:e_mongol_empire
+}

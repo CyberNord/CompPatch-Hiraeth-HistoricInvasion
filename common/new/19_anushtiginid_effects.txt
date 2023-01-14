@@ -1,0 +1,224 @@
+﻿# spawn invader, before story
+spawn_tekish_character_effect = {
+	title:c_gurganj.title_province = {
+		save_scope_as = $INVADER_DYNN$_spawn_location
+	}
+	### ancestors
+	# gen A
+	create_character = {
+		template = anushtigin_anushtiginid_character_template
+		dynasty = generate
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = anushtigin_anushtiginid
+	}
+	# gen B
+	create_character = {
+		template = muhammad_i_anushtiginid_character_template
+		dynasty = inherit
+		father = scope:anushtigin_anushtiginid
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = muhammad_i_anushtiginid
+	}
+	# gen C
+	create_character = {
+		template = atsiz_anushtiginid_character_template
+		dynasty = inherit
+		father = scope:muhammad_i_anushtiginid
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = atsiz_anushtiginid
+	}
+	create_character = {
+		template = inaltigin_anushtiginid_character_template
+		dynasty = inherit
+		father = scope:muhammad_i_anushtiginid
+		location = scope:$INVADER_DYNN$_spawn_location
+	}
+	create_character = {
+		template = yusuf_anushtiginid_character_template
+		dynasty = inherit
+		father = scope:muhammad_i_anushtiginid
+		location = scope:$INVADER_DYNN$_spawn_location
+	}
+	# gen D
+	create_character = {
+		template = il-arlsan_anushtiginid_character_template
+		dynasty = inherit
+		father = scope:atsiz_anushtiginid
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = il-arlsan_anushtiginid
+	}
+	create_character = {
+		template = atliq_anushtiginid_character_template
+		dynasty = inherit
+		father = scope:atsiz_anushtiginid
+		location = scope:$INVADER_DYNN$_spawn_location
+	}
+	create_character = {
+		template = hitan_anushtiginid_character_template
+		dynasty = inherit
+		father = scope:atsiz_anushtiginid
+		location = scope:$INVADER_DYNN$_spawn_location
+	}
+	create_character = {
+		template = suleiman_anushtiginid_character_template
+		dynasty = inherit
+		father = scope:atsiz_anushtiginid
+		location = scope:$INVADER_DYNN$_spawn_location
+	}
+
+	# gen E
+	### INVADER
+	create_character = {
+		template = tekish_anushtiginid_character_template
+		dynasty = inherit
+		father = scope:il-arlsan_anushtiginid
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = $INVADER_NAME$
+	}
+
+	scope:$INVADER_NAME$ = {
+		add_gold = 2000
+		add_prestige = 2500
+		add_piety = 150
+		
+		dynasty = {
+			set_dynasty_name = hi_dynn_anushtiginid
+			set_coa = title:e_anushtiginid
+
+			add_dynasty_prestige_level = 2
+			add_dynasty_prestige = 1750
+			add_dynasty_perk = warfare_legacy_1
+		}
+		house = {
+			set_house_name = hi_dynn_anushtiginid
+		}
+	}
+
+	every_player = {
+		trigger_event = $INVADER_DYNN$_invasion.1001 # Notification: Start of invasion
+	}
+}
+
+anushtiginid_maintenance_effect = {
+	apply_invader_modifiers_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+	}
+	give_invader_land_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		STARTING_TIER = $STARTING_TIER$
+	}
+	spawn_$INVADER_DYNN$_family_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	spawn_invader_servants_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	form_the_invader_title_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		INVADER_TITLE = $INVADER_TITLE$
+		LANDLESS_YES_NO = $LANDLESS_YES_NO$
+	}
+}
+
+### populating the life of the invader character
+spawn_anushtiginid_family_effect = {
+	# brother
+	create_character = {
+		template = mahmud_anushtiginid_character_template
+		dynasty = inherit
+		father = $INVADER_CHAR$.father
+		employer = $INVADER_CHAR$
+		after_creation = { disease_immunity_short_effect = yes }
+	}
+
+	# spouse
+	create_character = {
+		age = { 20 30 }
+		template = hi_random_spouse_character_template
+		dynasty = none
+		gender = female
+		employer = $INVADER_CHAR$
+		faith = $INVADER_CHAR$.faith
+		culture = $INVADER_CHAR$.culture
+		save_scope_as = tekish_spouse
+		after_creation = {
+			marry = $INVADER_CHAR$
+			disease_immunity_long_effect = yes
+		}
+	}
+
+	# children
+	create_character = {
+		template = muhammad_ii_anushtiginid_character_template
+		dynasty = inherit
+		mother = scope:tekish_spouse
+		father = $INVADER_CHAR$
+		employer = $INVADER_CHAR$
+		after_creation = { disease_immunity_short_effect = yes }
+	}
+	create_character = {
+		template = khutan_anushtiginid_character_template
+		dynasty = inherit
+		mother = scope:tekish_spouse
+		father = $INVADER_CHAR$
+		employer = $INVADER_CHAR$
+		after_creation = { disease_immunity_short_effect = yes }
+	}
+}
+
+# Make sure invader has troops
+spawn_anushtiginid_troops_effect = {
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_anushtiginid_army_effect = yes
+	}
+	spawn_anushtiginid_army_effect = yes
+	spawn_anushtiginid_army_effect = yes
+	spawn_anushtiginid_army_effect = yes
+	spawn_anushtiginid_army_effect = yes
+	if = {
+		limit = { game_start_date < 1000.1.1 }
+		spawn_anushtiginid_army_effect = yes
+	}
+}
+spawn_anushtiginid_army_effect = {
+	spawn_army = {
+		name = anushtiginid_event_troops
+		location = capital_province
+		uses_supply = no
+		inheritable = no
+		
+		levies = 2000
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 12
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 12
+		}
+		men_at_arms = {
+			type = ayyar
+			stacks = 9
+		}
+		men_at_arms = {
+			type = ayyar
+			stacks = 9
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 7
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 7
+		}
+		# siege
+		men_at_arms = {
+			type = trebuchet
+			stacks = 9
+		}
+	}
+}
