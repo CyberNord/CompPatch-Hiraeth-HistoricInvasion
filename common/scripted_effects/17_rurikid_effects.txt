@@ -30,7 +30,7 @@ spawn_oleg_character_effect = {
 		dynasty = {
 			add_dynasty_prestige_level = 1
 			add_dynasty_prestige = 500
-			add_dynasty_perk = hth_warfare_legacy_1
+			add_dynasty_perk = warfare_legacy_1
 		}
 	}
 
