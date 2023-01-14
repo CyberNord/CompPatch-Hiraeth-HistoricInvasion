@@ -1,0 +1,4 @@
+﻿﻿l_german:
+ trait_argead_blood_trait:0 "Argead Blood"
+ argead_blood_trait_desc:0 "The blood of Alexander 'the Great' flows through the veins of this character."
+ argead_blood_trait_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is blessed with the blood of Alexander 'the Great'."

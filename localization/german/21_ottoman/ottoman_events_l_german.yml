@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  ottoman_invasion.1001.t:0 "The Rise of [osman.GetFirstNameNoTooltip]"
  ottoman_invasion.1001.desc:0 "The origins of how [osman.GetFather.GetFirstName] rose to power are lost to time. Did their forefathers of the Kayı tribe flee $k_oghuz_il$ with the looming threat of the $e_mongol_empire$ or are they direct descendants of Suleiman Seljuk, the first sultan of $k_rum$?\n\nAfter the $e_mongol_empire$ splintered, $k_rum$ remained a vassal of the $e_ilkhanate$. But as the $mongol$ influence wavered in Asia Minor, many Beyliks declared their independence, including $k_karaman$, $k_eretnid$ and [osman.GetFather.GetFirstNameNoTooltip].\n\nThe $k_ottoman$ have settled near the Sea of Marmara and $b_constantinople$ - the City of the World's Desire - lies just in reach..."
  ottoman_invasion.1001.a:0 "Just like the Great Seljuk and $k_rum$, they'll fail to cross into Europe."
@@ -8,34 +8,3 @@
  ottoman_invasion.1201.desc_vassal:0 "I dragged you out of the filth, and I can cast you back in again! You didn't #EMP truly#! think #EMP Constantinople#!, the last pillar of erudition on this disdainful earth, could really be yours! Not so much as your littlest toe is worthy of treading upon its glimmering bricks! Return it, or else the Golden Horn shall be your drowning-pit — I will fling you into it myself, if I must."
  ottoman_invasion.1201.a:0 "I was merely looking after it for you!"
  ottoman_invasion.1201.b:0 "I hope your mithering rear gets splinters on the Throne."
-
- ottoman_invasion.2001.opening:0 "My destined servant,"
- ottoman_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- ottoman_invasion.2001.a:0 "I submit with honor, my [ottoman_ruler.GetTitleAsNameNoTooltip] and convert to your faith."
- ottoman_invasion.2001.a.tt:0 "You become a vassal of [ottoman_ruler.GetShortUIName]"
- ottoman_invasion.2001.b:0 "You pose no threat to me!"
- ottoman_invasion.2001.b.tt:0 "[ottoman_ruler.GetShortUIName|U] declares war on you"
- ottoman_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [ottoman_ruler.GetTitleAsNameNoTooltip]."
- ottoman_invasion.2001.c.tt:0 "You become a vassal of [ottoman_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- ottoman_invasion.2002.opening:0 "Oh almighty Sultan,"
- ottoman_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
- ottoman_invasion.2002.a:0 "A wise choice, my servant."
-
- ottoman_invasion.2003.opening:0 "You [ottoman_ruler.Custom('InsultAdjective')] shadow of a [ottoman_ruler.GetTitleAsNameNoTooltip],"
- ottoman_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
- ottoman_invasion.2003.a:0 "War and death it is, then."
-
- ottoman_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the true ruler of $k_persia$."
- ottoman_invasion.2101.a:0 "Of course, my liege."
- ottoman_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- ottoman_invasion.2101.b.tt:0 "@warning_icon! [ottoman_ruler.GetShortUIName] breaks [ottoman_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- ottoman_invasion.2103.a:0 "You will bow to me now, one way or another!"
- ottoman_invasion.2103.b:0 "Just you wait..."
-
- ottoman_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- ottoman_invasion.2111.b.tt:0 "@warning_icon! [ottoman_ruler.GetShortUIName] breaks [ottoman_ruler.GetHerHis] alliance with you"
-
- ottoman_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- ottoman_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

@@ -1,36 +1,5 @@
-﻿l_german:
+﻿﻿l_german:
  almohad_invasion.1001.t:0 "Rise of the [amghar.GetFaith.GetAdherentNameNoTooltip]"
  almohad_invasion.1001.desc:0 "The religious movement known as the [amghar.GetFaith.GetAdherentNameNoTooltip] have sallied forth from their headquarters, intent on \"reclaiming the Maghreb from the disbelievers\", by force if necessary!\n\nTheir leader, [amghar.GetTitledFirstName] was once turned away from numerous places of learning for being too insistent in [amghar.GetHerHis] dogmatic practices. However, [amghar.GetSheHe] has now found a strong core of followers and declared [amghar.GetHerselfHimself] nothing less than the Madhi!"
  almohad_invasion.1001.a:0 "When has a fringe religious group ever caused trouble for anyone?"
  almohad_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [amghar.GetHerHim]..."
-
- almohad_invasion.2001.opening:0 "My destined servant,"
- almohad_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- almohad_invasion.2001.a:0 "I submit with honor, my [almohad_ruler.GetTitleAsNameNoTooltip]."
- almohad_invasion.2001.a.tt:0 "You become a vassal of [almohad_ruler.GetShortUIName]"
- almohad_invasion.2001.b:0 "You pose no threat to me!"
- almohad_invasion.2001.b.tt:0 "[almohad_ruler.GetShortUIName|U] declares war on you"
- almohad_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [almohad_ruler.GetTitleAsNameNoTooltip]."
- almohad_invasion.2001.c.tt:0 "You become a vassal of [almohad_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- almohad_invasion.2002.opening:0 "Oh almighty Amir,"
- almohad_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
- almohad_invasion.2002.a:0 "A wise choice, my servant."
-
- almohad_invasion.2003.opening:0 "You [almohad_ruler.Custom('InsultAdjective')] shadow of a [almohad_ruler.GetTitleAsNameNoTooltip],"
- almohad_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
- almohad_invasion.2003.a:0 "War and death it is, then."
-
- almohad_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the true ruler of these lands."
- almohad_invasion.2101.a:0 "Of course, my liege."
- almohad_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- almohad_invasion.2101.b.tt:0 "@warning_icon! [almohad_ruler.GetShortUIName] breaks [almohad_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- almohad_invasion.2103.a:0 "You will bow to me now, one way or another!"
- almohad_invasion.2103.b:0 "Just you wait..."
-
- almohad_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- almohad_invasion.2111.b.tt:0 "@warning_icon! [almohad_ruler.GetShortUIName] breaks [almohad_ruler.GetHerHis] alliance with you"
-
- almohad_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- almohad_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

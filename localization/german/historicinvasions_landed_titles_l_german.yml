@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  tmp:0 "Temporary"
  tmp_adj:0 "Temporary"
  tmp_honorary_duchy:0 "Honorary Duchy"
@@ -112,10 +112,6 @@
  e_keita:0 "Keita Empire"
  e_keita_adj:0 "$malinke$"
 
- e_attila_article:0 "the "
- e_attila:0 "Hunnic Empire"
- e_attila_adj:0 "Hunnic"
-
  d_al-qays_article:0 "the "
  d_al-qays:0 "Zanj Revolt"
  d_al-qays_adj:0 "Zanj"
@@ -152,12 +148,16 @@
  k_piast:0 "$k_poland$"
  k_piast_adj:0 "$polish$"
 
- e_song:0 "Song"
- e_song_adj:0 "$han$"
-
- e_maurya:0 "Maurya"
- e_maurya_adj:0 "Magadhi"
+ e_attila_article:0 "the "
+ e_attila:0 "Hunnic Empire"
+ e_attila_adj:0 "Hunnic"
 
  e_argead_article:0 "the "
  e_argead:0 "Argead Empire"
  e_argead_adj:0 "Macedonian"
+
+ e_maurya:0 "Maurya"
+ e_maurya_adj:0 "Magadhi"
+
+ e_song:0 "Song"
+ e_song_adj:0 "$han$"

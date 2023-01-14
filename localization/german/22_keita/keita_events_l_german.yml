@@ -1,39 +1,8 @@
-﻿l_german:
+﻿﻿l_german:
  keita_invasion.1001.t:0 "[sundiata.GetFirstNameNoTooltip] [sundiata.GetHouse.GetNameNoTooltip]"
  keita_invasion.1001.desc:0 "The mountainous lands of $k_mali$ are not dull and barren, but instead a natural barrier against invaders. On the banks of the Niger river, floodplains irrigate the surrounding plains.\n\nThe ground holds valuable resources as well: Prospecters have found gold deposists below $c_niani$, $c_bure$ and $c_bambuk$.\n\nDue to exposure via the trans saharan trade routes, Islam has taken a foodhold in $d_manding$, a faith the local ruler [sundiata.GetShortUINameNoTooltip] is an adherent of.\n\nWill the rich land [sundiata.GetSheHe] rules over birth an everlasting empire?"
  keita_invasion.1001.a:0 "With three gold mines on [sundiata.GetHerHis] hands, [sundiata.GetSheHe] will be unstoppable!"
  keita_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [sundiata.GetHerHim]..."
-
- keita_invasion.2001.opening:0 "My destined servant,"
- keita_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- keita_invasion.2001.a:0 "I submit with honor, my [keita_ruler.GetTitleAsNameNoTooltip]."
- keita_invasion.2001.a.tt:0 "You become a vassal of [keita_ruler.GetShortUIName]"
- keita_invasion.2001.b:0 "You pose no threat to me!"
- keita_invasion.2001.b.tt:0 "[keita_ruler.GetShortUIName|U] declares war on you"
- keita_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [keita_ruler.GetTitleAsNameNoTooltip]."
- keita_invasion.2001.c.tt:0 "You become a vassal of [keita_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- keita_invasion.2002.opening:0 "Honored Ruler,"
- keita_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
- keita_invasion.2002.a:0 "A wise choice, my servant."
-
- keita_invasion.2003.opening:0 "You [keita_ruler.Custom('InsultAdjective')] shadow of a [keita_ruler.GetTitleAsNameNoTooltip],"
- keita_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
- keita_invasion.2003.a:0 "War and death it is, then."
-
- keita_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty me."
- keita_invasion.2101.a:0 "Of course, my liege."
- keita_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- keita_invasion.2101.b.tt:0 "@warning_icon! [keita_ruler.GetShortUIName] breaks [keita_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- keita_invasion.2103.a:0 "You will bow to me now, one way or another!"
- keita_invasion.2103.b:0 "Just you wait..."
-
- keita_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- keita_invasion.2111.b.tt:0 "@warning_icon! [keita_ruler.GetShortUIName] breaks [keita_ruler.GetHerHis] alliance with you"
-
- keita_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- keita_invasion.2113.a:0 "Oh, you will regret your words and deeds..."
 
  keita_invasion.3001.t:0 "The local Faith"
  keita_invasion.3001.desc:0 "The locals in my capital [ROOT.Char.GetCapitalLocation.GetName] are devout [ROOT.Char.GetCapitalLocation.GetCounty.GetFaith.GetAdherentNamePluralNoTooltip]. I - however - am not.\n\nIt might be in my interest to covert to the local faith..."

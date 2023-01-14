@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  turkish_migrations.1001.t:0 "The Turkic Migrations"
  turkish_migrations.1001.desc:0 "Large movements of entire tribes isn't anything new.\nBack in the Bronze Age, the migration of the 'Sea People' led to a general collapse of civilization that only Egypt could withstand. In 434 AD, Attila the Hun ploughed through the Steppe and uprooted many tribes who fled into the $e_roman_empire$, causing unrest.\n\nMore recently, the mighty Göktürk empire #weak (5th - 8th century)#! caused a general spread of Turkic tribes within Eurasia.\nThe successes of the #TOOLTIP:turkish_migrations.1001.ttt Desht-i Qipchaq#! within the Steppe itself, the Ghaznavids along the Indian border regions and the Great Seljuk within Persia have only emboldened the other migratory tribes.\n\nTheir eyes are looking towards the rich lands of [GetGeographicalRegion('special_turkish_migration_region').GetName] - much to the dismay of their sedentary rulers."
  turkish_migrations.1001.a:0 "Worrying..."

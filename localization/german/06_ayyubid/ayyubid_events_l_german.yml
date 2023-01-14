@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  ayyubid_invasion.1001.t:0 "[saladin.GetFirstNameNoTooltip] [saladin.GetHouse.GetNameNoTooltip]"
  ayyubid_invasion.1001.desc:0 "[saladin.GetFirstNameNoTooltip] was first sent to Egypt as a commander to slightly aid in succession matters. In the following years, [saladin.GetSheHe] has amassed influence in the ruling court and used that to put loyalists in strategic government positions.\n\nAnd now [saladin.GetFirstNameNoTooltip] has decided that the time is right: [saladin.GetSheHe] is marching on $k_egypt$ and demands absolute control of the region."
  ayyubid_invasion.1001.a:0 "The Shiites might lose an important center of influence..."
@@ -8,34 +8,3 @@
  ayyubid_invasion.1007.desc:0 "as your new ruler, I expect you to follow the true faith from here on out.\n\nI eagerly await your reply."
  ayyubid_invasion.1007.a:0 "Yes, of course I will."
  ayyubid_invasion.1007.b:0 "No! Never!"
-
- ayyubid_invasion.2001.opening:0 "My destined servant,"
- ayyubid_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- ayyubid_invasion.2001.a:0 "I submit with honor, my [ayyubid_ruler.GetTitleAsNameNoTooltip]."
- ayyubid_invasion.2001.a.tt:0 "You become a vassal of [ayyubid_ruler.GetShortUIName]"
- ayyubid_invasion.2001.b:0 "You pose no threat to me!"
- ayyubid_invasion.2001.b.tt:0 "[ayyubid_ruler.GetShortUIName|U] declares war on you"
- ayyubid_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [ayyubid_ruler.GetTitleAsNameNoTooltip]."
- ayyubid_invasion.2001.c.tt:0 "You become a vassal of [ayyubid_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- ayyubid_invasion.2002.opening:0 "Oh almighty Amir,"
- ayyubid_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
- ayyubid_invasion.2002.a:0 "A wise choice, my servant."
-
- ayyubid_invasion.2003.opening:0 "You [ayyubid_ruler.Custom('InsultAdjective')] shadow of a [ayyubid_ruler.GetTitleAsNameNoTooltip],"
- ayyubid_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
- ayyubid_invasion.2003.a:0 "War and death it is, then."
-
- ayyubid_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the true ruler of these lands."
- ayyubid_invasion.2101.a:0 "Of course, my liege."
- ayyubid_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- ayyubid_invasion.2101.b.tt:0 "@warning_icon! [ayyubid_ruler.GetShortUIName] breaks [ayyubid_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- ayyubid_invasion.2103.a:0 "You will bow to me now, one way or another!"
- ayyubid_invasion.2103.b:0 "Just you wait..."
-
- ayyubid_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- ayyubid_invasion.2111.b.tt:0 "@warning_icon! [ayyubid_ruler.GetShortUIName] breaks [ayyubid_ruler.GetHerHis] alliance with you"
-
- ayyubid_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- ayyubid_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

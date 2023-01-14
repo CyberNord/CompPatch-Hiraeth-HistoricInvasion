@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  catholic_opinion:0 "[GetFaithByKey('catholic').GetName] [opinion|E]"
  orthodox_opinion:0 "[GetFaithByKey('orthodox').GetName] [opinion|E]"
  qarmatian_opinion:0 "[GetFaithByKey('qarmatian').GetAdherentName] [opinion|E]"
@@ -93,3 +93,10 @@
 
  first_attila_modifier:0 "Attila the Hun"
  first_attila_modifier_desc:0 "Didn't he die hundreds of years ago?!"
+ first_argead_modifier:0 "Alexander 'the Great'"
+ first_argead_modifier_desc:0 "A great Macedonian king."
+ first_maurya_modifier:0 "Chandragupta"
+ first_maurya_modifier_desc:0 "Uniter of India."
+
+ first_song_modifier:0 "Emperor Bing Song"
+ first_song_modifier_desc:0 "After being conquered by Yuan, this imperial dynasty fled China."

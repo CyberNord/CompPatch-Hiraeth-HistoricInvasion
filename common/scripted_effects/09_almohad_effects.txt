@@ -30,10 +30,10 @@ spawn_almohad_character_effect = {
 
 			add_dynasty_prestige_level = 2
 			add_dynasty_prestige = 4000
-			add_dynasty_perk = warfare_legacy_1
-			add_dynasty_perk = erudition_legacy_1
-			add_dynasty_perk = erudition_legacy_2
-			add_dynasty_perk = erudition_legacy_3
+			add_dynasty_perk = hth_warfare_legacy_1
+			add_dynasty_perk = hth_erudition_legacy_1
+			add_dynasty_perk = hth_erudition_legacy_2
+			add_dynasty_perk = hth_erudition_legacy_3
 		}
 		house = {
 			set_house_name = hi_dynn_tumart

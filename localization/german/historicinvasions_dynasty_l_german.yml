@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  hi_dynn_timurid:0 "Timurid"
  hi_dynn_ghanzi:0 "Ghanzi"
  hi_dynn_oghuz_house_qiniq:0 "Qiniq"
@@ -37,3 +37,7 @@
  hi_dynn_piast:0 "Piast"
 
  hi_dynn_attila:0 "Attila"
+ hi_dynn_argead:0 "Argead"
+ hi_dynn_maurya:0 "Maurya"
+
+ hi_dynn_song:0 "Song"

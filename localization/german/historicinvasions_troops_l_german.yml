@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  honor_guard:0 "Honor Guard"
 
  turkish_nomad_event_troops:0 "Turkish Nomads"
@@ -40,3 +40,7 @@
 
 
  attila_event_troops:0 "Attila's Horde"
+ argead_event_troops:0 "Silver Shields"
+ maurya_event_troops:0 "Magadhi Warriors"
+
+ song_event_troops:0 "$han$ Loyalists"

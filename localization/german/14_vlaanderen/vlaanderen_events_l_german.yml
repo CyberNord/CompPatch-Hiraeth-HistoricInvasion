@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  vlaanderen_invasion.1001.t:0 "$e_byzantium$ is shattered!"
  vlaanderen_invasion.1001.desc:0 "In a vile display of misguided greed, the knights who were originally heading to reinforce the crusaders fighting in the Holy Land have brutally ransacked most coastal trade ports on the way to $b_constantinople$. The City of the World's Desire itself is aflame while the Latins are doing unthinkable things to the local population.\n\nThe former ruler of the $e_byzantium$ has fled the city and left $b_constantinople$ in the hands of [latin_emperor.GetShortUINameNoTooltip], who has proclaimed [latin_emperor.GetHerselfHimself] rightful ruler.\n\nAcross the strait, [nikaea_emperor.GetShortUINameNoTooltip] has organized a resistance to reclaim the lost city and restore the $e_byzantium$."
  vlaanderen_invasion.1001.a:0 "From 27 BC until now..."
@@ -35,34 +35,3 @@
  vlaanderen_invasion.1202.desc_vassal:0 "I dragged you out of the filth, and I can cast you back in again! You didn't #EMP truly#! think #EMP Nikaea#!, the last pillar of erudition on this disdainful earth, could really be yours! Not so much as your littlest toe is worthy of treading upon its glimmering bricks! Return it, or else the Golden Horn shall be your drowning-pit — I will fling you into it myself, if I must."
  vlaanderen_invasion.1202.a:0 "I was merely looking after it for you!"
  vlaanderen_invasion.1202.b:0 "I hope your mithering rear gets splinters on the Throne."
-
- vlaanderen_invasion.2001.opening:0 "My destined servant,"
- vlaanderen_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- vlaanderen_invasion.2001.a:0 "I submit with honor, my [vlaanderen_ruler.GetTitleAsNameNoTooltip]."
- vlaanderen_invasion.2001.a.tt:0 "You become a vassal of [vlaanderen_ruler.GetShortUIName]"
- vlaanderen_invasion.2001.b:0 "You pose no threat to me!"
- vlaanderen_invasion.2001.b.tt:0 "[vlaanderen_ruler.GetShortUIName|U] declares war on you"
- vlaanderen_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [vlaanderen_ruler.GetTitleAsNameNoTooltip]."
- vlaanderen_invasion.2001.c.tt:0 "You become a vassal of [vlaanderen_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- vlaanderen_invasion.2002.opening:0 "Oh almighty Emperor,"
- vlaanderen_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
- vlaanderen_invasion.2002.a:0 "A wise choice, my servant."
-
- vlaanderen_invasion.2003.opening:0 "You [vlaanderen_ruler.Custom('InsultAdjective')] shadow of a [vlaanderen_ruler.GetTitleAsNameNoTooltip],"
- vlaanderen_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
- vlaanderen_invasion.2003.a:0 "War and death it is, then."
-
- vlaanderen_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the true ruler of these lands."
- vlaanderen_invasion.2101.a:0 "Of course, my liege."
- vlaanderen_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- vlaanderen_invasion.2101.b.tt:0 "@warning_icon! [vlaanderen_ruler.GetShortUIName] breaks [vlaanderen_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- vlaanderen_invasion.2103.a:0 "You will bow to me now, one way or another!"
- vlaanderen_invasion.2103.b:0 "Just you wait..."
-
- vlaanderen_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- vlaanderen_invasion.2111.b.tt:0 "@warning_icon! [vlaanderen_ruler.GetShortUIName] breaks [vlaanderen_ruler.GetHerHis] alliance with you"
-
- vlaanderen_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- vlaanderen_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

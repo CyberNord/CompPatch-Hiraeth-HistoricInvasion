@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  rule_historicinvasions_invasion_ends_after_player_win:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Invasion End"
  setting_enabled_invasion_ends_after_player_win:0 "Enabled (default)"
  setting_enabled_invasion_ends_after_player_win_desc:0 "If an AI invader loses a Historic Invasion war against any defending player, their invasion story will end."
@@ -6,7 +6,7 @@
  setting_disabled_invasion_ends_after_player_win_desc:0 "Invasion stories will only end after X amount of successions or after their conquest goal has been achieved."
 
  rule_historicinvasion_cb_levy_reinforcements:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Temporary Invasion Levy Reinforcements"
- setting_historicinvasion_cb_levy_tripple:0 "Tripple"
+ setting_historicinvasion_cb_levy_tripple:0 "Triple"
  setting_historicinvasion_cb_levy_tripple_desc:0 "Invaders will receive three times the amount of bonus levies."
  setting_historicinvasion_cb_levy_full:0 "Full (default)"
  setting_historicinvasion_cb_levy_full_desc:0 "If disadvantaged, invaders will receive the difference between their military strength and that of the defender's alliance network as temporary levy reinforcements."
@@ -207,7 +207,7 @@
 
  rule_vivar_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] El Cid (Iberia)"
  setting_default_vivar_invasion:0 "1094 (default)"
- setting_default_vivar_invasion_desc:0 "Around 1094, Rodrigo Díaz de Vivar will attempt to conquer a duchy in southern $e_iberia$."
+ setting_default_vivar_invasion_desc:0 "Around 1094, Rodrigo Díaz de Vivar will attempt to conquer a duchy in southern $e_spain$."
  setting_never_vivar_invasion:0 "#r Never#!"
  setting_never_vivar_invasion_desc:0 "$k_england$ will not be invaded by William."
 
@@ -233,8 +233,27 @@
  setting_never_turkish_migrations_desc:0 "No Turkish migrations will happen. No decisions that form certain Beyliks within Asia Minor can be taken."
 
 
- rule_attila_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Attila (western Steppe)"
+ rule_attila_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] #y Ancient:#! Attila (western Steppe)"
  setting_never_attila_invasion:0 "#r Never#! (default)"
  setting_never_attila_invasion_desc:0 "The $e_attila$ will not appear."
  setting_enabled_attila_invasion:0 "Random"
- setting_enabled_attila_invasion_desc:0 "There is a tiny chance that Attila will invade."
+ setting_enabled_attila_invasion_desc:0 "There is a tiny chance that Attila will randomly invade."
+
+ rule_argead_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] #y Ancient:#! Alexander Argead (Macedonia)"
+ setting_never_argead_invasion:0 "#r Never#! (default)"
+ setting_never_argead_invasion_desc:0 "The $e_argead$ will not appear."
+ setting_enabled_argead_invasion:0 "Random"
+ setting_enabled_argead_invasion_desc:0 "There is a tiny chance that argead will invade if $e_e_byzantium$ is not created."
+
+ rule_maurya_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] #y Ancient:#! Chandragupta Maurya (India)"
+ setting_never_maurya_invasion:0 "#r Never#! (default)"
+ setting_never_maurya_invasion_desc:0 "The $e_maurya$ will not appear."
+ setting_enabled_maurya_invasion:0 "Random"
+ setting_enabled_maurya_invasion_desc:0 "There is a tiny chance that Chandragupta will randomly invade."
+
+
+ rule_song_invasion:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] #d Fantasy:#! Song (eastern India)"
+ setting_never_song_invasion:0 "#r Never#! (default)"
+ setting_never_song_invasion_desc:0 "The $e_song$ will not appear."
+ setting_enabled_song_invasion:0 "1279"
+ setting_enabled_song_invasion_desc:0 "Around 1279, the overthrown $han$ Song dynasty will flee to India."

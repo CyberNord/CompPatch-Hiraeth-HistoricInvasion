@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  vivar_invasion.1001.t:0 "[rodrigo.GetFirstNameNoTooltip] [rodrigo.GetHouse.GetNameNoTooltip]"
  vivar_invasion.1001.desc:0 "[rodrigo.GetShortUINameNoTooltip], a $castilian$ knight, has successfully meneuvered the complicated political landscape of the struggling $e_spain$.\n\nFighting both $christianity_religion_adherent_plural$ and $islam_religion_adherent_plural$, [rodrigo.GetFirstNameNoTooltip] became known and respected by both sides of the conflict. This would earn [rodrigo.GetHerHim] the $arab$ nickname 'al-sīd' (the lord) as well as the $castilian$ nickname 'El Campeador' (the valiant).\n\nHis influence reached its climax when [rodrigo.GetSheHe] conquered [rodrigo.GetCapitalLocation.GetName] in southern $e_spain$."
  vivar_invasion.1001.a:0 "[rodrigo.GetHerHis] realm will surely crumble."

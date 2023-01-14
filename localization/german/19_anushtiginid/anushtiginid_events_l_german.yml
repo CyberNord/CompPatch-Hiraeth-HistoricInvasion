@@ -1,36 +1,5 @@
-﻿l_german:
+﻿﻿l_german:
  anushtiginid_invasion.1001.t:0 "[tekish.GetFirstNameNoTooltip] [tekish.GetHouse.GetNameNoTooltip]"
  anushtiginid_invasion.1001.desc:0 "The $e_seljuk$ has slowly been losing its hold on Persia, the $e_yelu$ to the north are showing weakness as well.\n\n[tekish.GetShortUINameNoTooltip] is using this opportunity to expand [tekish.GetHerHis] territory.\n\nWill Persia be ruled by a ruler of Persian heritage once more? Or will the $turkish$ tresspassers prevail? Only time will tell."
  anushtiginid_invasion.1001.a:0 "Give that region a rest!"
  anushtiginid_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [tekish.GetHerHim]..."
-
- anushtiginid_invasion.2001.opening:0 "My destined servant,"
- anushtiginid_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- anushtiginid_invasion.2001.a:0 "I submit with honor, my [anushtiginid_ruler.GetTitleAsNameNoTooltip]."
- anushtiginid_invasion.2001.a.tt:0 "You become a vassal of [anushtiginid_ruler.GetShortUIName]"
- anushtiginid_invasion.2001.b:0 "You pose no threat to me!"
- anushtiginid_invasion.2001.b.tt:0 "[anushtiginid_ruler.GetShortUIName|U] declares war on you"
- anushtiginid_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [anushtiginid_ruler.GetTitleAsNameNoTooltip]."
- anushtiginid_invasion.2001.c.tt:0 "You become a vassal of [anushtiginid_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- anushtiginid_invasion.2002.opening:0 "Honored Ruler,"
- anushtiginid_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
- anushtiginid_invasion.2002.a:0 "A wise choice, my servant."
-
- anushtiginid_invasion.2003.opening:0 "You [anushtiginid_ruler.Custom('InsultAdjective')] shadow of a [anushtiginid_ruler.GetTitleAsNameNoTooltip],"
- anushtiginid_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
- anushtiginid_invasion.2003.a:0 "War and death it is, then."
-
- anushtiginid_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty me."
- anushtiginid_invasion.2101.a:0 "Of course, my liege."
- anushtiginid_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- anushtiginid_invasion.2101.b.tt:0 "@warning_icon! [anushtiginid_ruler.GetShortUIName] breaks [anushtiginid_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- anushtiginid_invasion.2103.a:0 "You will bow to me now, one way or another!"
- anushtiginid_invasion.2103.b:0 "Just you wait..."
-
- anushtiginid_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- anushtiginid_invasion.2111.b.tt:0 "@warning_icon! [anushtiginid_ruler.GetShortUIName] breaks [anushtiginid_ruler.GetHerHis] alliance with you"
-
- anushtiginid_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- anushtiginid_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

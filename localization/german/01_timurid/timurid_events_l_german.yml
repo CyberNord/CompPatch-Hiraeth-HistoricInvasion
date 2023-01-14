@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  timurid_invasion.1001.t:0 "Rise of [timur.GetFirstNameNoTooltip]"
  timurid_invasion.1001.desc:0 "The invasion by the $e_mongol_empire$ caused much turmoil and turned the local political landscape upside down. Old ruling dynasties have been replaced by the likes of the $e_golden_horde$, $e_ilkhanate$ or $e_chagatai$.\n\nYoung [timur.GetShortUINameNoTooltip] was was born near the city of Kesh south of $c_samarkand$. [timur.GetHerHis|U] story began in the western part of $e_chagatai$, where [timur.GetSheHe] was employed as a renowned commander by the Khan. It is not known for certain where Timur sustained his injuries, but two hits by an arrow - one in [timur.GetHerHis] foot and one in [timur.GetHerHis] right hand - left [timur.GetHerHim] disabled for life and earned [timur.GetHerHim] the nickname 'the Lame'.\n\nBy now, [timur.GetFirstNameNoTooltip] has reduced the power base of the ruling elite in $e_chagatai$, instead effectively ruling in their name.\nBut [timur.GetSheHe] is looking for more..."
  timurid_invasion.1001.a:0 "Rivaling the $e_mongol_empire$? [timur.GetSheHe|U] isn't even Khan!"
@@ -15,34 +15,3 @@
  timurid_invasion.1004.desc:0 "With the passing of [old_timurid_emperor.GetTitledFirstName], several successors have claimed the position as Great Khan. With none of them recognizing the others, we are finally seeing the end of the timurids as a unified empire.\n\nThey may not be weak, but they no longer stand united behind a single "universal ruler"."
  timurid_invasion.1004.a:0 "The empire will rise again one day..."
  timurid_invasion.1004.b:0 "Thank you for your mercy, [ROOT.Char.GetFaith.HighGodName]!"
-
- timurid_invasion.2001.opening:0 "My destined servant,"
- timurid_invasion.2001.desc:0 "As the true heir of Temujin, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with an axeman's blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- timurid_invasion.2001.a:0 "I submit with honor, my [timurid_ruler.GetTitleAsNameNoTooltip]."
- timurid_invasion.2001.a.tt:0 "You become a vassal of [timurid_ruler.GetShortUIName]"
- timurid_invasion.2001.b:0 "You pose no threat to me, arrogant fool!"
- timurid_invasion.2001.b.tt:0 "[timurid_ruler.GetShortUIName|U] declares war on you"
- timurid_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [timurid_ruler.GetTitleAsNameNoTooltip]."
- timurid_invasion.2001.c.tt:0 "You become a vassal of [timurid_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- timurid_invasion.2002.opening:0 "Honored true heir of Temujin,"
- timurid_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who oppose your destiny."
- timurid_invasion.2002.a:0 "A wise choice, my servant."
-
- timurid_invasion.2003.opening:0 "You [timurid_ruler.Custom('InsultAdjective')] shadow of a [timurid_ruler.GetTitleAsNameNoTooltip],"
- timurid_invasion.2003.desc:0 "You dare think you can threaten me into submission? I will show you what a true ruler does with your so-called invincible horsemen!"
- timurid_invasion.2003.a:0 "War and death it is, then."
-
- timurid_invasion.2101.desc:0 "You have been a good friend and servant to me thus far. It is time we make your service official, as you swear fealty to the true heir of Temujin."
- timurid_invasion.2101.a:0 "Of course, my liege."
- timurid_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- timurid_invasion.2101.b.tt:0 "@warning_icon! [timurid_ruler.GetShortUIName] breaks [timurid_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- timurid_invasion.2103.a:0 "You will bow to me now, one way or another!"
- timurid_invasion.2103.b:0 "Just you wait, you insolent dog..."
-
- timurid_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- timurid_invasion.2111.b.tt:0 "@warning_icon! [timurid_ruler.GetShortUIName] breaks [timurid_ruler.GetHerHis] alliance with you"
-
- timurid_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- timurid_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

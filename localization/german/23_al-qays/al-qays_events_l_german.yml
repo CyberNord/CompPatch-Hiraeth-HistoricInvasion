@@ -1,36 +1,5 @@
-﻿l_german:
+﻿﻿l_german:
  al-qays_invasion.1001.t:0 "The Zanj Revolt"
  al-qays_invasion.1001.desc:0 "The floodplains [terrain] around $k_mesopotamia$ are perfect for agricultural labor. But, since too much water can be harmful to crops, the Abbasid Caliphate has been forcing slaves from south Africa - the Zanj - to drain flooded marshlands.\n\nDue to the miserable working conditions and forced labor, the Zanj grew more and more discontent. Two previous revolts which took place in the late 7th century had failed.\n\nHowever, [ali.GetShortUINameNoTooltip] has instigated a third revolt against these horrendous living conditions. [ali.GetSheHe] claims to be descended from the Prophet, even though his lineage is shrowded in mystery.\nBut that does not concern the Zanj slaves who have gathered under his command."
  al-qays_invasion.1001.a:0 "Someone put down those slaves!"
  al-qays_invasion.1001.b:0 "@warning_icon! I wish I was leading them in [ali.GetHerHis] stead..."
-
- al-qays_invasion.2001.opening:0 "My destined servant,"
- al-qays_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- al-qays_invasion.2001.a:0 "I submit with honor, my [ziyarid_ruler.GetTitleAsNameNoTooltip]."
- al-qays_invasion.2001.a.tt:0 "You become a vassal of [ziyarid_ruler.GetShortUIName]"
- al-qays_invasion.2001.b:0 "You pose no threat to me!"
- al-qays_invasion.2001.b.tt:0 "[ziyarid_ruler.GetShortUIName|U] declares war on you"
- al-qays_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [ziyarid_ruler.GetTitleAsNameNoTooltip]."
- al-qays_invasion.2001.c.tt:0 "You become a vassal of [ziyarid_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- al-qays_invasion.2002.opening:0 "Oh almighty Amir,"
- al-qays_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
- al-qays_invasion.2002.a:0 "A wise choice, my servant."
-
- al-qays_invasion.2003.opening:0 "You [ziyarid_ruler.Custom('InsultAdjective')] shadow of a [ziyarid_ruler.GetTitleAsNameNoTooltip],"
- al-qays_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
- al-qays_invasion.2003.a:0 "War and death it is, then."
-
- al-qays_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the true ruler of $k_persia$."
- al-qays_invasion.2101.a:0 "Of course, my liege."
- al-qays_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- al-qays_invasion.2101.b.tt:0 "@warning_icon! [ziyarid_ruler.GetShortUIName] breaks [ziyarid_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- al-qays_invasion.2103.a:0 "You will bow to me now, one way or another!"
- al-qays_invasion.2103.b:0 "Just you wait..."
-
- al-qays_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- al-qays_invasion.2111.b.tt:0 "@warning_icon! [ziyarid_ruler.GetShortUIName] breaks [ziyarid_ruler.GetHerHis] alliance with you"
-
- al-qays_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- al-qays_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

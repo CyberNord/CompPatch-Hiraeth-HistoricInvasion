@@ -1,4 +1,4 @@
-﻿l_german:
+﻿﻿l_german:
  fatimid_invasion.1001.t:0 "Rise of the Shia"
  fatimid_invasion.1001.desc:0 "The schism of Islam was triggered in its early days and has by now turned into an open rebellion that questions the legitimacy of the Abbassid Caliph. The Shia have gathered enough strength to openly state their allegiance to [abdullah.GetFirstName], which has opened the gates for more proud zealots to join their ranks.\n\nRumors tell that a strong ruler within [GetGeographicalRegion('special_fatimid_persia_region').GetName] has already embraced [abdullah.GetFaith.GetName].\n\nA storm is gathering in Africa, one that the Sunni Caliph can't afford to ignore..."
  fatimid_invasion.1001.a:0 "And so, the infighting begins."
@@ -14,34 +14,3 @@
  fatimid_invasion.1007.desc:0 "as your new ruler, I expect you to follow the true faith from here on out.\n\nI eagerly await your reply."
  fatimid_invasion.1007.a:0 "Yes, of course I will."
  fatimid_invasion.1007.b:0 "No! Never!"
-
- fatimid_invasion.2001.opening:0 "My destined servant,"
- fatimid_invasion.2001.desc:0 "As the true Caliph of Islam, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- fatimid_invasion.2001.a:0 "I submit with honor, my [fatimid_ruler.GetTitleAsNameNoTooltip]."
- fatimid_invasion.2001.a.tt:0 "You become a vassal of [fatimid_ruler.GetShortUIName]"
- fatimid_invasion.2001.b:0 "You pose no threat to me!"
- fatimid_invasion.2001.b.tt:0 "[fatimid_ruler.GetShortUIName|U] declares war on you"
- fatimid_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [fatimid_ruler.GetTitleAsNameNoTooltip]."
- fatimid_invasion.2001.c.tt:0 "You become a vassal of [fatimid_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- fatimid_invasion.2002.opening:0 "Honored Caliph,"
- fatimid_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you and will convert to your faith."
- fatimid_invasion.2002.a:0 "A wise choice, my servant."
-
- fatimid_invasion.2003.opening:0 "You [fatimid_ruler.Custom('InsultAdjective')] shadow of a [fatimid_ruler.GetTitleAsNameNoTooltip],"
- fatimid_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
- fatimid_invasion.2003.a:0 "War and death it is, then."
-
- fatimid_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the Caliph."
- fatimid_invasion.2101.a:0 "Of course, my liege."
- fatimid_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- fatimid_invasion.2101.b.tt:0 "@warning_icon! [fatimid_ruler.GetShortUIName] breaks [fatimid_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- fatimid_invasion.2103.a:0 "You will bow to me now, one way or another!"
- fatimid_invasion.2103.b:0 "Just you wait..."
-
- fatimid_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- fatimid_invasion.2111.b.tt:0 "@warning_icon! [fatimid_ruler.GetShortUIName] breaks [fatimid_ruler.GetHerHis] alliance with you"
-
- fatimid_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- fatimid_invasion.2113.a:0 "Oh, you will regret your words and deeds..."

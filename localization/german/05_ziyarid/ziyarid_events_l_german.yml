@@ -1,36 +1,5 @@
-﻿l_german:
+﻿﻿l_german:
  ziyarid_invasion.1001.t:0 "[mardavij.GetFaith.GetReligion.GetNameNoTooltip] Uprising in $k_daylam$"
  ziyarid_invasion.1001.desc:0 "Back when the $e_roman_empire$ was still whole and before the Rashidun Caliphate emerged from Arabia, Persia was ruled by the [sassanid_dynasty_member.GetDynasty.GetName]#l s#! - a Zoroastrian empire founded in 224 AD.\nAfter the conquest of the entire region by the Muslims in 654, Islam had slowly become the majority faith.\n\n[mardavij.GetShortUINameNoTooltip] dreams of restoring the once mighty empire and bringing [mardavij.GetFaith.GetReligion.GetName] back from the brink of extinction. [mardavij.GetSheHe|U] and [mardavij.GetHerHis] devout followers of [mardavij.GetFaith.HighGodName] have been gathering strength in secret and believe that the time is now right to stage a large scale uprising.\n\nWill [mardavij.GetFirstNameNoTooltip] succeed in becoming the fabled Saoshyant? Only time will tell."
  ziyarid_invasion.1001.a:0 "A new Sassanid Empire? Pah!"
  ziyarid_invasion.1001.b:0 "@warning_icon! I wish I was ruling in [mardavij.GetHerHis] stead..."
-
- ziyarid_invasion.2001.opening:0 "My destined servant,"
- ziyarid_invasion.2001.desc:0 "As the true ruler of these lands, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with a blade against your neck.\n\n#f Targeted title: [next_invasion_target_title.GetName]#!"
- ziyarid_invasion.2001.a:0 "I submit with honor, my [ziyarid_ruler.GetTitleAsNameNoTooltip]."
- ziyarid_invasion.2001.a.tt:0 "You become a vassal of [ziyarid_ruler.GetShortUIName]"
- ziyarid_invasion.2001.b:0 "You pose no threat to me!"
- ziyarid_invasion.2001.b.tt:0 "[ziyarid_ruler.GetShortUIName|U] declares war on you"
- ziyarid_invasion.2001.c:0 "@warning_icon! I submit and give up my realm, my [ziyarid_ruler.GetTitleAsNameNoTooltip]."
- ziyarid_invasion.2001.c.tt:0 "You become a vassal of [ziyarid_ruler.GetShortUIName] and destroy every held title of an equal or higher tier than theirs."
-
- ziyarid_invasion.2002.opening:0 "Oh almighty Amir,"
- ziyarid_invasion.2002.desc:0 "I submit to your rightful and benevolent grace. I will stand with you against any who defy you."
- ziyarid_invasion.2002.a:0 "A wise choice, my servant."
-
- ziyarid_invasion.2003.opening:0 "You [ziyarid_ruler.Custom('InsultAdjective')] shadow of a [ziyarid_ruler.GetTitleAsNameNoTooltip],"
- ziyarid_invasion.2003.desc:0 "You dare think you can threaten me into submission? Let us meet on the battlefield!"
- ziyarid_invasion.2003.a:0 "War and death it is, then."
-
- ziyarid_invasion.2101.desc:0 "You have been a good friend to me thus far. It is time we make your devotion official, as you swear fealty to the true ruler of $k_persia$."
- ziyarid_invasion.2101.a:0 "Of course, my liege."
- ziyarid_invasion.2101.b:0 "You think I am in service to you? Ridiculous!"
- ziyarid_invasion.2101.b.tt:0 "@warning_icon! [ziyarid_ruler.GetShortUIName] breaks [ziyarid_ruler.GetHerHis] alliance with you and may go to war instead!"
-
- ziyarid_invasion.2103.a:0 "You will bow to me now, one way or another!"
- ziyarid_invasion.2103.b:0 "Just you wait..."
-
- ziyarid_invasion.2111.b:0 "You think me less than your equal? Outrageous!"
- ziyarid_invasion.2111.b.tt:0 "@warning_icon! [ziyarid_ruler.GetShortUIName] breaks [ziyarid_ruler.GetHerHis] alliance with you"
-
- ziyarid_invasion.2113.desc:0 "You truly believe yourself to be my better? You are not even my equal! It is clear that the friendship I graciously offered you has been nothing more than throwing pearls before swine."
- ziyarid_invasion.2113.a:0 "Oh, you will regret your words and deeds..."
