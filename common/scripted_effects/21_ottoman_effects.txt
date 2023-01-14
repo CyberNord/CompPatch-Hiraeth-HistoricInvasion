@@ -1,0 +1,217 @@
+﻿# invader appears, before story
+spawn_osman_character_effect = {
+	title:c_phrygia.title_province = {
+		save_scope_as = $INVADER_DYNN$_spawn_location
+	}
+
+	character:1000230100 = { save_scope_as = oghuz_oghuz }
+	if = { # characters were created at game start
+		limit = { game_start_date = 1066.9.15 }
+		character:41701 = { save_scope_as = kilij_seljuk }
+	}
+	else_if = { # characters were created through seljuk story
+		limit = { scope:oghuz_oghuz.dynasty = { any_dynasty_member = { has_trait = suleiman_seljuk_trait } } }
+		scope:oghuz_oghuz.dynasty = {
+			random_dynasty_member = {
+				limit = { has_trait = suleiman_seljuk_trait }
+				save_scope_as = suleiman_seljuk
+			}
+		}
+		create_character = { # Kilij, 2nd sultan of Rûm
+			template = kilij_seljuk_character_template
+			dynasty = inherit
+			father = scope:suleiman_seljuk
+			location = scope:$INVADER_DYNN$_spawn_location
+			save_scope_as = kilij_seljuk
+		}
+	}
+	else = { # fallback: random dynasty member; #todo can't choose dead dynasty members?
+		character:1000230100 = { save_scope_as = oghuz_oghuz }
+		# scope:oghuz_oghuz.dynasty = {
+		# 	random_dynasty_member = {
+		# 		limit = {
+		# 			is_male = yes
+		# 			is_alive = no
+		# 		}
+		# 		save_scope_as = kilij_seljuk
+		# 	}
+		# }
+		scope:oghuz_oghuz = { save_scope_as = kilij_seljuk }
+	}
+
+	create_character = { # Malik Shah, 3rd sultan of Rûm
+		template = malik_seljuk_character_template
+		dynasty = inherit
+		father = scope:kilij_seljuk
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = malik_seljuk
+	}
+	create_character = {
+		template = gok_seljuk_character_template
+		dynasty = inherit
+		father = scope:malik_seljuk
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = gok_seljuk
+	}
+	create_character = { # grandfather
+		template = gunduz_seljuk_character_template
+		dynasty = inherit
+		father = scope:gok_seljuk
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = gunduz_seljuk
+	}
+	create_character = { # father
+		template = ertugrul_seljuk_character_template
+		dynasty = inherit
+		father = scope:gunduz_seljuk
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = ertugrul_seljuk
+	}
+	create_character = { # mother
+		name = halime_character_template_name
+		template = hi_random_spouse_character_template
+		age = 75
+		dynasty = none
+		gender = female
+		location = scope:$INVADER_DYNN$_spawn_location
+		faith = scope:ertugrul_seljuk.faith
+		culture = scope:ertugrul_seljuk.culture
+		save_scope_as = ertugrul_seljuk_spouse
+		after_creation = {
+			marry = scope:ertugrul_seljuk
+			death = natural
+		}
+	}
+	# INVADER
+	create_character = {
+		template = osman_ottoman_character_template
+		dynasty = inherit
+		mother = scope:ertugrul_seljuk_spouse
+		father = scope:ertugrul_seljuk
+		location = scope:$INVADER_DYNN$_spawn_location
+		save_scope_as = $INVADER_NAME$
+	}
+	scope:$INVADER_NAME$ = {
+		add_gold = 7500
+		add_prestige = 1000
+		add_piety = 500
+
+		dynasty = {
+			add_dynasty_prestige_level = 0
+			add_dynasty_prestige = 1500
+		}
+		house = {
+			set_house_name = hi_dynn_oghuz_house_ottoman
+			set_coa = title:k_ottoman
+		}
+	}
+
+	every_player = {
+		trigger_event = $INVADER_DYNN$_invasion.1001 # Notification: Start of invasion
+	}
+}
+
+ottoman_maintenance_effect = {
+	apply_invader_modifiers_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+	}
+	give_invader_land_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		STARTING_TIER = $STARTING_TIER$
+	}
+	spawn_$INVADER_DYNN$_family_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	spawn_invader_servants_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	form_the_invader_title_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		INVADER_TITLE = $INVADER_TITLE$
+		LANDLESS_YES_NO = $LANDLESS_YES_NO$
+	}
+}
+
+### populating the life of the invader character
+spawn_ottoman_family_effect = {
+	# spouse
+	create_character = {
+		name = malhun_omber_character_template_name
+		template = hi_random_spouse_character_template
+		dynasty = none
+		gender = female
+		employer = $INVADER_CHAR$
+		faith = $INVADER_CHAR$.faith
+		culture = $INVADER_CHAR$.culture
+		save_scope_as = osman_spouse
+		after_creation = {
+			marry = $INVADER_CHAR$
+			disease_immunity_short_effect = yes
+		}
+	}
+
+	# children
+	create_character = {
+		template = orhan_ottoman_character_template
+		dynasty = inherit
+		mother = scope:osman_spouse
+		father = $INVADER_CHAR$
+		employer = $INVADER_CHAR$
+		after_creation = {
+			disease_immunity_short_effect = yes
+		}
+	}
+}
+
+# Make sure invader has troops
+spawn_ottoman_troops_effect = {
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_ottoman_army_effect = yes
+	}
+	spawn_ottoman_army_effect = yes
+	spawn_ottoman_army_effect = yes
+	spawn_ottoman_army_effect = yes
+	spawn_ottoman_army_effect = yes
+}
+spawn_ottoman_army_effect = {
+	spawn_army = {
+		name = ottoman_event_troops
+		location = capital_province
+		uses_supply = no
+		inheritable = no
+		
+		levies = 500
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 16
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 16
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = crossbowmen
+			stacks = 7
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		# siege
+		men_at_arms = {
+			type = trebuchet
+			stacks = 7
+		}
+		men_at_arms = {
+			type = bombard
+			stacks = 3
+		}
+	}
+}
