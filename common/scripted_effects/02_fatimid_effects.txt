@@ -29,13 +29,13 @@ spawn_abdullah_character_effect = {
 		}
 
 		# rivals
-		if = {
-			limit = { exists = title:d_sunni.holder }
-			set_relation_rival = {
-				target = title:d_sunni.holder
-				reason = rival_competing_caliph_reason
-			}
-		}
+		# if = {
+		# 	limit = { exists = title:d_sunni.holder }
+		# 	set_relation_rival = {
+		# 		target = title:d_sunni.holder
+		# 		reason = rival_competing_caliph_reason
+		# 	}
+		# }
 	}
 
 	every_player = {

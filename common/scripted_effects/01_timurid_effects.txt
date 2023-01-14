@@ -292,9 +292,7 @@ spawn_timurid_family_effect = {
 	scope:hafez = {
 		disease_immunity_short_effect = yes
 		# Set friendship with invader
-		set_relation_friend = {
-			target = $INVADER_CHAR$
-		}
+		set_random_friendship_reason = { TARGET = $INVADER_CHAR$ }
 	}
 }
 

@@ -31,7 +31,7 @@ spawn_sinan_character_effect = {
 		add_gold = 500
 		add_prestige = 500
 		add_piety = 750
-		
+
 		dynasty = {
 			set_dynasty_name = hi_dynn_jabalid
 			set_coa = title:k_jabalid
@@ -83,7 +83,7 @@ spawn_jabalid_family_effect = {
 		gender_female_chance = historicinvasions_soldier_female_chance
 		dynasty = none
 		employer = $INVADER_CHAR$
-		after_creation = { 
+		after_creation = {
 			add_opinion = {
 				target = $INVADER_CHAR$
 				modifier = loyal_servant
@@ -95,7 +95,7 @@ spawn_jabalid_family_effect = {
 		gender_female_chance = historicinvasions_soldier_female_chance
 		dynasty = none
 		employer = $INVADER_CHAR$
-		after_creation = { 
+		after_creation = {
 			add_opinion = {
 				target = $INVADER_CHAR$
 				modifier = loyal_servant
@@ -107,7 +107,7 @@ spawn_jabalid_family_effect = {
 		gender_female_chance = historicinvasions_soldier_female_chance
 		dynasty = none
 		employer = $INVADER_CHAR$
-		after_creation = { 
+		after_creation = {
 			add_opinion = {
 				target = $INVADER_CHAR$
 				modifier = loyal_servant
@@ -130,7 +130,7 @@ spawn_jabalid_army_effect = {
 		location = capital_province
 		uses_supply = no
 		inheritable = no
-		
+
 		levies = 125
 		men_at_arms = {
 			type = light_horsemen
