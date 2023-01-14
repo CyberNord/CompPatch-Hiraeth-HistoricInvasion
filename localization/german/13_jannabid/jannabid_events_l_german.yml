@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  jannabid_invasion.1001.t:0 "[said.GetFaith.GetAdherentNameNoTooltip] Uprising in $d_al-hasa$"
  jannabid_invasion.1001.desc.1:0 "Just a few years ago in lower $k_mesopotamia$, a young [hamadan_qarmat.GetName] [hamadan_qarmat.GetDynasty.GetNameNoTooltip] was part of an Isma'ili opposition movement against Abbasid rule. In $b_salamiya$, [hamadan_qarmat.GetSheHe] lost the leadership to Abdullah Fatimid, who would later be declared Mahdi.\n"
  jannabid_invasion.1001.desc.2.a:0 "[hamadan_qarmat.GetFirstNameNoTooltip] has since 'repented' and joined [fatimid_caliph.GetFirstNameNicknamed] in [fatimid_caliph.GetCapitalLocation.GetNameNoTooltip]. But despite this, "

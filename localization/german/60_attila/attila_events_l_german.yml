@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  attila_invasion.1001.t:0 "[attila.GetFirstNameNicknamedNoTooltip]"
  attila_invasion.1001.desc:0 "Many years ago, in the 4th century AD, a nomadic tribe known as the Huns settled north of the Caspian Sea. The did not come with peaceful intentions, as they would subjugate the western Steppe in the following years.\n\nBut they would not stop there: When their realm stretched from the Caspian Sea in the east to the Rhine in the west, they invaded the crumbling Western $e_roman_empire$ and delivered a decisive death blow.\n\nWhen [attila.GetFirstNameNoTooltip] threatened to invade $b_roma$ itself, [pope_leo.GetNameNicknamed] negotiated with [attila.GetHerHim] to not raze $k_italy$ any further.\n\n[attila.GetFirstNameNoTooltip] would die in 453 due to a haemorrhage."
  attila_invasion.1001.a:0 "Not again!"

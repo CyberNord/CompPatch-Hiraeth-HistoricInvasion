@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  terteroba_invasion.1001.t:0 "[blush.GetFirstNameNoTooltip] [blush.GetHouse.GetNameNoTooltip]"
  terteroba_invasion.1001.desc:0 "Over the past few years, the strengh and influence of $e_caspian-pontic_steppe$ has been wavering. Both the [GetTitleByKey('c_kiev').GetProvince.GetCulture.GetCollectiveNoun] as well as the [blush.GetCulture.GetName] nomads of the Steppe are eyeing the territories they currently control.\n\n[blush.GetShortUINameNoTooltip] has united the local nomads in a $cuman$ and $kipchak$ confederation and their combined strength is threatening to subjugate the entire steppe region!"
  terteroba_invasion.1001.a:0 "Let them quarrel all day."

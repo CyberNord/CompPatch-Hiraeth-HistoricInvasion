@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  keita_invasion.1001.t:0 "[sundiata.GetFirstNameNoTooltip] [sundiata.GetHouse.GetNameNoTooltip]"
  keita_invasion.1001.desc:0 "The mountainous lands of $k_mali$ are not dull and barren, but instead a natural barrier against invaders. On the banks of the Niger river, floodplains irrigate the surrounding plains.\n\nThe ground holds valuable resources as well: Prospecters have found gold deposists below $c_niani$, $c_bure$ and $c_bambuk$.\n\nDue to exposure via the trans saharan trade routes, Islam has taken a foodhold in $d_manding$, a faith the local ruler [sundiata.GetShortUINameNoTooltip] is an adherent of.\n\nWill the rich land [sundiata.GetSheHe] rules over birth an everlasting empire?"
  keita_invasion.1001.a:0 "With three gold mines on [sundiata.GetHerHis] hands, [sundiata.GetSheHe] will be unstoppable!"

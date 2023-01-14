@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  bassenheim_invasion.1001.t:0 "[heinrich.GetFirstNameNoTooltip] Walpot von [heinrich.GetHouse.GetNameNoTooltip]"
  bassenheim_invasion.1001.desc:0 "After a long struggle, the $k_teutonic_order$ under [heinrich.GetShortUINameNoTooltip] has acquired a foothold in $d_prussia$.\n\nThe sponsored Wendish Crusade was a full success!"
  bassenheim_invasion.1001.a:0 "Will they ever let go of that region?"

@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  balk_invasion.1001.t:0 "[hermann.GetFirstNameNoTooltip] [hermann.GetHouse.GetNameNoTooltip]"
  balk_invasion.1001.desc:0 "The expedition lead by [hermann.GetShortUINameNoTooltip] led the $k_livonian_order$ much further north into the Baltic area than the $k_teutonic_order$.\n\nWill the Wendish Crusaders prevail in the harsh climate?"
  balk_invasion.1001.a:0 "I still have my doubts..."

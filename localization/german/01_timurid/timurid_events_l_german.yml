@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  timurid_invasion.1001.t:0 "Rise of [timur.GetFirstNameNoTooltip]"
  timurid_invasion.1001.desc:0 "The invasion by the $e_mongol_empire$ caused much turmoil and turned the local political landscape upside down. Old ruling dynasties have been replaced by the likes of the $e_golden_horde$, $e_ilkhanate$ or $e_chagatai$.\n\nYoung [timur.GetShortUINameNoTooltip] was was born near the city of Kesh south of $c_samarkand$. [timur.GetHerHis|U] story began in the western part of $e_chagatai$, where [timur.GetSheHe] was employed as a renowned commander by the Khan. It is not known for certain where Timur sustained his injuries, but two hits by an arrow - one in [timur.GetHerHis] foot and one in [timur.GetHerHis] right hand - left [timur.GetHerHim] disabled for life and earned [timur.GetHerHim] the nickname 'the Lame'.\n\nBy now, [timur.GetFirstNameNoTooltip] has reduced the power base of the ruling elite in $e_chagatai$, instead effectively ruling in their name.\nBut [timur.GetSheHe] is looking for more..."
  timurid_invasion.1001.a:0 "Rivaling the $e_mongol_empire$? [timur.GetSheHe|U] isn't even Khan!"

@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  song_invasion.1001.t:0 "[bing.GetFirstNameNoTooltip] [bing.GetHouse.GetNameNoTooltip]"
  song_invasion.1001.desc:0 "The [bing.GetDynasty.GetNameNoTooltip] has ruled over China since 960 AD, but has since been overthrown by the Yuan.\n\nWhen defeat was all but inevitable, the young emperor [bing.GetShortUINameNoTooltip] and [bing.GetHerHis] court fled to [bing.GetCapitalLocation.GetNameNoTooltip], where the last remaining loyalists established a beachhead and captured the port."
  song_invasion.1001.a:0 "That won't go well."

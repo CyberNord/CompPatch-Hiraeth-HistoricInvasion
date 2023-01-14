@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  rule_historicinvasions_invasion_ends_after_player_win:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Invasion End"
  setting_enabled_invasion_ends_after_player_win:0 "Enabled (default)"
  setting_enabled_invasion_ends_after_player_win_desc:0 "If an AI invader loses a Historic Invasion war against any defending player, their invasion story will end."

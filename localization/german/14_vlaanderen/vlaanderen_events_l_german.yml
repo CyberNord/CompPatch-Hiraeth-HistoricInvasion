@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  vlaanderen_invasion.1001.t:0 "$e_byzantium$ is shattered!"
  vlaanderen_invasion.1001.desc:0 "In a vile display of misguided greed, the knights who were originally heading to reinforce the crusaders fighting in the Holy Land have brutally ransacked most coastal trade ports on the way to $b_constantinople$. The City of the World's Desire itself is aflame while the Latins are doing unthinkable things to the local population.\n\nThe former ruler of the $e_byzantium$ has fled the city and left $b_constantinople$ in the hands of [latin_emperor.GetShortUINameNoTooltip], who has proclaimed [latin_emperor.GetHerselfHimself] rightful ruler.\n\nAcross the strait, [nikaea_emperor.GetShortUINameNoTooltip] has organized a resistance to reclaim the lost city and restore the $e_byzantium$."
  vlaanderen_invasion.1001.a:0 "From 27 BC until now..."

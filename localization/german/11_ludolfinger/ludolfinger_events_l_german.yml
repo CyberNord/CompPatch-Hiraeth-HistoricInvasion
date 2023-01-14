@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  ludolfinger_invasion.1001.t:0 "An ambitious Dream"
  ludolfinger_invasion.1001.desc:0 "[otto.GetTitledFirstName] was elected [otto.Custom('GetQueenKing')] of $k_east_francia$ by its dukes. With their support, [otto.GetSheHe] seeks to unite the splintered $frankish$ kingdoms into a new $e_hre$."
  ludolfinger_invasion.1001.a:0 "His dream won't come true."

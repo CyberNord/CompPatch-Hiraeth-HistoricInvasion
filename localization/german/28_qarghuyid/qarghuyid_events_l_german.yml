@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  qarghuyid_invasion.1001.t:0 "[qarghuyah.GetFirstNameNoTooltip] [qarghuyah.GetHouse.GetNameNoTooltip]"
  qarghuyid_invasion.1001.desc:0 "Seizing a golden opportunity, [qarghuyah.GetShortUINameNoTooltip] has managed to capture a duchy within $k_syria$, wedged in between the fighting $arab$ and $greek$ realms.\n\n[qarghuyah.GetSheHe|U] would go on and sign the Treaty of Safar with the $e_byzantium$, which turned [qarghuyah.GetHerHis] [qarghuyah.GetPrimaryTitle.GetTierAsNameNoTooltip|l] into a tributary buffer state between $b_constantinople$ and the $arab$ realms. This did however secure [qarghuyah.GetHerHis] position as [qarghuyah.GetTitleAsNameNoTooltip|l].\n\nAs part of this treaty, $arab$ armies were forbidden from traveling through the tributary state, future [qarghuyah.GetTitleAsNameNoTooltip|l]s would be nominated by the Emperor and religious converts would not be persecuted."
  qarghuyid_invasion.1001.a:0 "It won't last for long."

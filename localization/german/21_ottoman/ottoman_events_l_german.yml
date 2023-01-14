@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  ottoman_invasion.1001.t:0 "The Rise of [osman.GetFirstNameNoTooltip]"
  ottoman_invasion.1001.desc:0 "The origins of how [osman.GetFather.GetFirstName] rose to power are lost to time. Did their forefathers of the Kayı tribe flee $k_oghuz_il$ with the looming threat of the $e_mongol_empire$ or are they direct descendants of Suleiman Seljuk, the first sultan of $k_rum$?\n\nAfter the $e_mongol_empire$ splintered, $k_rum$ remained a vassal of the $e_ilkhanate$. But as the $mongol$ influence wavered in Asia Minor, many Beyliks declared their independence, including $k_karaman$, $k_eretnid$ and [osman.GetFather.GetFirstNameNoTooltip].\n\nThe $k_ottoman$ have settled near the Sea of Marmara and $b_constantinople$ - the City of the World's Desire - lies just in reach..."
  ottoman_invasion.1001.a:0 "Just like the Great Seljuk and $k_rum$, they'll fail to cross into Europe."

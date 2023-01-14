@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  catholic_opinion:0 "[GetFaithByKey('catholic').GetName] [opinion|E]"
  orthodox_opinion:0 "[GetFaithByKey('orthodox').GetName] [opinion|E]"
  qarmatian_opinion:0 "[GetFaithByKey('qarmatian').GetAdherentName] [opinion|E]"

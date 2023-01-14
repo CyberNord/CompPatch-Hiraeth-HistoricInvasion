@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  TRUCE_SWEAR_FEALTY:0 "Negotiated Truce"
 
  global_any_county_in_region_percent_trigger:0 "A certain percentage of [counties|El] fulfill the following requirements:"

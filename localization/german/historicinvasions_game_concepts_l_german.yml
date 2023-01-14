@@ -1,4 +1,4 @@
-﻿﻿l_german:
+﻿l_german:
  game_concept_historicinvasions_mod:0 "Historic Invasions"
  game_concept_historicinvasions_mod_desc:0 "A mod that adds a variety of large scale invasions, smaller uprisings and decisions to the game.\n\nAlmost all features can be enabled or disabled within the game rules (preceeded by #p HI:#!) before starting a game.\n\nRelated encyclopedia entries:\n$EFFECT_LIST_BULLET$[historicinvasions_invaders|E]\n$EFFECT_LIST_BULLET$[plot_armor|E]\n$EFFECT_LIST_BULLET$[historicinvasions_invasion_war|E]\n$EFFECT_LIST_BULLET$[turkic_nomads|E]\n$EFFECT_LIST_BULLET$[turkic_migration_war|E]\n\n[historicinvasions_invaders|E] have their own unique [titles|E], some of which receive [de_jure|E] land. I try to clean those up via script if an invasion fails, but I can't catch every eventuality. Therefore I recommend using the #high Title Manager#! mod alongside my mod to clean up any potential mess that might be left behind."
 
