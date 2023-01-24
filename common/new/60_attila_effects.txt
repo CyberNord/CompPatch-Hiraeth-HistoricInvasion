@@ -56,7 +56,7 @@ spawn_attila_invader_effect = {
 
 			add_dynasty_prestige_level = 1
 			add_dynasty_prestige = 1000
-			add_dynasty_perk = warfare_legacy_1
+			add_dynasty_perk = hth_warfare_legacy_1
 		}
 		house = {
 			set_house_name = hi_dynn_attila

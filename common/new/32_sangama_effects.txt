@@ -24,7 +24,7 @@ spawn_sangama_invader_effect = {
 
 			add_dynasty_prestige_level = 3
 			add_dynasty_prestige = 7000
-			add_dynasty_perk = warfare_legacy_1
+			add_dynasty_perk = hth_warfare_legacy_1
 		}
 		house = {
 			set_house_name = hi_dynn_$INVADER_DYNN$

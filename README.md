@@ -1,5 +1,5 @@
 # CompPatch-Hiraeth-HistoricInvasion
-
+add_dynasty_perk
 
 ##Changelog:
 These entities are changed
