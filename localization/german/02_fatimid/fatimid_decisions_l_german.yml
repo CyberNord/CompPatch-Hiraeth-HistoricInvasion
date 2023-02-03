@@ -1,6 +1,0 @@
-﻿l_german:
- submit_to_shia_caliph_decision:0 "Submit to the $d_shiite$."
- submit_to_shia_caliph_decision_confirm:0 "Swear Fealty"
- submit_to_shia_caliph_decision_opening_desc:0 "It is time to acknowledge the $d_shiite$ as the true Caliph. I will join their ranks, rather than fight them."
- submit_to_shia_caliph_decision_tooltip:0 "You become a vassal of the Shia Caliph in exchange for retaining your right to rule."
- submit_to_shia_caliph_effect_tooltip:0 "Become a vassal of the $d_shiite$."

@@ -1,5 +1,0 @@
-﻿l_german:
- debug_start_era_of_turkish_migrations_interaction:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] Trigger Era of Turkish Migrations"
- debug_start_era_of_turkish_migrations_interaction_desc:0 "[turkic_nomads|E] will periodically attempt to purchase or conquer land within [GetGeographicalRegion('special_turkish_migration_region').GetName]."
- historicinvasions_end_story_debug_interaction:0 "[Concept('historicinvasions_mod','#p HI:#!')|E] End Invasion Story"
- historicinvasions_end_story_debug_interaction_desc:0 "The current invasion story will end."

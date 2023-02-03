@@ -1,5 +1,0 @@
-﻿l_german:
- piast_invasion.1001.t:0 "[mieszko.GetFirstNameNoTooltip] [mieszko.GetHouse.GetNameNoTooltip]"
- piast_invasion.1001.desc:0 "[mieszko.GetShortUINameNoTooltip], just like his father and grandfather, shares the dream of an united $k_poland$. Utilizing both diplomacy and military force, [mieszko.GetSheHe] plans to subjugate the surrounding realms to create a prosperous and lasting kingdom that will weather the ages.\n\nTo achieve this goal, [mieszko.GetSheHe] is willing to negotiate with [mieszko.GetHerHis] former enemies."
- piast_invasion.1001.a:0 "I have my doubts."
- piast_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [mieszko.GetHerHim]..."

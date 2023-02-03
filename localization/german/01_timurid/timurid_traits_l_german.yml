@@ -1,9 +1,0 @@
-﻿l_german:
- trait_true_heir_of_genghis:0 "True Heir of Genghis Khan"
- trait_true_heir_of_genghis_desc:0 "Blessed with strategic and tactical genius, this character lays claim to the fallen Mongol Empire."
- trait_true_heir_of_genghis_character_desc:0 "[ROOT.GetCharacter.GetTitledFirstNameNoTooltip] is a military genius and wishes to restore the Mongol Empire."
- trait_true_heir_of_genghis_tooltip:0 "Self-acclaimed true heir of Genghis Khan."
-
- trait_clubfooted_timur:0 "Crippled Foot"
- trait_clubfooted_timur_desc:0 "This character is cursed with a crippled foot and an unsightly walk."
- trait_clubfooted_timur_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is cursed with a crippled foot and an unsightly walk."

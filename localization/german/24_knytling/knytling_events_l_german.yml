@@ -1,5 +1,0 @@
-﻿l_german:
- knytling_invasion.1001.t:0 "[knud.GetFirstNameNoTooltip] [knud.GetHouse.GetNameNoTooltip]"
- knytling_invasion.1001.desc:0 "Ever since the age of the Vikings had begun, coastal settlements around the North Sea have been raided regularly. Within $e_britannia$, the $k_danelaw$ had been established and served as a permanent foothold for the $norse$ raiders.\n\n[knud.GetShortUINameNoTooltip] holds claims to $k_england$ and $k_denmark$ due to close family ties.\n\nWill [knud.GetSheHe] be able to consolidate [knud.GetHerHis] claims?"
- knytling_invasion.1001.a:0 "Relentless savages!"
- knytling_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [knud.GetHerHim]..."

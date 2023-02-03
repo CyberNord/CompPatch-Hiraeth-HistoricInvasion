@@ -1,5 +1,0 @@
-﻿l_german:
- hauteville_invasion.1001.t:0 "[william.GetFirstNameNoTooltip] de [william.GetHouse.GetNameNoTooltip]"
- hauteville_invasion.1001.desc:0 "Once a mercenary to reconquer $k_sicily$ for the $e_byzantium$, [william.GetTitledFirstName] instead seized power for himself and his $norman$ companions and threatens to absorb the power vaccum left behind in southern $e_italy$."
- hauteville_invasion.1001.a:0 "The Byzantines keep losing influence..."
- hauteville_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [william.GetHerHim]..."

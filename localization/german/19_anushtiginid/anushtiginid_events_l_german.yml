@@ -1,5 +1,0 @@
-﻿l_german:
- anushtiginid_invasion.1001.t:0 "[tekish.GetFirstNameNoTooltip] [tekish.GetHouse.GetNameNoTooltip]"
- anushtiginid_invasion.1001.desc:0 "The $e_seljuk$ has slowly been losing its hold on Persia, the $e_yelu$ to the north are showing weakness as well.\n\n[tekish.GetShortUINameNoTooltip] is using this opportunity to expand [tekish.GetHerHis] territory.\n\nWill Persia be ruled by a ruler of Persian heritage once more? Or will the $turkish$ tresspassers prevail? Only time will tell."
- anushtiginid_invasion.1001.a:0 "Give that region a rest!"
- anushtiginid_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [tekish.GetHerHim]..."

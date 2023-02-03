@@ -1,5 +1,0 @@
-﻿l_german:
- argead_invasion.1001.t:0 "[alexander.GetNameNicknamedNoTooltip] [alexander.GetHouse.GetNameNoTooltip]"
- argead_invasion.1001.desc:0 "[alexander.GetShortUINameNoTooltip] inherited the kingdom of Macedon at the age of [alexander.GetAge] when [alexander.GetHerHis] father was murdered. Due to successful reforms introduced by [alexander.GetHerHis] father, the realm now posessed a capable standing army consisting of a sturdy phalanx supported by light cavalry and siege engine strikes.\n\nAfter ascending to the throne, [alexander.GetFirstNameNoTooltip] pruged any potential rivals, put down rebellions and secured the Balkan front before advancing into Asia."
- argead_invasion.1001.a:0 "Hollow ambitions."
- argead_invasion.1001.b:0 "@warning_icon! I wish I was ruling in [alexander.GetHerHis] stead..."

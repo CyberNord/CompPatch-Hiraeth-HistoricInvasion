@@ -1,5 +1,0 @@
-﻿l_german:
- msg_historicinvasions_invasion_war_invalidated_message:1 "The [war.GetName] has ended: [defender.GetShortUIName] no longer controls any land in the target region."
- msg_turkic_migration_war_invalidated_message:1 "The [war.GetName] has ended: [defender.GetShortUIName] no longer controls any land in the target region."
-
- invader_looted_county.t:0 "[county.GetNameNoTier] was looted by [occupant.GetFirstNameOrMe]."

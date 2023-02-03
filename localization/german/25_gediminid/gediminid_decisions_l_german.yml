@@ -1,6 +1,0 @@
-﻿l_german:
- gediminid_establish_plc_decision:0 "Establish a Commonwealth"
- gediminid_establish_plc_decision_confirm:0 "To Glory!"
- gediminid_establish_plc_decision_desc:0 "Since our influence over has grown considerably, we have established ourselves as the true and rightful owners of these lands."
- gediminid_establish_plc_decision_tooltip:0 "You establish a strong realm in eastern Europe."
- plc_when_more_than_x_counties_within:0 "The [GetTitleByKey('e_gediminid').GetName] will become [de_jure|E] [liege|E] of all [kingdoms|E] with at least #bold 60%#! of [counties|E] within the specified [region|E]:"

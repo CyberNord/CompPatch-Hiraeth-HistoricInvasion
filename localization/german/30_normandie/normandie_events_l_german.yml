@@ -1,5 +1,0 @@
-﻿l_german:
- normandie_invasion.1001.t:0 "[william.GetFirstNameNoTooltip] [william.GetHouse.GetNameNoTooltip]"
- normandie_invasion.1001.desc:0 "[william.GetShortUINameNoTooltip] is a descendant of the legendary [hrolfr_normandie.GetFirstName] who settled in $d_normandy$ 100 years ago.\n\nFollowing the death of [william.GetHerHis] father, general unrest broke out in $d_normandy$ while local nobles struggled to influence the young [william.GetFirstNameNoTooltip]. Proving [william.GetHerHis] strength, the anarchy was brought to an end.\n\nNot too long ago, the king of $k_england$, Edward 'the Confessor', died without an heir. Since [william.GetFirstNameNoTooltip] was his first cousin once removed, [william.GetSheHe] claimed the throne, built a large fleet and invaded the island along with [william.GetHerHis] $norman$ knights.\n\n[william.GetHerHis|U] conquest was successful, but rebellions are sure to follow."
- normandie_invasion.1001.a:0 "These Vikings won't leave $e_britannia$ alone."
- normandie_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [william.GetHerHim]..."

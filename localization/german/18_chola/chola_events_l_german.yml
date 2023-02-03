@@ -1,5 +1,0 @@
-﻿l_german:
- chola_invasion.1001.t:0 "[parantaka.GetFirstNameNoTooltip] [parantaka.GetHouse.GetNameNoTooltip]"
- chola_invasion.1001.desc:0 "The [parantaka.GetDynasty.GetNameNoTooltip] are perhaps one of the longest ruling dynasties in the world. It is said that they were in power back in the 3rd century BC during the time of Maurya and Alexander's conquests of the Achaemenid Empire.\nWhile surrounding dynasties rose and fell from power, the [parantaka.GetDynasty.GetNameNoTooltip] were quietly ruling the rich valleys of the Godavari River.\n\nHowever, [parantaka.GetShortUINameNoTooltip] has decided that now the time is right to unify southern India and turn the region into a long lasting center of influence."
- chola_invasion.1001.a:0 "I have my doubts."
- chola_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [parantaka.GetHerHim]..."

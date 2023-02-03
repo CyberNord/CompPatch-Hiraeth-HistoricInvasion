@@ -1,5 +1,0 @@
-﻿l_german:
- al-qays_invasion.1001.t:0 "The Zanj Revolt"
- al-qays_invasion.1001.desc:0 "The floodplains [terrain] around $k_mesopotamia$ are perfect for agricultural labor. But, since too much water can be harmful to crops, the Abbasid Caliphate has been forcing slaves from south Africa - the Zanj - to drain flooded marshlands.\n\nDue to the miserable working conditions and forced labor, the Zanj grew more and more discontent. Two previous revolts which took place in the late 7th century had failed.\n\nHowever, [ali.GetShortUINameNoTooltip] has instigated a third revolt against these horrendous living conditions. [ali.GetSheHe] claims to be descended from the Prophet, even though his lineage is shrowded in mystery.\nBut that does not concern the Zanj slaves who have gathered under his command."
- al-qays_invasion.1001.a:0 "Someone put down those slaves!"
- al-qays_invasion.1001.b:0 "@warning_icon! I wish I was leading them in [ali.GetHerHis] stead..."

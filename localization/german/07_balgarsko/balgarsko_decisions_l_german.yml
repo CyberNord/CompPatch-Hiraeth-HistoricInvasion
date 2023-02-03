@@ -1,6 +1,0 @@
-﻿l_german:
- form_first_bulgarian_empire_decision:0 "Form the Empire of $e_bulgaria$"
- form_first_bulgarian_empire_decision_confirm:0 "To glory!"
- form_first_bulgarian_empire_decision_desc:0 "The Romans ought to acknowledge us as the true rulers of these lands!"
- form_first_bulgarian_empire_decision_tooltip:0 "You become a mighty [emperor|E]."
- global_form_first_bulgarian_empire_decision_mindate:0 "The current date ist greater than 910 AD."

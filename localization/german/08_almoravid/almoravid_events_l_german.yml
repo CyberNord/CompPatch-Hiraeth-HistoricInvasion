@@ -1,5 +1,0 @@
-﻿l_german:
- almoravid_invasion.1001.t:0 "[yahya.GetFirstNameNoTooltip] [yahya.GetHouse.GetNameNoTooltip]"
- almoravid_invasion.1001.desc:0 "Years ago, [yahya.GetFirstName] undertook the Hajj to $c_mecca$ and met Abu Imran al-Fasi, another Muslim from south of Andalusia. The two discussed the fractured religious unity within the $berber$ tribes - a conversation that would shape the fate of the region for years to come.\n\nBack home, [yahya.GetSheHe] would prepare to venture deep into remote $berber$ tribes to spread the word of Allah along the Sahara trade routes.\n\nNow that their influence has grown stronger, the Almoravids threaten to subjugate the fractured realms left behind by the Fatimids."
- almoravid_invasion.1001.a:0 "A troubled region."
- almoravid_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [yahya.GetHerHim]..."

@@ -1,9 +1,0 @@
-﻿l_german:
- bassenheim_invasion.1001.t:0 "[heinrich.GetFirstNameNoTooltip] Walpot von [heinrich.GetHouse.GetNameNoTooltip]"
- bassenheim_invasion.1001.desc:0 "After a long struggle, the $k_teutonic_order$ under [heinrich.GetShortUINameNoTooltip] has acquired a foothold in $d_prussia$.\n\nThe sponsored Wendish Crusade was a full success!"
- bassenheim_invasion.1001.a:0 "Will they ever let go of that region?"
- bassenheim_invasion.1001.b:0 "@warning_icon! I wonder what the future holds for [heinrich.GetHerHim]..."
-
- bassenheim_invasion.1101.t:0 "The Faithful Prepare for War"
- bassenheim_invasion.1101.desc:0 "A Papal envoy has reached my court, bringing news from the Vatican. [pope.GetTitledFirstName] issued a call to arms to all righteous Christian rulers.\n\nTo all those who will take the fight against the wild Pagans around the Baltic Sea, the Holy See promises full absolution from all sins and a guaranteed place in Heaven."
- bassenheim_invasion.1101.a:0 "I wonder how many will answer [pope.GetHerHis] call to arms?"

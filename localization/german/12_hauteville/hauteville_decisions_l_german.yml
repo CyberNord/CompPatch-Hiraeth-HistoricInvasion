@@ -1,9 +1,0 @@
-﻿l_german:
- settle_norse_character_in_neustria_decision:0 "Settle $norse$ adventurers in $d_normandy$"
- settle_norse_character_in_neustria_decision_confirm:0 "Confirm"
- settle_norse_character_in_neustria_decision_desc:0 "The Viking raids are getting out of hand. We could grant $d_normandy$ to a $norse$ ruler in exchange for protection."
- settle_norse_character_in_neustria_decision_tooltip:0 "You settle $norse$ Vikings in $d_normandy$."
-
- settle_norse_character_in_neustria_decision_effect_text:0 "Grant the [duchy|El] of $d_normandy$ to a $norse$ character; they will become your [vassal|El]."
- global_settle_norse_character_in_neustria_decision_neustria_only_ai:0 "All counties within $d_normandy$ are controlled by AI."
- global_settle_norse_character_in_neustria_decision_neustria_not_norse_already:0 "The holder of $d_normandy$ doesn't have the North Germanic [cultural|El] [heritage|El]."
