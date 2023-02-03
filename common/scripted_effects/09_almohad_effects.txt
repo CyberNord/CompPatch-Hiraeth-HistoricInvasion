@@ -1,25 +1,26 @@
 ﻿# invader appears, before story
 # atlas mountains
-spawn_almohad_character_effect = {
-	title:c_tinmallal.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_almohad_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
 	# father
 	create_character = {
 		template = tumart_almohad_character_template
-		location = scope:$INVADER_DYNN$_spawn_location
-		save_scope_as = $INVADER_NAME$_father
+		location = scope:invader_spawn_location
+		save_scope_as = invader_father
 	}
 	# INVADER
 	create_character = {
 		template = amghar_almohad_character_template
 		dynasty = inherit
-		father = scope:$INVADER_NAME$_father
-		location = scope:$INVADER_DYNN$_spawn_location
-		save_scope_as = $INVADER_NAME$
+		father = scope:invader_father
+		location = scope:invader_spawn_location
+		save_scope_as = invader
 	}
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 7500
 		add_prestige = 7500
 		add_piety = 2500
@@ -316,7 +317,7 @@ spawn_almohad_army_effect = {
 		uses_supply = no
 		inheritable = no
 		
-		levies = 1200
+		levies = 250
 		men_at_arms = {
 			type = camel_rider
 			stacks = 7
@@ -339,4 +340,8 @@ spawn_almohad_army_effect = {
 			stacks = 7
 		}
 	}
+}
+
+almohad_create_artifacts_effect = {
+	create_artifact_almohad_book_effect = { OWNER = this } # character artifact
 }

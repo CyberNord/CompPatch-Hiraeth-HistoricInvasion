@@ -1,18 +1,57 @@
 ﻿# spawn invader, before story
-spawn_yahya_character_effect = {
-	title:c_wadan.title_province = { # d_adrar
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_almoravid_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
-	### add direct line to invader before they spawn themselves so the heritage line can work properly
+	### Lamptuna
+	character:273081 = { save_scope_as = dynasty_root }
+	if = {
+		limit = { game_start_date < 870.1.1 }
+		character:273073 = { save_scope_as = tamim_lamptuna }
+		create_character = {
+			template = addu_lamptuna_character_template
+			dynasty = inherit
+			location = scope:invader_spawn_location
+			father = scope:tamim_lamptuna
+			save_scope_as = addu_lamptuna
+		}
+		create_character = {
+			template = talakakin_ii_lamptuna_character_template
+			dynasty = inherit
+			location = scope:invader_spawn_location
+			father = scope:addu_lamptuna
+			save_scope_as = talakakin_ii_lamptuna
+		}
+		create_character = {
+			template = tifawt_lamptuna_character_template
+			dynasty = inherit
+			location = scope:invader_spawn_location
+			father = scope:talakakin_ii_lamptuna
+			save_scope_as = tifawt_lamptuna
+		}
+	}
+	
 
+	### Almoravid: add direct line to invader before they spawn themselves so the heritage line can work properly
 	# GEN A
+
+	if = { # fallback for dynasty link
+		limit = { NOT = { exists = scope:tifawt_lamptuna } }
+		scope:dynasty_root = { save_scope_as = tifawt_lamptuna }
+	}
 
 	create_character = {
 		template = turgurt_almoravid_a_character_template
-		name = "Turgurt"
-		location = scope:$INVADER_DYNN$_spawn_location
+		dynasty = inherit
+		location = scope:invader_spawn_location
+		father = scope:tifawt_lamptuna
 		save_scope_as = turgurt_almoravid_a
+		after_creation = {
+			create_cadet_branch = yes
+			father = { death = natural }
+		}
 	}
 
 	# GEN B
@@ -20,7 +59,7 @@ spawn_yahya_character_effect = {
 	create_character = {
 		template = talagagin_almoravid_b_character_template
 		dynasty = inherit
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		father = scope:turgurt_almoravid_a
 		save_scope_as = talagagin_almoravid_b
 	}
@@ -30,7 +69,7 @@ spawn_yahya_character_effect = {
 	create_character = {
 		template = umar_almoravid_c_character_template
 		dynasty = inherit
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		father = scope:talagagin_almoravid_b
 		save_scope_as = umar_almoravid_c
 	}
@@ -40,26 +79,24 @@ spawn_yahya_character_effect = {
 	create_character = { # INVADER
 		template = yahya_almoravid_character_template
 		dynasty = inherit
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		father = scope:umar_almoravid_c
-		save_scope_as = $INVADER_NAME$
+		save_scope_as = invader
 	}
 
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 4500
 		add_prestige = 4000
 		add_piety = 250
 		
 		dynasty = {
-			set_dynasty_name = hi_dynn_almoravid
-			set_coa = title:e_almoravid
-
 			add_dynasty_prestige_level = 1
 			add_dynasty_prestige = 1000
 			add_dynasty_perk = hth_warfare_legacy_1
 			add_dynasty_perk = hth_erudition_legacy_1
 		}
 		house = {
+			set_coa = title:e_almoravid
 			set_house_name = hi_dynn_almoravid
 		}
 	}
@@ -213,7 +250,7 @@ spawn_almoravid_army_effect = {
 		uses_supply = no
 		inheritable = no
 		
-		levies = 1200
+		levies = 250
 		men_at_arms = {
 			type = camel_rider
 			stacks = 7

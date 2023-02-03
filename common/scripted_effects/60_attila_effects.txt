@@ -1,7 +1,8 @@
 ﻿# spawn invader, before story
-spawn_attila_character_effect = {
-	title:c_turgay.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_attila_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
 	# INVADER Attila
@@ -10,8 +11,8 @@ spawn_attila_character_effect = {
 		create_character = {
 			gender = female
 			template = attila_attila_character_template
-			location = scope:$INVADER_DYNN$_spawn_location
-			save_scope_as = $INVADER_NAME$
+			location = scope:invader_spawn_location
+			save_scope_as = invader
 		}
 	}
 	else_if = {
@@ -21,16 +22,16 @@ spawn_attila_character_effect = {
 				create_character = {
 					gender = female
 					template = attila_attila_character_template
-					location = scope:$INVADER_DYNN$_spawn_location
-					save_scope_as = $INVADER_NAME$
+					location = scope:invader_spawn_location
+					save_scope_as = invader
 				}
 			}
 			50 = {
 				create_character = {
 					gender = male
 					template = attila_attila_character_template
-					location = scope:$INVADER_DYNN$_spawn_location
-					save_scope_as = $INVADER_NAME$
+					location = scope:invader_spawn_location
+					save_scope_as = invader
 				}
 			}
 		}
@@ -39,12 +40,12 @@ spawn_attila_character_effect = {
 		create_character = {
 			gender = male
 			template = attila_attila_character_template
-			location = scope:$INVADER_DYNN$_spawn_location
-			save_scope_as = $INVADER_NAME$
+			location = scope:invader_spawn_location
+			save_scope_as = invader
 		}
 	}
 
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 3000
 		add_prestige = 5000
 		add_piety = 250
@@ -88,6 +89,7 @@ attila_maintenance_effect = {
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
 	}
+	attila_grant_historical_artifacts_effect = yes
 }
 
 ### populating the life of the invader character
@@ -157,7 +159,7 @@ spawn_attila_army_effect = {
 		uses_supply = no
 		inheritable = no
 		
-		levies = 500
+		levies = 250
 		men_at_arms = {
 			type = horse_archers
 			stacks = 15
@@ -182,6 +184,19 @@ spawn_attila_army_effect = {
 		men_at_arms = {
 			type = mangonel
 			stacks = 7
+		}
+	}
+}
+
+attila_grant_historical_artifacts_effect = {
+	# see historical_artifacts.0023 for DLC restrictions
+	title:e_attila.holder = {
+		if = {
+			limit = {
+				#has_ep1_dlc_trigger = yes
+				has_dlc_feature = royal_court
+			}
+			create_artifact_wall_sword_attila_effect = { OWNER = this } # court artifact
 		}
 	}
 }

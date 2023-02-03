@@ -1,7 +1,8 @@
 ﻿# invader appears, before story
-spawn_abdullah_character_effect = {
-	title:c_kairwan.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_fatimid_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
 	# father
@@ -11,11 +12,11 @@ spawn_abdullah_character_effect = {
 		template = abdullah_fatimid_character_template
 		dynasty = inherit
 		father = scope:abdullah_father
-		location = scope:$INVADER_DYNN$_spawn_location
-		save_scope_as = $INVADER_NAME$
+		location = scope:invader_spawn_location
+		save_scope_as = invader
 	}
 
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 5000
 		add_prestige = 8000
 		add_piety = 7000
@@ -29,13 +30,13 @@ spawn_abdullah_character_effect = {
 		}
 
 		# rivals
-		# if = {
-		# 	limit = { exists = title:d_sunni.holder }
-		# 	set_relation_rival = {
-		# 		target = title:d_sunni.holder
-		# 		reason = rival_competing_caliph_reason
-		# 	}
-		# }
+		if = {
+			limit = { exists = title:d_sunni.holder }
+			set_relation_rival = {
+				target = title:d_sunni.holder
+				reason = rival_competing_caliph_reason
+			}
+		}
 	}
 
 	every_player = {
@@ -65,6 +66,7 @@ fatimid_maintenance_effect = {
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
 	}
+	fatimid_grant_historical_artifacts_effect = yes
 }
 
 ### populating the life of the invader character
@@ -150,6 +152,24 @@ spawn_fatimid_army_effect = {
 		men_at_arms = {
 			type = mangonel
 			stacks = 5
+		}
+	}
+}
+
+fatimid_grant_historical_artifacts_effect = {
+	# see historical_artifacts.0023 for DLC restrictions
+	title:d_shiite.holder = {
+		create_artifact_al_taj_crown_effect = { OWNER = this } # character artifact
+		create_artifact_qadib_al_mulk_effect = { OWNER = this } # character artifact
+		if = {
+			limit = {
+				#has_ep1_dlc_trigger = yes
+				has_dlc_feature = royal_court
+			}
+			create_artifact_al_sayf_al_khass_effect = { OWNER = this } # court artifact
+			create_artifact_wall_banner_thankfulness_effect = { OWNER = this } # court artifact
+			create_artifact_al_dawat_effect = { OWNER = this } # court artifact
+			create_artifact_al_hafir_effect = { OWNER = this } # court artifact
 		}
 	}
 }

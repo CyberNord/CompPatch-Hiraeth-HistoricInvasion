@@ -1,10 +1,13 @@
 ﻿# spawn invader, before story
-spawn_sundiata_character_effect = {
-	title:c_niani.title_province = { save_scope_as = $INVADER_DYNN$_spawn_location }
+spawn_keita_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
+	}
 
 	# spawn new invader
 	if = {
-		limit = { NOT = { exists = scope:$INVADER_NAME$ } }
+		limit = { NOT = { exists = scope:invader } }
 		# scope to dynasty
 		character:251110 = { save_scope_as = keita_dynasty_origin }
 		scope:keita_dynasty_origin.dynasty = {
@@ -26,14 +29,14 @@ spawn_sundiata_character_effect = {
 			dynasty = inherit
 			father = scope:maghan_keita_father
 			#father = scope:keita_dynasty_origin
-			location = scope:$INVADER_DYNN$_spawn_location
+			location = scope:invader_spawn_location
 			save_scope_as = maghan_keita
 		}
 		# mother
 		create_character = {
 			template = maghan_keita_spouse_character_template
 			dynasty = none
-			location = scope:$INVADER_DYNN$_spawn_location
+			location = scope:invader_spawn_location
 			save_scope_as = maghan_keita_spouse
 		}
 		# INVADER
@@ -42,16 +45,16 @@ spawn_sundiata_character_effect = {
 			dynasty = inherit
 			mother = scope:maghan_keita_spouse
 			father = scope:maghan_keita
-			location = scope:$INVADER_DYNN$_spawn_location
-			save_scope_as = $INVADER_NAME$
+			location = scope:invader_spawn_location
+			save_scope_as = invader
 			after_creation = {
 				add_character_flag = spawned_$INVADER_DYNN$
 			}
 		}
 	}
-	else = { scope:$INVADER_NAME$ = { add_trait = desert_warrior } }
+	else = { scope:invader = { add_trait = desert_warrior } }
 
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 3000
 		add_prestige = 2500
 		add_piety = 250
@@ -147,7 +150,7 @@ spawn_keita_army_effect = {
 		uses_supply = no
 		inheritable = no
 		
-		levies = 750
+		levies = 250
 		men_at_arms = {
 			type = guinea_warrior
 			stacks = 9

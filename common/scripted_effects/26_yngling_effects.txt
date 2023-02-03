@@ -1,28 +1,29 @@
 ﻿# spawn invader, before story
-spawn_haraldr_character_effect = {
-	title:c_vingulmork.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_yngling_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
 	# father
 	character:168323 = { save_scope_as = halfdan }
 
 	if = {
-		limit = { NOT = { exists = scope:$INVADER_NAME$ } }
+		limit = { NOT = { exists = scope:invader } }
 		# INVADER
 		create_character = {
 			template = haraldr_yngling_character_template
 			dynasty = inherit
 			father = scope:halfdan
-			location = scope:$INVADER_DYNN$_spawn_location
-			save_scope_as = $INVADER_NAME$
+			location = scope:invader_spawn_location
+			save_scope_as = invader
 			after_creation = {
 				add_character_flag = spawned_$INVADER_DYNN$
 			}
 		}
 	}
 
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 750
 		add_prestige = 100
 		add_piety = 50

@@ -1,7 +1,8 @@
 ﻿# invader appears, before story
-spawn_mardavij_character_effect = {
-	title:c_gilan.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_ziyarid_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
 	# father, hist-ID
@@ -12,7 +13,7 @@ spawn_mardavij_character_effect = {
 	else = {
 		create_character = {
 			template = ziyar_ziyarid_character_template
-			location = scope:$INVADER_DYNN$_spawn_location
+			location = scope:invader_spawn_location
 			save_scope_as = ziyar_ziyarid
 		}
 		scope:ziyar_ziyarid = {
@@ -30,10 +31,10 @@ spawn_mardavij_character_effect = {
 		template = mardavij_ziyarid_character_template
 		dynasty = inherit
 		father = scope:ziyar_ziyarid
-		location = scope:$INVADER_DYNN$_spawn_location
-		save_scope_as = $INVADER_NAME$
+		location = scope:invader_spawn_location
+		save_scope_as = invader
 	}
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 750
 		add_prestige = 2250
 		add_piety = 3500

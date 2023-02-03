@@ -1,20 +1,22 @@
 ﻿# spawn invader, before story
-spawn_sinan_character_effect = {
-	title:c_qazwin.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_jabalid_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
+
 	# family
 	create_character = {
 		template = muhammad_jabalid_character_template
 		dynasty = generate
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = muhammad_jabalid
 	}
 	create_character = {
 		template = sulayman_jabalid_character_template
 		dynasty = inherit
 		father = scope:muhammad_jabalid
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = sulayman_jabalid
 	}
 
@@ -23,11 +25,11 @@ spawn_sinan_character_effect = {
 		template = sinan_jabalid_character_template
 		dynasty = inherit
 		father = scope:sulayman_jabalid
-		location = scope:$INVADER_DYNN$_spawn_location
-		save_scope_as = $INVADER_NAME$
+		location = scope:invader_spawn_location
+		save_scope_as = invader
 	}
 
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 500
 		add_prestige = 500
 		add_piety = 750

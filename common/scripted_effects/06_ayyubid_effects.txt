@@ -1,15 +1,16 @@
 ﻿# invader appears, before story
-spawn_ayyubid_character_effect = {
-	title:c_cairo.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_ayyubid_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
 	create_character = {
 		template = saladin_ayyubid_character_template
-		location = scope:$INVADER_DYNN$_spawn_location
-		save_scope_as = $INVADER_NAME$
+		location = scope:invader_spawn_location
+		save_scope_as = invader
 	}
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 7500
 		add_prestige = 12000
 		add_piety = 1750
@@ -288,7 +289,7 @@ spawn_ayyubid_army_effect = {
 		uses_supply = no
 		inheritable = no
 		
-		levies = 1250
+		levies = 250
 		men_at_arms = {
 			type = camel_rider
 			stacks = 10

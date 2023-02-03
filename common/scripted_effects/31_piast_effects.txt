@@ -1,17 +1,18 @@
 ﻿# spawn invader, before story
-spawn_mieszko_character_effect = {
-	title:c_krakowska.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_piast_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
 	if = {
-		limit = { NOT = { exists = scope:$INVADER_NAME$ } }
+		limit = { NOT = { exists = scope:invader } }
 		character:752 = { save_scope_as = siemowit_piast }
 		create_character = {
 			template = lestek_piast_character_template
 			dynasty = inherit
 			father = scope:siemowit_piast
-			location = scope:$INVADER_DYNN$_spawn_location
+			location = scope:invader_spawn_location
 			save_scope_as = lestek_piast
 		}
 		# FATHER
@@ -19,7 +20,7 @@ spawn_mieszko_character_effect = {
 			template = siemomysl_piast_character_template
 			dynasty = inherit
 			father = scope:lestek_piast
-			location = scope:$INVADER_DYNN$_spawn_location
+			location = scope:invader_spawn_location
 			save_scope_as = siemomysl_piast
 		}
 		# INVADER
@@ -27,15 +28,15 @@ spawn_mieszko_character_effect = {
 			template = mieszko_piast_character_template
 			dynasty = inherit
 			father = scope:siemomysl_piast
-			location = scope:$INVADER_DYNN$_spawn_location
-			save_scope_as = $INVADER_NAME$
+			location = scope:invader_spawn_location
+			save_scope_as = invader
 			after_creation = {
 				add_character_flag = spawned_$INVADER_DYNN$
 			}
 		}
 	}
 
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 1750
 		add_prestige = 1500
 		add_piety = 250
@@ -105,7 +106,7 @@ spawn_piast_army_effect = {
 		uses_supply = no
 		inheritable = no
 		
-		levies = 500
+		levies = 250
 		men_at_arms = {
 			type = armored_footmen
 			stacks = 7

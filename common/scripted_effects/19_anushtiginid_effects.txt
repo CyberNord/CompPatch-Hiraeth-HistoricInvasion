@@ -1,14 +1,16 @@
 ﻿# spawn invader, before story
-spawn_tekish_character_effect = {
-	title:c_gurganj.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_anushtiginid_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
+
 	### ancestors
 	# gen A
 	create_character = {
 		template = anushtigin_anushtiginid_character_template
 		dynasty = generate
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = anushtigin_anushtiginid
 	}
 	# gen B
@@ -16,7 +18,7 @@ spawn_tekish_character_effect = {
 		template = muhammad_i_anushtiginid_character_template
 		dynasty = inherit
 		father = scope:anushtigin_anushtiginid
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = muhammad_i_anushtiginid
 	}
 	# gen C
@@ -24,46 +26,46 @@ spawn_tekish_character_effect = {
 		template = atsiz_anushtiginid_character_template
 		dynasty = inherit
 		father = scope:muhammad_i_anushtiginid
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = atsiz_anushtiginid
 	}
 	create_character = {
 		template = inaltigin_anushtiginid_character_template
 		dynasty = inherit
 		father = scope:muhammad_i_anushtiginid
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 	}
 	create_character = {
 		template = yusuf_anushtiginid_character_template
 		dynasty = inherit
 		father = scope:muhammad_i_anushtiginid
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 	}
 	# gen D
 	create_character = {
 		template = il-arlsan_anushtiginid_character_template
 		dynasty = inherit
 		father = scope:atsiz_anushtiginid
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = il-arlsan_anushtiginid
 	}
 	create_character = {
 		template = atliq_anushtiginid_character_template
 		dynasty = inherit
 		father = scope:atsiz_anushtiginid
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 	}
 	create_character = {
 		template = hitan_anushtiginid_character_template
 		dynasty = inherit
 		father = scope:atsiz_anushtiginid
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 	}
 	create_character = {
 		template = suleiman_anushtiginid_character_template
 		dynasty = inherit
 		father = scope:atsiz_anushtiginid
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 	}
 
 	# gen E
@@ -72,11 +74,11 @@ spawn_tekish_character_effect = {
 		template = tekish_anushtiginid_character_template
 		dynasty = inherit
 		father = scope:il-arlsan_anushtiginid
-		location = scope:$INVADER_DYNN$_spawn_location
-		save_scope_as = $INVADER_NAME$
+		location = scope:invader_spawn_location
+		save_scope_as = invader
 	}
 
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 2000
 		add_prestige = 2500
 		add_piety = 150
@@ -190,7 +192,7 @@ spawn_anushtiginid_army_effect = {
 		uses_supply = no
 		inheritable = no
 		
-		levies = 2000
+		levies = 250
 		men_at_arms = {
 			type = light_horsemen
 			stacks = 12
@@ -218,7 +220,7 @@ spawn_anushtiginid_army_effect = {
 		# siege
 		men_at_arms = {
 			type = trebuchet
-			stacks = 9
+			stacks = 10
 		}
 	}
 }

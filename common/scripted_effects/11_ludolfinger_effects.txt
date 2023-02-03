@@ -1,7 +1,8 @@
 ﻿# invader appears if k_east_francia.holder doesn't exist, before story
-spawn_otto_character_effect = {
-	title:c_frankfurt.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_ludolfinger_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
 	if = { # doesn't exist yet
@@ -12,22 +13,22 @@ spawn_otto_character_effect = {
 			template = heinrich_ludolfinger_character_template
 			dynasty = inherit
 			father = scope:otto_grandfather
-			location = scope:$INVADER_DYNN$_spawn_location
+			location = scope:invader_spawn_location
 			save_scope_as = heinrich_ludolfinger
 		}
 		create_character = {
 			template = otto_ludolfinger_character_template
 			dynasty = inherit
 			father = scope:heinrich_ludolfinger
-			location = scope:$INVADER_DYNN$_spawn_location
-			save_scope_as = $INVADER_NAME$
+			location = scope:invader_spawn_location
+			save_scope_as = invader
 		}
 	}
 	else = { # suitable replacement exists
-		title:k_east_francia.holder = { save_scope_as = $INVADER_NAME$ }
+		title:k_east_francia.holder = { save_scope_as = invader }
 	}
 	
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 2500
 		add_prestige = 7500
 		add_piety = 500
@@ -148,6 +149,22 @@ spawn_ludolfinger_army_effect = {
 		men_at_arms = {
 			type = mangonel
 			stacks = 5
+		}
+	}
+}
+
+ludolfinger_grant_historical_artifacts_effect = {
+	# see historical_artifacts.0023 for DLC restrictions
+	title:e_hre.holder = {
+		create_artifact_reichskrone_effect = { OWNER = this } # character artifact
+		if = {
+			limit = {
+				#has_ep1_dlc_trigger = yes
+				has_dlc_feature = royal_court
+			}
+			create_artifact_pedestal_crown_iron_effect = { OWNER = this } # court artifact
+			create_artifact_essen_crown_effect = { OWNER = this } # court artifact
+			create_artifact_throne_charlemagne_effect = { OWNER = this } # court artifact
 		}
 	}
 }
@@ -303,6 +320,8 @@ hi_restore_hre_decision_effect = {
 	### name change
 	title:k_burgundy = { set_title_name = hi_k_arles }
 	#title:k_lotharingia = { set_title_name = hi_k_lorraine }
+
+	ludolfinger_grant_historical_artifacts_effect = yes
 }
 
 hi_expand_hre_decision_effect = {

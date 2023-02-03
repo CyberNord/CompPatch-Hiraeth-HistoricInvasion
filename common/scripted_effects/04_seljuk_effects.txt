@@ -1,7 +1,8 @@
 ﻿# invader appears, before story
-spawn_seljuk_character_effect = {
-	title:c_gurgan.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_seljuk_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
 
 	### create distant, dead ancestors
@@ -10,14 +11,14 @@ spawn_seljuk_character_effect = {
 		template = tengiz_inaltiginid_character_template
 		father = scope:uechoq_inaltiginid
 		dynasty = inherit
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = tengiz_inaltiginid
 	}
 	create_character = {
 		template = qiniq_qiniq_character_template
 		father = scope:tengiz_inaltiginid
 		dynasty = inherit
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = qiniq_qiniq
 	}
 	scope:qiniq_qiniq = {
@@ -30,14 +31,14 @@ spawn_seljuk_character_effect = {
 		template = duqaq_qiniq_character_template
 		father = scope:qiniq_qiniq
 		dynasty = inherit
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = duqaq_qiniq
 	}
 	create_character = {
 		template = seljuk_seljuk_character_template
 		father = scope:duqaq_qiniq
 		dynasty = inherit
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = seljuk_seljuk
 	}
 	scope:seljuk_seljuk = {
@@ -53,8 +54,8 @@ spawn_seljuk_character_effect = {
 		template = mikail_seljuk_character_template
 		father = scope:seljuk_seljuk
 		dynasty = inherit
-		#employer = scope:$INVADER_NAME$
-		location = scope:$INVADER_DYNN$_spawn_location
+		#employer = scope:invader
+		location = scope:invader_spawn_location
 		save_scope_as = mikail_seljuk
 	}
 	# mother
@@ -63,7 +64,7 @@ spawn_seljuk_character_effect = {
 		template = hi_random_spouse_character_template
 		dynasty = none
 		gender = female
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		faith = scope:mikail_seljuk.faith
 		culture = scope:mikail_seljuk.culture
 		save_scope_as = mikail_seljuk_spouse
@@ -77,10 +78,10 @@ spawn_seljuk_character_effect = {
 		mother = scope:mikail_seljuk_spouse
 		father = scope:mikail_seljuk
 		dynasty = inherit
-		location = scope:$INVADER_DYNN$_spawn_location
-		save_scope_as = $INVADER_NAME$
+		location = scope:invader_spawn_location
+		save_scope_as = invader
 	}
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 4500
 		add_prestige = 5000
 		add_piety = 400
@@ -120,6 +121,7 @@ seljuk_maintenance_effect = {
 		INVADER_TITLE = $INVADER_TITLE$
 		LANDLESS_YES_NO = $LANDLESS_YES_NO$
 	}
+	seljuk_create_artifacts_effect = yes
 }
 
 ### populating the life of the invader character
@@ -311,6 +313,10 @@ spawn_seljuk_army_effect = {
 			stacks = 7
 		}	
 	}
+}
+
+seljuk_create_artifacts_effect = {
+	create_artifact_seljuk_sword_effect = { OWNER = this } # character artifact
 }
 
 seljuk_offer_caliph_subjugation_effect = {
@@ -543,7 +549,7 @@ seljuk_rum_invasion_effect = {
 				marry = scope:first_rum_ruler
 			}
 		}
-		# create childrem
+		# create children
 		create_character = {
 			template = hi_random_child_character_template
 			dynasty = inherit

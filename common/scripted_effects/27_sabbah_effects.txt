@@ -1,48 +1,50 @@
 ﻿# spawn invader, before story
-spawn_hassan_character_effect = {
-	title:c_qazwin.title_province = {
-		save_scope_as = $INVADER_DYNN$_spawn_location
+spawn_sabbah_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
 	}
+
 	# family
 	create_character = {
 		template = sabbah_sabbah_character_template
 		dynasty = generate
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = sabbah_sabbah
 	}
 	create_character = {
 		template = muhammad_i_sabbah_character_template
 		dynasty = inherit
 		father = scope:sabbah_sabbah
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = muhammad_i_sabbah
 	}
 	create_character = {
 		template = husayn_sabbah_character_template
 		dynasty = inherit
 		father = scope:muhammad_i_sabbah
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = husayn_sabbah
 	}
 	create_character = {
 		template = jafar_sabbah_character_template
 		dynasty = inherit
 		father = scope:husayn_sabbah
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = jafar_sabbah
 	}
 	create_character = {
 		template = muhammad_ii_sabbah_character_template
 		dynasty = inherit
 		father = scope:jafar_sabbah
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = muhammad_ii_sabbah
 	}
 	create_character = {
 		template = ali_sabbah_character_template
 		dynasty = inherit
 		father = scope:muhammad_ii_sabbah
-		location = scope:$INVADER_DYNN$_spawn_location
+		location = scope:invader_spawn_location
 		save_scope_as = ali_sabbah
 	}
 
@@ -51,11 +53,11 @@ spawn_hassan_character_effect = {
 		template = hassan_sabbah_character_template
 		dynasty = inherit
 		father = scope:ali_sabbah
-		location = scope:$INVADER_DYNN$_spawn_location
-		save_scope_as = $INVADER_NAME$
+		location = scope:invader_spawn_location
+		save_scope_as = invader
 	}
 
-	scope:$INVADER_NAME$ = {
+	scope:invader = {
 		add_gold = 500
 		add_prestige = 500
 		add_piety = 750
