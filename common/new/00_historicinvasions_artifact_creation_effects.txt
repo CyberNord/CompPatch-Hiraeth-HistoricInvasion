@@ -1,0 +1,150 @@
+﻿create_artifact_seljuk_sword_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes # common (grey, 60), masterwork (green, 75), famed (blue, 100), illustrious (purple, 150); sets scopes quality and wealth
+
+	# Create the artifact
+	create_artifact = {
+		### flavor
+		name = seljuk_sword_name
+		description = seljuk_sword_desc
+		#creator
+		history = {
+			type = created_before_history
+			# type = created
+			# date = 527.4.1
+			# actor = scope:adventurer # instead of creator
+			# recipient = character:70512 #Justinian the Great
+			# location = province:496 #Constantinople
+		}
+
+		### equip restrictions
+		template = seljuk_sword_template
+
+		### type & visuals determine the picked court blueprint after it is reforged
+		type = sword
+		visuals = sword # blueprint input for court after reforge?
+
+		### used to determine visuals? not sure
+		quality = scope:quality
+		wealth = scope:wealth
+		
+		### actual effect on the character, fallback is handled in template. artifact_placeholder_modifier could be added and replaced in the next step (add_artifact_modifier; remove_artifact_modifier = artifact_placeholder_modifier)
+		modifier = seljuk_sword_modifier
+
+		### other
+		decaying = yes # will the artifact degrade over time?
+		save_scope_as = newly_created_artifact
+	}
+
+	scope:newly_created_artifact = {
+		### used to trigger various base game events
+		set_variable = { name = historical_unique_artifact value = yes }
+
+		### used for fund_inspiration_effect ? irrelevant for this mod?
+		set_variable = seljuk_sword
+		save_scope_as = epic
+
+		### artifact will be inherited alongside this title; handled in base game on_title_gain
+		set_variable = {
+			name = artifact_succession_title
+			value = title:e_seljuk
+		}
+
+		### tracks dynasty / house for use in template
+		set_variable = {
+			name = dynasty
+			value = scope:owner.dynasty
+		}
+
+		### this is needed to determine what religion the artifact will work for; handled in artifact template, thus any name could be used
+		# set_variable = {
+		# 	name = religion
+		# 	value = scope:owner.religion
+		# }
+
+		# add_artifact_title_history = {
+		# 	target = title:e_seljuk
+		# 	date = 881.1.1
+		# }
+
+		### Save the quality and wealth of this artifact in case we need to reference it later
+		set_variable = {
+			name = quality
+			value = scope:quality
+		}
+		set_variable = {
+			name = wealth
+			value = scope:wealth
+		}
+
+		### equip artifact
+		equip_artifact_to_owner_replace = yes
+	}
+}
+
+create_artifact_almohad_book_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes # common (grey, 60), masterwork (green, 75), famed (blue, 100), illustrious (purple, 150); sets scopes quality and wealth
+
+	# Create the artifact
+	create_artifact = {
+		### flavor
+		name = almohad_book_name
+		description = almohad_book_desc
+		history = {
+			type = created
+			date = current_date
+			actor = scope:owner # replaces creator
+			recipient = scope:abd_al-mumin_almohad
+			location = province:4718 # Marrakesh
+		}
+
+		### equip restrictions
+		template = almohad_book_template
+
+		### type & visuals determine the picked court blueprint after it is reforged
+		type = miscellaneous
+		visuals = book # blueprint input for court after reforge?
+
+		### used to determine visuals? not sure
+		quality = scope:quality
+		wealth = scope:wealth
+		
+		### actual effect on the character, fallback is handled in template. artifact_placeholder_modifier could be added and replaced in the next step (add_artifact_modifier; remove_artifact_modifier = artifact_placeholder_modifier)
+		modifier = almohad_book_modifier
+
+		### other
+		decaying = yes # will the artifact degrade over time?
+		save_scope_as = newly_created_artifact
+	}
+
+	scope:newly_created_artifact = {
+		# Subject and cover material is set as a required feature for a book-type artifact, but for a miscellaneous-type it's an optional feature, so we need to set it here
+		#set_artifact_feature_group = book_subject
+		#set_artifact_feature_group = book_cover_material
+
+		### used to trigger various base game events
+		set_variable = { name = historical_unique_artifact value = yes }
+
+		### used for fund_inspiration_effect ? irrelevant for this mod?
+		set_variable = almohad_book
+		save_scope_as = epic
+
+		### Save the quality and wealth of this artifact in case we need to reference it later
+		set_variable = {
+			name = quality
+			value = scope:quality
+		}
+		set_variable = {
+			name = wealth
+			value = scope:wealth
+		}
+
+		### equip artifact
+		equip_artifact_to_owner_replace = yes
+	}
+}
