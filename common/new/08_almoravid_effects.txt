@@ -5,15 +5,53 @@ spawn_almoravid_invader_effect = {
 		title_province = { save_scope_as = invader_spawn_location }
 	}
 
-	### add direct line to invader before they spawn themselves so the heritage line can work properly
+	### Lamptuna
+	character:273081 = { save_scope_as = dynasty_root }
+	if = {
+		limit = { game_start_date < 870.1.1 }
+		character:273073 = { save_scope_as = tamim_lamptuna }
+		create_character = {
+			template = addu_lamptuna_character_template
+			dynasty = inherit
+			location = scope:invader_spawn_location
+			father = scope:tamim_lamptuna
+			save_scope_as = addu_lamptuna
+		}
+		create_character = {
+			template = talakakin_ii_lamptuna_character_template
+			dynasty = inherit
+			location = scope:invader_spawn_location
+			father = scope:addu_lamptuna
+			save_scope_as = talakakin_ii_lamptuna
+		}
+		create_character = {
+			template = tifawt_lamptuna_character_template
+			dynasty = inherit
+			location = scope:invader_spawn_location
+			father = scope:talakakin_ii_lamptuna
+			save_scope_as = tifawt_lamptuna
+		}
+	}
+	
 
+	### Almoravid: add direct line to invader before they spawn themselves so the heritage line can work properly
 	# GEN A
+
+	if = { # fallback for dynasty link
+		limit = { NOT = { exists = scope:tifawt_lamptuna } }
+		scope:dynasty_root = { save_scope_as = tifawt_lamptuna }
+	}
 
 	create_character = {
 		template = turgurt_almoravid_a_character_template
-		name = turgurt_almoravid_a_character_template_name
+		dynasty = inherit
 		location = scope:invader_spawn_location
+		father = scope:tifawt_lamptuna
 		save_scope_as = turgurt_almoravid_a
+		after_creation = {
+			create_cadet_branch = yes
+			father = { death = natural }
+		}
 	}
 
 	# GEN B
@@ -52,15 +90,13 @@ spawn_almoravid_invader_effect = {
 		add_piety = 250
 		
 		dynasty = {
-			set_dynasty_name = hi_dynn_almoravid
-			set_coa = title:e_almoravid
-
 			add_dynasty_prestige_level = 1
 			add_dynasty_prestige = 1000
-			add_dynasty_perk = hth_warfare_legacy_1
-			add_dynasty_perk = hth_erudition_legacy_1
+			add_dynasty_perk = warfare_legacy_1
+			add_dynasty_perk = erudition_legacy_1
 		}
 		house = {
+			set_coa = title:e_almoravid
 			set_house_name = hi_dynn_almoravid
 		}
 	}

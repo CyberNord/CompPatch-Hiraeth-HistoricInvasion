@@ -68,7 +68,7 @@ spawn_sabbah_invader_effect = {
 
 			add_dynasty_prestige_level = 1
 			add_dynasty_prestige = 1500
-			add_dynasty_perk = hth_guile_legacy_1
+			add_dynasty_perk = guile_legacy_1
 		}
 		house = {
 			set_house_name = hi_dynn_sabbah

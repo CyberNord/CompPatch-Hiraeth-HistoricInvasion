@@ -57,22 +57,22 @@ spawn_timurid_invader_effect = {
 
 			add_dynasty_prestige_level = 5
 			add_dynasty_prestige = 20250
-			add_dynasty_perk = hth_warfare_legacy_1
-			add_dynasty_perk = hth_warfare_legacy_2
-			add_dynasty_perk = hth_warfare_legacy_3
-			add_dynasty_perk = hth_warfare_legacy_4
-			add_dynasty_perk = hth_warfare_legacy_5
-			add_dynasty_perk = hth_glory_legacy_1
+			add_dynasty_perk = warfare_legacy_1
+			add_dynasty_perk = warfare_legacy_2
+			add_dynasty_perk = warfare_legacy_3
+			add_dynasty_perk = warfare_legacy_4
+			add_dynasty_perk = warfare_legacy_5
+			add_dynasty_perk = glory_legacy_1
 			if = {
 				limit = { has_fp1_dlc_trigger = yes }
-				add_dynasty_perk = hth_ep1_culture_legacy_1
-				add_dynasty_perk = hth_ep1_culture_legacy_2
-				add_dynasty_perk = hth_ep1_culture_legacy_3
+				add_dynasty_perk = ep1_culture_legacy_1
+				add_dynasty_perk = ep1_culture_legacy_2
+				add_dynasty_perk = ep1_culture_legacy_3
 			}
 			else = {
-				add_dynasty_perk = hth_erudition_legacy_1
-				add_dynasty_perk = hth_erudition_legacy_2
-				add_dynasty_perk = hth_erudition_legacy_3
+				add_dynasty_perk = erudition_legacy_1
+				add_dynasty_perk = erudition_legacy_2
+				add_dynasty_perk = erudition_legacy_3
 			}
 		}
 		house = {

@@ -5,11 +5,39 @@ spawn_sangama_invader_effect = {
 		title_province = { save_scope_as = invader_spawn_location }
 	}
 
+	# mother
+	create_character = {
+		template = maravve_nayakiti_character_template
+		dynasty = generate
+		location = scope:invader_spawn_location
+		save_scope_as = maravve_nayakiti
+	}
+	scope:maravve_nayakiti = {
+		dynasty = { set_dynasty_name = hi_dynn_nayakiti }
+		house = { set_house_name = hi_dynn_nayakiti }
+	}
+
+	# father
+	create_character = {
+		template = bahvana_sangama_character_template
+		dynasty = generate
+		location = scope:invader_spawn_location
+		save_scope_as = harihara_sangama
+		after_creation = {
+			marry = scope:maravve_nayakiti
+		}
+	}
+
+	scope:maravve_nayakiti = { death = natural }
+	scope:harihara_sangama = { death = natural }
+
 	# INVADER
 	create_character = {
 		template = harihara_sangama_character_template
-		dynasty = generate
+		dynasty = inherit
 		location = scope:invader_spawn_location
+		mother = scope:maravve_nayakiti
+		father = scope:harihara_sangama
 		save_scope_as = invader
 	}
 
@@ -24,7 +52,7 @@ spawn_sangama_invader_effect = {
 
 			add_dynasty_prestige_level = 3
 			add_dynasty_prestige = 7000
-			add_dynasty_perk = hth_warfare_legacy_1
+			add_dynasty_perk = warfare_legacy_1
 		}
 		house = {
 			set_house_name = hi_dynn_$INVADER_DYNN$
@@ -61,7 +89,59 @@ sangama_maintenance_effect = {
 
 ### populating the life of the invader character
 spawn_sangama_family_effect = {
-	$INVADER_CHAR$ = { trigger_event = game_rule.1001 }
+	### siblings
+	create_character = {
+		template = bukka_sangama_character_template
+		dynasty = inherit
+		mother = $INVADER_CHAR$.mother
+		father = $INVADER_CHAR$.father
+		employer = $INVADER_CHAR$
+		save_scope_as = bukka_sangama
+		after_creation = {
+			disease_immunity_long_effect = yes
+			# Set friendship with invader
+			set_random_friendship_reason = { TARGET = $INVADER_CHAR$ }
+		}
+	}
+	create_character = {
+		template = kampa_sangama_character_template
+		dynasty = inherit
+		mother = $INVADER_CHAR$.mother
+		father = $INVADER_CHAR$.father
+		employer = $INVADER_CHAR$
+		save_scope_as = kampa_sangama
+	}
+	create_character = {
+		template = marapa_sangama_character_template
+		dynasty = inherit
+		mother = $INVADER_CHAR$.mother
+		father = $INVADER_CHAR$.father
+		employer = $INVADER_CHAR$
+		save_scope_as = marapa_sangama
+	}
+	create_character = {
+		template = muddappa_sangama_character_template
+		dynasty = inherit
+		mother = $INVADER_CHAR$.mother
+		father = $INVADER_CHAR$.father
+		employer = $INVADER_CHAR$
+		save_scope_as = muddappa_sangama
+	}
+
+	# random spouse for Muddappa
+	create_character = {
+		template = hi_random_spouse_character_template
+		dynasty = none
+		employer = $INVADER_CHAR$
+		faith = $INVADER_CHAR$.faith
+		culture = $INVADER_CHAR$.culture
+		after_creation = {
+			marry = scope:muddappa_sangama
+		}
+	}
+
+	### succession
+	$INVADER_CHAR$ = { set_designated_heir = scope:bukka_sangama }
 }
 
 # Make sure invader has troops
