@@ -1,0 +1,103 @@
+﻿# invader appears, before story
+spawn_vivar_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
+	}
+
+	# INVADER
+	create_character = {
+		template = rodrigo_vivar_character_template
+		dynasty = generate
+		location = scope:invader_spawn_location
+		save_scope_as = invader
+	}
+	scope:invader = {
+		add_gold = 750
+		add_prestige = 500
+		add_piety = 250
+		
+		dynasty = {
+			set_dynasty_name = hi_dynn_vivar
+			set_coa = title:d_vivar
+
+			add_dynasty_prestige_level = 1
+			add_dynasty_prestige = 750
+		}
+		house = {
+			set_house_name = hi_dynn_vivar
+		}
+	}
+}
+
+vivar_maintenance_effect = {
+	apply_invader_modifiers_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+	}
+	spawn_$INVADER_DYNN$_family_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	spawn_invader_servants_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	form_the_invader_title_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		INVADER_TITLE = $INVADER_TITLE$
+		LANDLESS_YES_NO = $LANDLESS_YES_NO$
+	}
+}
+
+### populating the life of the invader character
+spawn_vivar_family_effect = {
+	$INVADER_CHAR$ = { trigger_event = game_rule.1001 }
+}
+
+# Make sure invader has troops
+spawn_vivar_troops_effect = {
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_vivar_army_effect = yes
+	}
+	spawn_vivar_army_effect = yes
+	if = {
+		limit = { game_start_date < 1000.1.1 }
+		spawn_vivar_army_effect = yes
+		spawn_vivar_army_effect = yes
+	}
+}
+spawn_vivar_army_effect = {
+	spawn_army = {
+		name = vivar_event_troops
+		location = primary_title.title_capital_county.title_province
+		uses_supply = no
+		inheritable = no
+		
+		levies = 200
+		men_at_arms = {
+			type = armored_footmen
+			stacks = 9
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 6
+		}
+		men_at_arms = {
+			type = pikemen_unit
+			stacks = 8
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 7
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 1
+		}
+		# siege
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+	}
+}

@@ -1,0 +1,74 @@
+﻿recruit_mamluk_commander_decision_effect = {
+	# track uses
+	if = {
+		limit = {
+			NOT = { primary_title = { has_variable = mamluk_recruitment_var } }
+		}
+		primary_title = {
+			set_variable = {
+				name = mamluk_recruitment_var
+				value = 0
+			}
+		}
+	}
+	custom_tooltip = {
+		text = mamluk_inflence_increases_tt
+		primary_title = {
+			change_variable = {
+				name = mamluk_recruitment_var
+				add = 1
+			}
+		}
+	}
+
+	# spawn commander
+	create_character = {
+		template = mamluk_commander_character_template
+		gender_female_chance = root_soldier_female_chance
+		dynasty = none
+		employer = root
+		faith = root.faith
+		after_creation = {
+			add_opinion = {
+				modifier = loyal_servant
+				target = root
+			}
+		}
+	}
+}
+
+recruit_mamluk_regiment_decision_effect = {
+	# track uses
+	if = {
+		limit = {
+			NOT = { primary_title = { has_variable = mamluk_recruitment_var } }
+		}
+		primary_title = {
+			set_variable = {
+				name = mamluk_recruitment_var
+				value = 0
+			}
+		}
+	}
+	custom_tooltip = {
+		text = mamluk_inflence_increases_tt
+		primary_title = {
+			change_variable = {
+				name = mamluk_recruitment_var
+				add = 1
+			}
+		}
+	}
+
+	# spawn regiment
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = mamluk_regiment
+		men_at_arms = {
+			type = camel_rider
+			stacks = 7
+		}
+		location = capital_province
+	}
+}

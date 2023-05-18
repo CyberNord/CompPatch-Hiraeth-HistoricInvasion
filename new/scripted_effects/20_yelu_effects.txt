@@ -1,0 +1,143 @@
+﻿# spawn invader, before story
+spawn_yelu_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
+	}
+
+	# INVADER
+	create_character = {
+		template = dezong_yelu_character_template
+		#dynasty = inherit
+		#father = scope:
+		location = scope:invader_spawn_location
+		save_scope_as = invader
+	}
+
+	scope:invader = {
+		add_gold = 2000
+		add_prestige = 2500
+		add_piety = 150
+		
+		dynasty = {
+			set_dynasty_name = hi_dynn_yelu
+			set_coa = title:e_yelu
+
+			add_dynasty_prestige_level = 2
+			add_dynasty_prestige = 1500
+			add_dynasty_perk = warfare_legacy_1
+		}
+		house = {
+			set_house_name = hi_dynn_yelu
+		}
+	}
+
+	every_player = {
+		trigger_event = $INVADER_DYNN$_invasion.1001 # Notification: Start of invasion
+	}
+}
+
+yelu_maintenance_effect = {
+	apply_invader_modifiers_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+	}
+	give_invader_land_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		STARTING_TIER = $STARTING_TIER$
+	}
+	spawn_$INVADER_DYNN$_family_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	spawn_invader_servants_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	form_the_invader_title_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		INVADER_TITLE = $INVADER_TITLE$
+		LANDLESS_YES_NO = $LANDLESS_YES_NO$
+	}
+}
+
+### populating the life of the invader character
+spawn_yelu_family_effect = {
+	# spouse
+	create_character = {
+		template = tabuyan_yelu_character_template
+		dynasty = generate
+		employer = $INVADER_CHAR$
+		save_scope_as = tabuyan_yelu
+		after_creation = {
+			marry = $INVADER_CHAR$
+			disease_immunity_long_effect = yes
+		}
+	}
+
+	# children
+	create_character = {
+		template = renzong_yelu_character_template
+		dynasty = inherit
+		mother = scope:tabuyan_yelu
+		father = $INVADER_CHAR$
+		employer = $INVADER_CHAR$
+		after_creation = { disease_immunity_short_effect = yes }
+	}
+	create_character = {
+		template = pusuwan_yelu_character_template
+		dynasty = inherit
+		mother = scope:tabuyan_yelu
+		father = $INVADER_CHAR$
+		employer = $INVADER_CHAR$
+		after_creation = { disease_immunity_short_effect = yes }
+	}
+}
+
+# Make sure invader has troops
+spawn_yelu_troops_effect = {
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_yelu_army_effect = yes
+	}
+	spawn_yelu_army_effect = yes
+	spawn_yelu_army_effect = yes
+	if = {
+		limit = { game_start_date < 1000.1.1 }
+		spawn_yelu_army_effect = yes
+	}
+}
+spawn_yelu_army_effect = {
+	spawn_army = {
+		name = yelu_event_troops
+		location = capital_province
+		uses_supply = no
+		inheritable = no
+		
+		levies = 250
+		men_at_arms = {
+			type = horse_archers
+			stacks = 12
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 12
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 9
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 9
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 5
+		}
+		# siege
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+	}
+}

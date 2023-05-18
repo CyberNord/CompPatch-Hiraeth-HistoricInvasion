@@ -1,0 +1,339 @@
+﻿# invader appears, before story
+spawn_hauteville_invader_effect = {
+	random_county_in_region = {
+		region = special_$INVADER_DYNN$_conquest_region_start
+		title_province = { save_scope_as = invader_spawn_location }
+	}
+
+	create_character = { # father is created first so we can have him appear as father
+		template = tancred_i_hauteville_character_template
+		location = scope:invader_spawn_location
+		save_scope_as = izz_hauteville
+	}
+
+	# INVADER
+	create_character = {
+		template = william_i_hauteville_character_template
+		dynasty = inherit
+		location = scope:invader_spawn_location
+		father = scope:izz_hauteville
+		save_scope_as = invader
+	}
+	scope:invader = {
+		add_gold = 2500
+		add_prestige = 2000
+		add_piety = 75
+		
+		dynasty = {
+			set_dynasty_name = hi_dynn_hauteville
+			set_coa = title:c_apulia
+
+			add_dynasty_prestige_level = 1
+			add_dynasty_prestige = 1000
+		}
+		house = {
+			set_house_name = hi_dynn_hauteville
+		}
+	}
+
+	every_player = {
+		trigger_event = $INVADER_DYNN$_invasion.1001 # Notification: Start of invasion
+	}
+}
+
+hauteville_maintenance_effect = {
+	apply_invader_modifiers_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+	}
+	give_invader_land_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		STARTING_TIER = $STARTING_TIER$
+	}
+	spawn_$INVADER_DYNN$_family_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	spawn_invader_servants_effect = {
+		INVADER_CHAR = $INVADER_CHAR$
+	}
+	form_the_invader_title_effect = {
+		INVADER_DYNN = $INVADER_DYNN$
+		INVADER_CHAR = $INVADER_CHAR$
+		INVADER_TITLE = $INVADER_TITLE$
+		LANDLESS_YES_NO = $LANDLESS_YES_NO$
+	}
+}
+
+### populating the life of the invader character
+spawn_hauteville_family_effect = {
+	create_character = {
+		template = serlo_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = beatrix_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = drogo_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = robert_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = humphrey_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = emma_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = geoffrey_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = mauger_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = william_ii_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = aubrey_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = fredesende_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = humbert_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = tancred_ii_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = frumentin_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+	create_character = {
+		template = roger_hauteville_character_template
+		dynasty = inherit
+		employer = $INVADER_CHAR$
+		father = $INVADER_CHAR$.father
+	}
+}
+
+# Make sure invader has troops
+spawn_hauteville_troops_effect = {
+	if = {
+		limit = { has_character_flag = is_first_invader_flag }
+		spawn_hauteville_army_effect = yes
+	}
+	spawn_hauteville_army_effect = yes
+	spawn_hauteville_army_effect = yes
+}
+spawn_hauteville_army_effect = {
+	spawn_army = {
+		name = hauteville_event_troops
+		location = capital_province
+		uses_supply = no
+		inheritable = no
+		
+		levies = 250
+		men_at_arms = {
+			type = bowmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_footmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = pikemen_unit
+			stacks = 5
+		}
+		men_at_arms = {
+			type = pikemen_unit
+			stacks = 5
+		}
+		# siege
+		men_at_arms = {
+			type = mangonel
+			stacks = 3
+		}
+	}
+}
+
+hauteville_byzantines_lose_sicily_effect = {
+	# balkans
+	title:k_croatia = { add_to_temporary_list = hi_e_carpathia_list }
+	title:k_bosnia = { add_to_temporary_list = hi_e_carpathia_list }
+	title:k_serbia = { add_to_temporary_list = hi_e_carpathia_list }
+	every_in_list = {
+		list = hi_e_carpathia_list
+		every_in_de_jure_hierarchy = {
+			limit = { # only kingdoms that are de jure part of e_byzantium
+				tier = tier_kingdom
+				target_is_de_jure_liege_or_above = title:e_byzantium
+			}
+			set_de_jure_liege_title = title:k_hungary.de_jure_liege
+		}
+	}
+	# italy
+	title:k_venice = { add_to_temporary_list = hi_e_italy_list }
+	title:k_sicily = { add_to_temporary_list = hi_e_italy_list }
+	title:k_naples = { add_to_temporary_list = hi_e_italy_list }
+	title:k_trinacria = { add_to_temporary_list = hi_e_italy_list }
+	every_in_list = {
+		list = hi_e_italy_list
+		every_in_de_jure_hierarchy = {
+			limit = { # only kingdoms that are de jure part of its original liege - to prevent erasing de jure shift
+				tier = tier_kingdom
+				target_is_de_jure_liege_or_above = title:e_byzantium
+			}
+			set_de_jure_liege_title = title:k_romagna.de_jure_liege
+		}
+	}
+}
+
+settle_norse_character_in_neustria_decision_effect = {
+	if = {
+		limit = {
+			# de normandie
+			character:242 = {
+				is_ai = yes
+				is_alive = yes
+				is_landed = no
+				is_at_war = no
+			}
+		}
+		character:242 = {
+			save_scope_as = norse_settler
+			set_character_faith_with_conversion = title:d_normandy.de_jure_liege.holder.faith
+			add_trait = loyal
+		}
+	}
+	else = {
+		# create the settler
+		create_character = {
+			age = { 35 45 }
+			template = new_warrior_character
+			dynasty = generate
+			gender = male
+			location = title:c_rouen.title_province
+			faith = title:d_normandy.de_jure_liege.holder.faith
+			culture = culture:norse
+			save_scope_as = norse_settler
+			after_creation = {
+				add_trait = adventurer
+				add_trait = viking
+				add_trait = loyal
+				if = {
+					limit = { has_trait = drunkard }
+					remove_trait = drunkard
+				}
+			}
+		}
+	}
+	# give the settler d_normandy as well as all its counties
+	create_title_and_vassal_change = {
+		type = granted
+		save_scope_as = change_one
+		add_claim_on_loss = no
+	}
+	title:d_normandy = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+				holder = { is_ai = yes }
+			}
+			change_title_holder = {
+				holder = scope:norse_settler
+				change = scope:change_one
+			}
+		}
+	}
+	title:d_normandy = {
+		change_title_holder = {
+			holder = scope:norse_settler
+			change = scope:change_one
+		}
+	}
+	resolve_title_and_vassal_change = scope:change_one
+	# swear fealty
+	scope:norse_settler = {
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change_two
+			add_claim_on_loss = no
+		}
+		change_liege = {
+			liege = title:k_france.holder
+			change = scope:change_two
+		}
+		resolve_title_and_vassal_change = scope:change_two
+	}
+	# create spouse
+	create_character = {
+		age = { 33 43 }
+		template = hi_random_spouse_character_template
+		dynasty = generate
+		gender = female
+		employer = scope:norse_settler
+		faith = scope:norse_settler.faith
+		culture = scope:norse_settler.culture
+		save_scope_as = norse_settler_spouse
+		after_creation = {
+			marry = scope:norse_settler
+		}
+	}
+	# potentially generate family
+	scope:norse_settler = { trigger_event = game_rule.1001 }
+
+	# decision-taker won't be invaded by scandinavian adventurers
+	if = {
+		limit = { has_fp1_dlc_trigger = yes }
+		fp1_add_realm_size_appropriate_sa_reprieve_effect = yes
+	}
+
+	# you may only enact the decision once
+	add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:settle_norse_character_in_neustria_decision
+	}
+}
