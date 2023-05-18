@@ -27,7 +27,7 @@ spawn_chola_invader_effect = {
 		add_gold = 2000
 		add_prestige = 2500
 		add_piety = 150
-		
+
 		dynasty = {
 			add_dynasty_prestige_level = 1
 			add_dynasty_prestige = 500
@@ -111,7 +111,7 @@ spawn_chola_army_effect = {
 		location = capital_province
 		uses_supply = no
 		inheritable = no
-		
+
 		levies = 250
 		men_at_arms = {
 			type = war_elephant
@@ -119,7 +119,7 @@ spawn_chola_army_effect = {
 		}
 		men_at_arms = {
 			type = armored_footmen
-			stacks = 12
+			stacks = 7
 		}
 		men_at_arms = {
 			type = pikemen_unit
@@ -127,12 +127,93 @@ spawn_chola_army_effect = {
 		}
 		men_at_arms = {
 			type = paiks
-			stacks = 8
+			stacks = 5
 		}
 		# siege
 		men_at_arms = {
 			type = mangonel
 			stacks = 5
 		}
+	}
+}
+
+create_chola_successor_kingdoms_effect = {
+	# Tamilakam
+	if = {
+		limit = {
+			title:k_tamilakam = { is_title_created = no }
+			any_county_in_region = {
+				region = special_chola_conquest_region_1
+				percent >= 0.4
+				OR = {
+					holder = scope:story.story_owner
+					holder = { target_is_liege_or_above = scope:story.story_owner }
+				}
+			}
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:k_tamilakam = {
+			change_title_holder = {
+				holder = scope:story.story_owner
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+	}
+	# Andhra
+	if = {
+		limit = {
+			title:k_andhra = { is_title_created = no }
+			any_county_in_region = {
+				region = special_chola_conquest_region_2
+				percent >= 0.4
+				OR = {
+					holder = scope:story.story_owner
+					holder = { target_is_liege_or_above = scope:story.story_owner }
+				}
+			}
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:k_andhra = {
+			change_title_holder = {
+				holder = scope:story.story_owner
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+	}
+	# Lanka
+	if = {
+		limit = {
+			title:k_lanka = { is_title_created = no }
+			any_county_in_region = {
+				region = special_chola_conquest_region_3
+				percent >= 0.4
+				OR = {
+					holder = scope:story.story_owner
+					holder = { target_is_liege_or_above = scope:story.story_owner }
+				}
+			}
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:k_lanka = {
+			change_title_holder = {
+				holder = scope:story.story_owner
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
 	}
 }

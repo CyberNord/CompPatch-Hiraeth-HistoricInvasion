@@ -8,6 +8,7 @@ spawn_piast_invader_effect = {
 	if = {
 		limit = { NOT = { exists = scope:invader } }
 		character:752 = { save_scope_as = siemowit_piast }
+		# GRANDFATHER
 		create_character = {
 			template = lestek_piast_character_template
 			dynasty = inherit
@@ -40,7 +41,7 @@ spawn_piast_invader_effect = {
 		add_gold = 1750
 		add_prestige = 1500
 		add_piety = 250
-		
+
 		dynasty = {
 			add_dynasty_prestige_level = 1
 			add_dynasty_prestige = 500
@@ -105,7 +106,7 @@ spawn_piast_army_effect = {
 		location = capital_province
 		uses_supply = no
 		inheritable = no
-		
+
 		levies = 250
 		men_at_arms = {
 			type = armored_footmen
