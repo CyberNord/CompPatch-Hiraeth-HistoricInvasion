@@ -1,0 +1,208 @@
+﻿# overwriting add_dynasty_perk effects in Historic Invasions
+# currently unused, empty effects are included to futureproof them just in case
+
+### base mod invasions
+
+# 01
+timurid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+	add_dynasty_perk = hth_warfare_legacy_4
+	add_dynasty_perk = hth_warfare_legacy_5
+	add_dynasty_perk = hth_glory_legacy_1
+	if = {
+		limit = { has_ep1_dlc_trigger = yes } # Royal Court
+		add_dynasty_perk = hth_ep1_culture_legacy_1
+		add_dynasty_perk = hth_ep1_culture_legacy_2
+		add_dynasty_perk = hth_ep1_culture_legacy_3
+	}
+	else = {
+		add_dynasty_perk = hth_erudition_legacy_1
+		add_dynasty_perk = hth_erudition_legacy_2
+		add_dynasty_perk = hth_erudition_legacy_3
+	}
+}
+
+# 02
+fatimid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# 03
+ghaznavid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# 04
+seljuk_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# 05
+ziyarid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 06
+ayyubid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# 07
+balgarsko_add_dynasty_perks_effect = {}
+
+# 08
+almoravid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_erudition_legacy_1
+}
+
+# 09
+almohad_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_erudition_legacy_1
+	add_dynasty_perk = hth_erudition_legacy_2
+	add_dynasty_perk = hth_erudition_legacy_3
+}
+
+# 10
+ghurid_add_dynasty_perks_effect = {}
+
+# 11
+ludolfinger_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 12
+hauteville_add_dynasty_perks_effect = {}
+
+# 13
+jannabid_add_dynasty_perks_effect = {}
+
+# 14
+vlaanderen_add_dynasty_perks_effect = {}
+
+# 15
+balk_add_dynasty_perks_effect = {}
+bassenheim_add_dynasty_perks_effect = {}
+
+# 16
+terteroba_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 17
+rurikid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 18
+chola_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 19
+anushtiginid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 20
+yelu_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 21
+ottoman_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 22
+keita_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 23
+al-qays_add_dynasty_perks_effect = {}
+
+# 24
+knytling_add_dynasty_perks_effect = {}
+
+# 25
+gediminid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 26
+yngling_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 27
+jabalid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_guile_legacy_1
+}
+sabbah_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_guile_legacy_1
+}
+
+# 28
+qarghuyid_add_dynasty_perks_effect = {}
+
+# 29
+vivar_add_dynasty_perks_effect = {}
+
+# 30
+normandie_add_dynasty_perks_effect = {}
+
+# 31
+piast_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 32
+sangama_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 33
+mamluk_add_dynasty_perks_effect = {}
+
+# 34
+bearn_add_dynasty_perks_effect = {}
+
+# 60
+attila_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 61
+argead_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# 62
+maurya_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_erudition_legacy_1
+	add_dynasty_perk = hth_law_legacy_1
+	if = {
+		limit = { has_ep1_dlc_trigger = yes }
+		add_dynasty_perk = hth_ep1_culture_legacy_1
+	}
+	else = {}
+}
+
+### Rajas of Asia Addon
+
+# 01
+wanggiyan_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
