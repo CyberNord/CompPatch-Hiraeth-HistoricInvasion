@@ -179,6 +179,11 @@ mamluk_add_dynasty_perks_effect = {}
 # 34
 bearn_add_dynasty_perks_effect = {}
 
+#35
+eldiguzid_add_dynasty_perks_effect = {
+add_dynasty_perk = hth_warfare_legacy_1
+}
+
 # 60
 attila_add_dynasty_perks_effect = {
 	add_dynasty_perk = hth_warfare_legacy_1
@@ -206,3 +211,16 @@ maurya_add_dynasty_perks_effect = {
 wanggiyan_add_dynasty_perks_effect = {
 	add_dynasty_perk = hth_warfare_legacy_1
 }
+
+#02
+rajasa_add_dynasty_perks_effect = {
+add_dynasty_perk = hth_warfare_legacy_1
+}
+
+#03
+liao_add_dynasty_perks_effect = {
+add_dynasty_perk = hth_warfare_legacy_1
+}
+
+#04
+ahom_add_dynasty_perks_effect = {}
