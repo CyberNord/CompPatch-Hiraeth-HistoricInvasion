@@ -224,3 +224,9 @@ add_dynasty_perk = hth_warfare_legacy_1
 
 #04
 ahom_add_dynasty_perks_effect = {}
+
+# 
+zunbil_add_dynasty_perks_effect = {
+add_dynasty_perk = erudition_legacy_1
+add_dynasty_perk = erudition_legacy_2
+}
